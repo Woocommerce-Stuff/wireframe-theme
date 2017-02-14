@@ -358,6 +358,88 @@ function wireframe_theme_config_customizer() {
 	$enqueue = new Core_Enqueue( $prefix, $styles, $scripts );
 
 	/**
+	 * Inline styles to <head>.
+	 *
+	 * @since 1.0.0 Wireframe_Theme
+	 * @var   array $inline Inline CSS.
+	 * @see   Theme_Customizer::css()
+	 */
+	$inline = array(
+		'body',
+		array(
+			'style'    => 'background-color',
+			'mod_name' => 'background_color',
+			'prefix'   => '#',
+			'postfix'  => '',
+			'echo'     => true,
+		),
+		'#site-title a',
+		array(
+			'style'    => 'color',
+			'mod_name' => 'header_textcolor',
+			'prefix'   => '#',
+			'postfix'  => '',
+			'echo'     => true,
+		),
+		'body',
+		array(
+			'style'    => 'background-color',
+			'mod_name' => 'background_color',
+			'prefix'   => '#',
+			'postfix'  => '',
+			'echo'     => true,
+		),
+		'a',
+		array(
+			'style'    => 'color',
+			'mod_name' => 'link_color',
+			'prefix'   => '',
+			'postfix'  => '',
+			'echo'     => true,
+		),
+		'body',
+		array(
+			'style'    => 'color',
+			'mod_name' => 'main_text_color',
+			'prefix'   => '',
+			'postfix'  => '',
+			'echo'     => true,
+		),
+		'#site-logo',
+		array(
+			'style'    => 'margin-top',
+			'mod_name' => 'margin_top',
+			'prefix'   => '',
+			'postfix'  => 'px',
+			'echo'     => true,
+		),
+		'#site-logo',
+		array(
+			'style'    => 'margin-right',
+			'mod_name' => 'margin_right',
+			'prefix'   => '',
+			'postfix'  => 'px',
+			'echo'     => true,
+		),
+		'#site-logo',
+		array(
+			'style'    => 'margin-bottom',
+			'mod_name' => 'margin_bottom',
+			'prefix'   => '',
+			'postfix'  => 'px',
+			'echo'     => true,
+		),
+		'#site-logo',
+		array(
+			'style'    => 'margin-left',
+			'mod_name' => 'margin_left',
+			'prefix'   => '',
+			'postfix'  => 'px',
+			'echo'     => true,
+		),
+	);
+
+	/**
 	 * Option #1: Return (array) of config data for passing into objects.
 	 *
 	 * Option #2: Cast array as an (object) and use object/property sytnax
@@ -385,6 +467,7 @@ function wireframe_theme_config_customizer() {
 		'panels'   => $panels,
 		'sections' => $sections,
 		'enqueue'  => $enqueue,
+		'inline'   => $inline,
 	);
 
 } // Thanks for using MixaTheme products!
