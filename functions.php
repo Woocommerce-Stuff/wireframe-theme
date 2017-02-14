@@ -5,7 +5,7 @@
  * PHP version 5.6.0
  *
  * @package   Wireframe_Theme
- * @author    MixaTheme() Tada Burke
+ * @author    MixaTheme, Tada Burke
  * @version   1.0.0 Wireframe_Theme
  * @copyright 2016 MixaTheme
  * @license   GPL-2.0+
@@ -26,12 +26,12 @@
  * Wireframe API.
  *
  * Checks WordPress version, then initializes wireframe.php. In this example,
- * Wireframe Theme only works with WordPress 4.7 or later. If the version is
+ * Wireframe Theme only works with WordPress 4.7.2 or later. If the version is
  * incompatible, load any backwards compatibility helpers; else continue setup.
  *
  * @since 1.0.0 Wireframe_Theme
  */
-if ( version_compare( $GLOBALS['wp_version'], '4.7-alpha', '<' ) ) {
+if ( version_compare( $GLOBALS['wp_version'], '4.7.2', '<' ) ) {
 	require get_template_directory() . '/wireframe_dev/wireframe/functions/functions-compat.php';
 	return;
 } else {

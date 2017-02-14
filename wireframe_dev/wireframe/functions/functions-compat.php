@@ -5,7 +5,7 @@
  * PHP version 5.6.0
  *
  * @package   Wireframe_Theme
- * @author    Automattic, MixaTheme, Tada Burke
+ * @author    MixaTheme, Tada Burke
  * @copyright 2016 MixaTheme
  * @license   GPL-2.0+
  * @version   1.0.0 Wireframe_Theme
