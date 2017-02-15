@@ -240,6 +240,9 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Theme_Customizer' ) ) :
 		 * @internal Thanks: WordPress Codex, Otto.
 		 */
 		public function header_output() {
+
+			// Inline CSS.
+			if ( isset( $this->_inline ) ) :
 		?>
 			<!--Customizer CSS-->
 			<style type="text/css">
@@ -294,12 +297,12 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Theme_Customizer' ) ) :
 
 					// Render the inline CSS.
 					$this->css( $id, $style, $mod_name, $prefix, $postfix, $echo );
-
 				endforeach;
 				?>
 			</style>
 			<!--/Customizer CSS-->
-		<?php
+			<?php
+			endif;
 		}
 
 		/**
