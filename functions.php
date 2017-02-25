@@ -38,5 +38,5 @@ if ( version_compare( $GLOBALS['wp_version'], '4.7.2', '<' ) ) {
 	require_once 'wireframe_dev/wireframe.php';
 }
 
-/** Your custom functions below this line... */
+/** ADD YOUR CUSTOM FUNCTIONS BELOW THIS LINE... */
 /** ------------------------------------------------------------------------- */
