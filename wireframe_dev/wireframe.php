@@ -304,7 +304,7 @@ if ( class_exists( 'MixaTheme\Wireframe\Theme\Core_Theme' ) ) :
 	 * § 06. Container.
 	 * =========================================================================
 	 *
-	 * Wireframe Theme needs to wire objects to the Core_Container::$storage array.
+	 * Wireframe Theme needs to wire objects to the Core_Container $_storage array.
 	 *
 	 * @since 1.0.0 Wireframe_Theme
 	 * @see   object   Core_Container
@@ -483,15 +483,15 @@ if ( class_exists( 'MixaTheme\Wireframe\Theme\Core_Theme' ) ) :
 	 * @since  1.0.0 Wireframe_Theme
 	 * @var    object $wireframe_theme
 	 * @return object Core_Theme(
-	 *         @param object Core_Language
-	 *         @param object Theme_Notices
-	 *         @param object Theme_UI
-	 *         @param object Theme_Mainmenu
-	 *         @param object Theme_Widgets
-	 *         @param object Theme_Features
-	 *         @param object Theme_Customizer
-	 *         @param object Theme_Editor
-	 *         @param object Theme_Admin
+	 *         @param object Core_Language    DI the default language.
+	 *         @param object Theme_Notices    DI the default Notices.
+	 *         @param object Theme_UI         DI the default UI.
+	 *         @param object Theme_Mainmenu   DI the default Mainmenu.
+	 *         @param object Theme_Widgets    DI the default widgets.
+	 *         @param object Theme_Features   DI the default Theme Features.
+	 *         @param object Theme_Customizer DI the default Customizer.
+	 *         @param object Theme_Editor     DI the default Editor.
+	 *         @param object Theme_Admin      DI the default Admin area.
 	 * )
 	 */
 	$wireframe_theme = new Core_Theme(
