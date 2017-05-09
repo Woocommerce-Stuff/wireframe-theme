@@ -32,7 +32,9 @@ namespace MixaTheme\Wireframe\Theme;
 /**
  * No direct access to this file.
  *
+ * @since 1.0.0 Wireframe
  * @since 1.0.0 Wireframe_Theme
+ * @since 1.0.0 Wireframe_Plugin
  */
 defined( 'ABSPATH' ) or die();
 
@@ -46,11 +48,24 @@ defined( 'ABSPATH' ) or die();
  *            Another alternative is putting all your object configs into one
  *            single config file to minimize your file count.
  *
+ * @since  1.0.0 Wireframe
  * @since  1.0.0 Wireframe_Theme
  * @see    object Core_Language
  * @return array  Default configuration values.
  */
 function wireframe_theme_config_language() {
+	/**
+	 * Module.
+	 *
+	 * Is this module for a theme or a plugin?
+	 *
+	 * @since 1.0.0 Wireframe
+	 * @since 1.0.0 Wireframe_Theme
+	 * @since 1.0.0 Wireframe_Plugin
+	 * @var   string $module The module type. Default: plugin
+	 */
+	$module = 'theme';
+
 	/**
 	 * Wired.
 	 *
@@ -61,7 +76,9 @@ function wireframe_theme_config_language() {
 	 * is instantiated. This is optional, because some objects do not need any
 	 * actions or filters.
 	 *
+	 * @since 1.0.0 Wireframe
 	 * @since 1.0.0 Wireframe_Theme
+	 * @since 1.0.0 Wireframe_Plugin
 	 * @var   bool $wired Wire hooks via __construct(). Default: true
 	 */
 	$wired = true;
@@ -71,12 +88,14 @@ function wireframe_theme_config_language() {
 	 *
 	 * Many objects use a prefix for various strings, handles, scripts, etc.
 	 * Generally, you should use a constant defined in wireframe.php. However,
-	 * you can change it here if needed. Default: WIREFRAME_THEME_PREFIX
+	 * you can change it here if needed. Default: WIREFRAME_THEME_TEXTDOMAIN
 	 *
+	 * @since 1.0.0 Wireframe
 	 * @since 1.0.0 Wireframe_Theme
+	 * @since 1.0.0 Wireframe_Plugin
 	 * @var   string $prefix Prefix for handles.
 	 */
-	$prefix = WIREFRAME_THEME_PREFIX;
+	$prefix = WIREFRAME_THEME_TEXTDOMAIN;
 
 	/**
 	 * Actions.
@@ -85,6 +104,7 @@ function wireframe_theme_config_language() {
 	 * You can set your actions in a multi-dimensional array and remember
 	 * to set the property $wired = true (above).
 	 *
+	 * @since 1.0.0 Wireframe
 	 * @since 1.0.0 Wireframe_Theme
 	 * @var   array $actions Actions to hook.
 	 */
@@ -104,15 +124,29 @@ function wireframe_theme_config_language() {
 	 * You can set your filters in a multi-dimensional array and remember
 	 * to set the property $wired = true (above).
 	 *
+	 * @since 1.0.0 Wireframe
 	 * @since 1.0.0 Wireframe_Theme
+	 * @since 1.0.0 Wireframe_Plugin
 	 * @var   array $filters Filters to hook.
 	 * @todo  WIP.
 	 */
 	$filters = array();
 
 	/**
+	 * Language: Use the $plugin_rel_path parameter instead?
+	 *
+	 * @since 1.0.0 Wireframe
+	 * @since 1.0.0 Wireframe_Theme
+	 * @since 1.0.0 Wireframe_Plugin
+	 * @var   bool $deprecated Language path. Default: false
+	 * @see   https://developer.wordpress.org/reference/functions/load_plugin_textdomain/
+	 */
+	$deprecated = false;
+
+	/**
 	 * Language: Path.
 	 *
+	 * @since 1.0.0 Wireframe
 	 * @since 1.0.0 Wireframe_Theme
 	 * @var   string $path Language path. Default: WIREFRAME_THEME_LANG
 	 */
@@ -130,15 +164,18 @@ function wireframe_theme_config_language() {
 	 * to use `apply_filters` or `wp_json_encode` or `add_setting` or `add_option`
 	 * whenever appropriate. Consider Admin pages for modifying settings & options.
 	 *
+	 * @since  1.0.0 Wireframe
 	 * @since  1.0.0 Wireframe_Theme
 	 * @return array|object
 	 */
 	return array(
-		'wired'   => $wired,
-		'prefix'  => $prefix,
-		'actions' => $actions,
-		'filters' => $filters,
-		'path'    => $path,
+		'module'     => $module,
+		'wired'      => $wired,
+		'prefix'     => $prefix,
+		'actions'    => $actions,
+		'filters'    => $filters,
+		'deprecated' => $deprecated,
+		'path'       => $path,
 	);
 
 } // Thanks for using MixaTheme products!
