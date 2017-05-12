@@ -1,6 +1,6 @@
 <?php
 /**
- * Theme_UI is a Wireframe power theme class..
+ * Module_UI is a Wireframe power theme class..
  *
  * PHP version 5.6.0
  *
@@ -41,14 +41,14 @@ defined( 'ABSPATH' ) or die();
  *
  * @since 1.0.0 Wireframe_Theme
  */
-if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Theme_UI' ) ) :
+if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_UI' ) ) :
 	/**
-	 * Theme_UI is a theme class for wiring front-end presentation methods.
+	 * Module_UI is a theme class for wiring front-end presentation methods.
 	 *
 	 * @since 1.0.0 Wireframe_Theme
 	 * @see   https://github.com/mixatheme/Wireframe
 	 */
-	final class Theme_UI extends Core_Module_Abstract implements Theme_UI_Interface {
+	final class Module_UI extends Core_Module_Abstract implements Module_UI_Interface {
 		/**
 		 * Enqueue.
 		 *
@@ -127,6 +127,6 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Theme_UI' ) ) :
 			}
 		}
 
-	} // Theme_UI.
+	} // Module_UI.
 
 endif; // Thanks for using MixaTheme products!

@@ -1,6 +1,6 @@
 <?php
 /**
- * Theme_Navigation is a Wireframe theme class.
+ * Module_Navigation is a Wireframe theme class.
  *
  * PHP version 5.6.0
  *
@@ -41,14 +41,14 @@ defined( 'ABSPATH' ) or die();
  *
  * @since 1.0.0 Wireframe_Theme
  */
-if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Theme_Navigation' ) ) :
+if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Navigation' ) ) :
 	/**
-	 * Theme_Navigation is a theme class for wiring nav menus.
+	 * Module_Navigation is a theme class for wiring nav menus.
 	 *
 	 * @since 1.0.0 Wireframe_Theme
 	 * @see   https://github.com/mixatheme/Wireframe
 	 */
-	final class Theme_Navigation extends Core_Module_Abstract implements Theme_Navigation_Interface {
+	final class Module_Navigation extends Core_Module_Abstract implements Module_Navigation_Interface {
 		/**
 		 * Primary Menu.
 		 *
@@ -148,6 +148,6 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Theme_Navigation' ) ) :
 			}
 		}
 
-	} // Theme_Navigation.
+	} // Module_Navigation.
 
 endif; // Thanks for using MixaTheme products!

@@ -135,18 +135,18 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Core_Theme' ) ) :
 		 *
 		 * @since 1.0.0 Wireframe_Theme
 		 * @param object $language   Core_Language_Interface.
-		 * @param object $notices    Theme_Notices_Interface.
-		 * @param object $ui         Theme_UI_Interface.
-		 * @param object $navigation Theme_Navigation_Interface.
-		 * @param object $widgets    Theme_Widgets_Interface.
-		 * @param object $features   Theme_Features_Interface.
-		 * @param object $customizer Theme_Customizer_Interface.
-		 * @param object $editor     Theme_Editor_Interface.
-		 * @param object $admin      Theme_Admin_Interface.
+		 * @param object $notices    Module_Notices_Interface.
+		 * @param object $ui         Module_UI_Interface.
+		 * @param object $navigation Module_Navigation_Interface.
+		 * @param object $widgets    Module_Widgets_Interface.
+		 * @param object $features   Module_Features_Interface.
+		 * @param object $customizer Module_Customizer_Interface.
+		 * @param object $editor     Module_Editor_Interface.
+		 * @param object $admin      Module_Admin_Interface.
 		 *
 		 * @internal WPCS may throw `Unknown type hint` for DI objects.
 		 */
-		public function __construct( Core_Language_Interface $language, Theme_Notices_Interface $notices, Theme_UI_Interface $ui, Theme_Navigation_Interface $navigation, Theme_Widgets_Interface $widgets, Theme_Features_Interface $features, Theme_Customizer_Interface $customizer = null, Theme_Editor_Interface $editor = null, Theme_Admin_Interface $admin = null ) {
+		public function __construct( Core_Language_Interface $language, Module_Notices_Interface $notices, Module_UI_Interface $ui, Module_Navigation_Interface $navigation, Module_Widgets_Interface $widgets, Module_Features_Interface $features, Module_Customizer_Interface $customizer = null, Module_Editor_Interface $editor = null, Module_Admin_Interface $admin = null ) {
 
 			// Default properties required for this class.
 			$this->_language   = $language;

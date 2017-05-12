@@ -1,6 +1,6 @@
 <?php
 /**
- * Theme_Features is a Wireframe theme class.
+ * Module_Features is a Wireframe theme class.
  *
  * PHP version 5.6.0
  *
@@ -41,9 +41,9 @@ defined( 'ABSPATH' ) or die();
  *
  * @since 1.0.0 Wireframe_Theme
  */
-if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Theme_Features' ) ) :
+if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Features' ) ) :
 	/**
-	 * Theme_Features is a theme class for wiring theme features.
+	 * Module_Features is a theme class for wiring theme features.
 	 *
 	 * Using add_theme_support() must be hooked via 'after_setup_theme'.
 	 * The ‘init’ hook may be too late for some features.
@@ -52,7 +52,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Theme_Features' ) ) :
 	 * @see   https://developer.wordpress.org/reference/functions/add_theme_support/
 	 * @see   https://github.com/mixatheme/Wireframe
 	 */
-	final class Theme_Features extends Core_Module_Abstract implements Theme_Features_Interface {
+	final class Module_Features extends Core_Module_Abstract implements Module_Features_Interface {
 		/**
 		 * Custom Header.
 		 *
@@ -435,6 +435,6 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Theme_Features' ) ) :
 			}
 		}
 
-	} // Theme_Features.
+	} // Module_Features.
 
 endif; // Thanks for using MixaTheme products!

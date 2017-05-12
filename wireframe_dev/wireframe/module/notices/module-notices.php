@@ -1,6 +1,6 @@
 <?php
 /**
- * Theme_Notices is a Wireframe theme class.
+ * Module_Notices is a Wireframe theme class.
  *
  * PHP version 5.6.0
  *
@@ -42,15 +42,15 @@ defined( 'ABSPATH' ) or die();
  *
  * @since 1.0.0 Wireframe_Theme
  */
-if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Theme_Notices' ) ) :
+if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Notices' ) ) :
 	/**
-	 * Theme_Notices is a theme class for wiring notifications.
+	 * Module_Notices is a theme class for wiring notifications.
 	 *
 	 * @since 1.0.0 Wireframe_Theme
 	 * @since 1.0.0 Wireframe_Theme
 	 * @see   https://github.com/mixatheme/Wireframe
 	 */
-	final class Theme_Notices extends Core_Module_Abstract implements Theme_Notices_Interface {
+	final class Module_Notices extends Core_Module_Abstract implements Module_Notices_Interface {
 		/**
 		 * Notices.
 		 *
@@ -105,6 +105,6 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Theme_Notices' ) ) :
 			}
 		}
 
-	} // Theme_Notices.
+	} // Module_Notices.
 
 endif; // Thanks for using MixaTheme products!

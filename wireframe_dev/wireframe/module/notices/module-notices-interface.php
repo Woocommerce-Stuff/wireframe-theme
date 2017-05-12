@@ -1,6 +1,6 @@
 <?php
 /**
- * Theme_Editor_Interface is a Wireframe theme interface.
+ * Module_Notices_Interface is a Wireframe theme interface.
  *
  * PHP version 5.6.0
  *
@@ -22,7 +22,7 @@
  */
 
 /**
- * Namespace.
+ * Namespaces.
  *
  * @since 5.3.0 PHP
  * @since 1.0.0 Wireframe_Theme
@@ -41,50 +41,27 @@ defined( 'ABSPATH' ) or die();
  *
  * @since 1.0.0 Wireframe_Theme
  */
-if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Theme_Editor_Interface' ) ) :
+if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Notices_Interface' ) ) :
 	/**
-	 * Theme_Editor_Interface contract for extending TinyMCE.
+	 * Module_Notices_Interface contract for notifications.
 	 *
 	 * Security Reminder: If you are saving any data to the Database, you should
 	 * validate and/or sanitize untrusted data before entering into the database.
 	 * All untrusted data should be escaped before output.
 	 *
-	 * @since 2.9.0 WordPress
+	 * @since 1.0.0 Wireframe_Theme
 	 * @since 1.0.0 Wireframe_Theme
 	 * @see   https://github.com/mixatheme/Wireframe
 	 */
-	interface Theme_Editor_Interface {
+	interface Module_Notices_Interface {
 		/**
-		 * Editor Style.
+		 * Parent Theme.
 		 *
 		 * @since 1.0.0 Wireframe_Theme
-		 */
-		public function editor_style();
-
-		/**
-		 * Buttons 2.
-		 *
-		 * Callback to insert 'styleselect' into the $buttons array.
-		 * Puts the buttons on Row 2.
-		 *
 		 * @since 1.0.0 Wireframe_Theme
-		 * @param array $buttons Row 2 buttons.
 		 */
-		public function buttons_2( $buttons );
+		public function parent_theme();
 
-		/**
-		 * Style Formats.
-		 *
-		 * Callback function to filter the MCE settings and returns
-		 * a JSON encoded array of $_style_formats. Each array child
-		 * is a format with it's own settings.
-		 *
-		 * @since  1.0.0 Wireframe_Theme
-		 * @param  array $json Args for style formats.
-		 * @return array $json JSON formatted array.
-		 */
-		public function style_formats( $json );
-
-	} // Theme_Editor_Interface.
+	} // Module_Notices_Interface.
 
 endif; // Thanks for using MixaTheme products!

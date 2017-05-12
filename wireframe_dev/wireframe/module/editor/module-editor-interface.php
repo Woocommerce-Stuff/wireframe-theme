@@ -1,6 +1,6 @@
 <?php
 /**
- * Theme_Navigation_Interface is a Wireframe theme interface.
+ * Module_Editor_Interface is a Wireframe theme interface.
  *
  * PHP version 5.6.0
  *
@@ -41,9 +41,9 @@ defined( 'ABSPATH' ) or die();
  *
  * @since 1.0.0 Wireframe_Theme
  */
-if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Theme_Navigation_Interface' ) ) :
+if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Editor_Interface' ) ) :
 	/**
-	 * Theme_Navigation_Interface contract for nav menus.
+	 * Module_Editor_Interface contract for extending TinyMCE.
 	 *
 	 * Security Reminder: If you are saving any data to the Database, you should
 	 * validate and/or sanitize untrusted data before entering into the database.
@@ -53,15 +53,38 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Theme_Navigation_Interface' ) ) 
 	 * @since 1.0.0 Wireframe_Theme
 	 * @see   https://github.com/mixatheme/Wireframe
 	 */
-	interface Theme_Navigation_Interface {
+	interface Module_Editor_Interface {
 		/**
-		 * Set Primary menu.
+		 * Editor Style.
 		 *
 		 * @since 1.0.0 Wireframe_Theme
-		 * @see   wp_nav_menu()
 		 */
-		public function primary_menu();
+		public function editor_style();
 
-	} // Theme_Navigation_Interface.
+		/**
+		 * Buttons 2.
+		 *
+		 * Callback to insert 'styleselect' into the $buttons array.
+		 * Puts the buttons on Row 2.
+		 *
+		 * @since 1.0.0 Wireframe_Theme
+		 * @param array $buttons Row 2 buttons.
+		 */
+		public function buttons_2( $buttons );
+
+		/**
+		 * Style Formats.
+		 *
+		 * Callback function to filter the MCE settings and returns
+		 * a JSON encoded array of $_style_formats. Each array child
+		 * is a format with it's own settings.
+		 *
+		 * @since  1.0.0 Wireframe_Theme
+		 * @param  array $json Args for style formats.
+		 * @return array $json JSON formatted array.
+		 */
+		public function style_formats( $json );
+
+	} // Module_Editor_Interface.
 
 endif; // Thanks for using MixaTheme products!

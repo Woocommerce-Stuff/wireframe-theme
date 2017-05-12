@@ -1,6 +1,6 @@
 <?php
 /**
- * Theme_Customizer is a Wireframe theme class.
+ * Module_Customizer is a Wireframe theme class.
  *
  * PHP version 5.6.0
  *
@@ -41,9 +41,9 @@ defined( 'ABSPATH' ) or die();
  *
  * @since 1.0.0 Wireframe_Theme
  */
-if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Theme_Customizer' ) ) :
+if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Customizer' ) ) :
 	/**
-	 * Theme_Customizer is a theme class for wiring live preview modifications.
+	 * Module_Customizer is a theme class for wiring live preview modifications.
 	 *
 	 * @since 1.0.0 Wireframe_Theme
 	 * @see   https://codex.wordpress.org/Theme_Customization_API
@@ -51,7 +51,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Theme_Customizer' ) ) :
 	 *
 	 * @internal Thanks: Weston Ruter, Otto, et al.
 	 */
-	final class Theme_Customizer extends Core_Module_Abstract implements Theme_Customizer_Interface {
+	final class Module_Customizer extends Core_Module_Abstract implements Module_Customizer_Interface {
 		/**
 		 * Version.
 		 *
@@ -454,6 +454,6 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Theme_Customizer' ) ) :
 			}
 		}
 
-	} // Theme_Customizer.
+	} // Module_Customizer.
 
 endif; // Thanks for using MixaTheme products!

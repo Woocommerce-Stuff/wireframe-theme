@@ -1,6 +1,6 @@
 <?php
 /**
- * Theme_Notices_Interface is a Wireframe theme interface.
+ * Module_Navigation_Interface is a Wireframe theme interface.
  *
  * PHP version 5.6.0
  *
@@ -22,7 +22,7 @@
  */
 
 /**
- * Namespaces.
+ * Namespace.
  *
  * @since 5.3.0 PHP
  * @since 1.0.0 Wireframe_Theme
@@ -41,27 +41,27 @@ defined( 'ABSPATH' ) or die();
  *
  * @since 1.0.0 Wireframe_Theme
  */
-if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Theme_Notices_Interface' ) ) :
+if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Navigation_Interface' ) ) :
 	/**
-	 * Theme_Notices_Interface contract for notifications.
+	 * Module_Navigation_Interface contract for nav menus.
 	 *
 	 * Security Reminder: If you are saving any data to the Database, you should
 	 * validate and/or sanitize untrusted data before entering into the database.
 	 * All untrusted data should be escaped before output.
 	 *
-	 * @since 1.0.0 Wireframe_Theme
+	 * @since 2.9.0 WordPress
 	 * @since 1.0.0 Wireframe_Theme
 	 * @see   https://github.com/mixatheme/Wireframe
 	 */
-	interface Theme_Notices_Interface {
+	interface Module_Navigation_Interface {
 		/**
-		 * Parent Theme.
+		 * Set Primary menu.
 		 *
 		 * @since 1.0.0 Wireframe_Theme
-		 * @since 1.0.0 Wireframe_Theme
+		 * @see   wp_nav_menu()
 		 */
-		public function parent_theme();
+		public function primary_menu();
 
-	} // Theme_Notices_Interface.
+	} // Module_Navigation_Interface.
 
 endif; // Thanks for using MixaTheme products!

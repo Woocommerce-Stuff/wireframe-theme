@@ -1,6 +1,6 @@
 <?php
 /**
- * Theme_Widgets is a Wireframe theme class packaged with WPWWireframe ThemeFT.
+ * Module_Widgets is a Wireframe theme class packaged with WPWWireframe ThemeFT.
  *
  * PHP version 5.6.0
  *
@@ -41,9 +41,9 @@ defined( 'ABSPATH' ) or die();
  *
  * @since 1.0.0 Wireframe_Theme
  */
-if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Theme_Widgets' ) ) :
+if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Widgets' ) ) :
 	/**
-	 * Theme_Widgets is a theme class for wiring sidebars & widgets.
+	 * Module_Widgets is a theme class for wiring sidebars & widgets.
 	 *
 	 * If you create a custom widget sub-class, be advised that Wireframe Theme
 	 * supports `Selective Refresh` by default. However, your custom widgets
@@ -54,7 +54,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Theme_Widgets' ) ) :
 	 * @since 1.0.0 Wireframe_Theme
 	 * @see   https://github.com/mixatheme/Wireframe
 	 */
-	final class Theme_Widgets extends Core_Module_Abstract implements Theme_Widgets_Interface {
+	final class Module_Widgets extends Core_Module_Abstract implements Module_Widgets_Interface {
 		/**
 		 * Registered.
 		 *
@@ -116,6 +116,6 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Theme_Widgets' ) ) :
 			}
 		}
 
-	} // Theme_Widgets.
+	} // Module_Widgets.
 
 endif; // Thanks for using MixaTheme products!

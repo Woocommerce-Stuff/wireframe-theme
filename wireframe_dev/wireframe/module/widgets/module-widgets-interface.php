@@ -1,6 +1,6 @@
 <?php
 /**
- * Theme_UI_Interface is a Wireframe theme interface.
+ * Module_Widgets_Interface is a Wireframe theme interface.
  *
  * PHP version 5.6.0
  *
@@ -22,7 +22,7 @@
  */
 
 /**
- * Namespace.
+ * Namespaces.
  *
  * @since 5.3.0 PHP
  * @since 1.0.0 Wireframe_Theme
@@ -41,54 +41,25 @@ defined( 'ABSPATH' ) or die();
  *
  * @since 1.0.0 Wireframe_Theme
  */
-if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Theme_UI_Interface' ) ) :
+if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Widgets_Interface' ) ) :
 	/**
-	 * Theme_UI_Interface contract for front-end presentation.
+	 * Module_Widgets_Interface contract for registering asides.
 	 *
 	 * Security Reminder: If you are saving any data to the Database, you should
 	 * validate and/or sanitize untrusted data before entering into the database.
 	 * All untrusted data should be escaped before output.
 	 *
-	 * @since 2.9.0 WordPress
 	 * @since 1.0.0 Wireframe_Theme
 	 * @see   https://github.com/mixatheme/Wireframe
 	 */
-	interface Theme_UI_Interface {
+	interface Module_Widgets_Interface {
 		/**
-		 * Enqueue Styles.
+		 * Register Widgets.
 		 *
 		 * @since 1.0.0 Wireframe_Theme
 		 */
-		public function styles();
+		public function register();
 
-		/**
-		 * Enqueue Scripts.
-		 *
-		 * @since 1.0.0 Wireframe_Theme
-		 */
-		public function scripts();
-
-		/**
-		 * Enqueue Media Modal.
-		 *
-		 * @since 1.0.0 Wireframe_Theme
-		 */
-		public function mediamodal();
-
-		/**
-		 * Enqueue Style CSS.
-		 *
-		 * @since 1.0.0 Wireframe_Theme
-		 */
-		public function stylecss();
-
-		/**
-		 * Enqueue Comment-Reply JS.
-		 *
-		 * @since 1.0.0 Wireframe_Theme
-		 */
-		public function commentjs();
-
-	} // Theme_UI_Interface.
+	} // Module_Widgets_Interface.
 
 endif; // Thanks for using MixaTheme products!

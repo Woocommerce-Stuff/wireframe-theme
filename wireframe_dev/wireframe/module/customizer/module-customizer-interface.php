@@ -1,6 +1,6 @@
 <?php
 /**
- * Theme_Customizer_Interface is a Wireframe theme interface.
+ * Module_Customizer_Interface is a Wireframe theme interface.
  *
  * PHP version 5.6.0
  *
@@ -41,9 +41,9 @@ defined( 'ABSPATH' ) or die();
  *
  * @since 1.0.0 Wireframe_Theme
  */
-if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Theme_Customizer_Interface' ) ) :
+if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Customizer_Interface' ) ) :
 	/**
-	 * Theme_Customizer_Interface contract for previewing front-end modifications.
+	 * Module_Customizer_Interface contract for previewing front-end modifications.
 	 *
 	 * Security Reminder: If you are saving any data to the Database, you should
 	 * validate and/or sanitize untrusted data before entering into the database.
@@ -55,7 +55,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Theme_Customizer_Interface' ) ) 
 	 *
 	 * @internal Thanks: Weston Ruter, Otto, et al.
 	 */
-	interface Theme_Customizer_Interface {
+	interface Module_Customizer_Interface {
 		/**
 		 * Register.
 		 *
@@ -118,6 +118,6 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Theme_Customizer_Interface' ) ) 
 		 */
 		public function css( $selector, $style, $mod_name, $prefix = '', $postfix = '', $echo = true );
 
-	} // Theme_Customizer_Interface.
+	} // Module_Customizer_Interface.
 
 endif; // Thanks for using MixaTheme products!

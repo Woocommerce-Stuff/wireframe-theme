@@ -1,6 +1,6 @@
 <?php
 /**
- * Theme_Features_Interface is a Wireframe theme interface.
+ * Module_Features_Interface is a Wireframe theme interface.
  *
  * PHP version 5.6.0
  *
@@ -41,9 +41,9 @@ defined( 'ABSPATH' ) or die();
  *
  * @since 1.0.0 Wireframe_Theme
  */
-if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Theme_Features_Interface' ) ) :
+if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Features_Interface' ) ) :
 	/**
-	 * Theme_Features_Interface contract for theme supports.
+	 * Module_Features_Interface contract for theme supports.
 	 *
 	 * Security Reminder: If you are saving any data to the Database, you should
 	 * validate and/or sanitize untrusted data before entering into the database.
@@ -53,7 +53,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Theme_Features_Interface' ) ) :
 	 * @see   https://developer.wordpress.org/reference/functions/add_theme_support/
 	 * @see   https://github.com/mixatheme/Wireframe
 	 */
-	interface Theme_Features_Interface {
+	interface Module_Features_Interface {
 		/**
 		 * Custom Header.
 		 *
@@ -205,6 +205,6 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Theme_Features_Interface' ) ) :
 		 */
 		public function selective_refresh();
 
-	} // Theme_Features_Interface.
+	} // Module_Features_Interface.
 
 endif; // Thanks for using MixaTheme products!

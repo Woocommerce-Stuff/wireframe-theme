@@ -277,22 +277,22 @@ require_once WIREFRAME_THEME_OBJECTS . 'core/core-language-interface.php';
 require_once WIREFRAME_THEME_OBJECTS . 'core/core-language.php';
 require_once WIREFRAME_THEME_OBJECTS . 'core/core-theme-interface.php';
 require_once WIREFRAME_THEME_OBJECTS . 'core/core-theme.php';
-require_once WIREFRAME_THEME_OBJECTS . 'theme/admin/theme-admin-interface.php';
-require_once WIREFRAME_THEME_OBJECTS . 'theme/admin/theme-admin.php';
-require_once WIREFRAME_THEME_OBJECTS . 'theme/customizer/theme-customizer-interface.php';
-require_once WIREFRAME_THEME_OBJECTS . 'theme/customizer/theme-customizer.php';
-require_once WIREFRAME_THEME_OBJECTS . 'theme/editor/theme-editor-interface.php';
-require_once WIREFRAME_THEME_OBJECTS . 'theme/editor/theme-editor.php';
-require_once WIREFRAME_THEME_OBJECTS . 'theme/features/theme-features-interface.php';
-require_once WIREFRAME_THEME_OBJECTS . 'theme/features/theme-features.php';
-require_once WIREFRAME_THEME_OBJECTS . 'theme/navigation/theme-navigation-interface.php';
-require_once WIREFRAME_THEME_OBJECTS . 'theme/navigation/theme-navigation.php';
-require_once WIREFRAME_THEME_OBJECTS . 'theme/notices/theme-notices-interface.php';
-require_once WIREFRAME_THEME_OBJECTS . 'theme/notices/theme-notices.php';
-require_once WIREFRAME_THEME_OBJECTS . 'theme/ui/theme-ui-interface.php';
-require_once WIREFRAME_THEME_OBJECTS . 'theme/ui/theme-ui.php';
-require_once WIREFRAME_THEME_OBJECTS . 'theme/widgets/theme-widgets-interface.php';
-require_once WIREFRAME_THEME_OBJECTS . 'theme/widgets/theme-widgets.php';
+require_once WIREFRAME_THEME_OBJECTS . 'module/admin/module-admin-interface.php';
+require_once WIREFRAME_THEME_OBJECTS . 'module/admin/module-admin.php';
+require_once WIREFRAME_THEME_OBJECTS . 'module/customizer/module-customizer-interface.php';
+require_once WIREFRAME_THEME_OBJECTS . 'module/customizer/module-customizer.php';
+require_once WIREFRAME_THEME_OBJECTS . 'module/editor/module-editor-interface.php';
+require_once WIREFRAME_THEME_OBJECTS . 'module/editor/module-editor.php';
+require_once WIREFRAME_THEME_OBJECTS . 'module/features/module-features-interface.php';
+require_once WIREFRAME_THEME_OBJECTS . 'module/features/module-features.php';
+require_once WIREFRAME_THEME_OBJECTS . 'module/navigation/module-navigation-interface.php';
+require_once WIREFRAME_THEME_OBJECTS . 'module/navigation/module-navigation.php';
+require_once WIREFRAME_THEME_OBJECTS . 'module/notices/module-notices-interface.php';
+require_once WIREFRAME_THEME_OBJECTS . 'module/notices/module-notices.php';
+require_once WIREFRAME_THEME_OBJECTS . 'module/ui/module-ui-interface.php';
+require_once WIREFRAME_THEME_OBJECTS . 'module/ui/module-ui.php';
+require_once WIREFRAME_THEME_OBJECTS . 'module/widgets/module-widgets-interface.php';
+require_once WIREFRAME_THEME_OBJECTS . 'module/widgets/module-widgets.php';
 
 /**
  * Check if the `Core_Theme` class exists then configure defaults.
@@ -357,112 +357,112 @@ if ( class_exists( 'MixaTheme\Wireframe\Theme\Core_Theme' ) ) :
 	 * =========================================================================
 	 *
 	 * This closure registers a service with the Core_Container::$storage array,
-	 * and instantiates a new Theme_Notices object with config data passed-in.
+	 * and instantiates a new Module_Notices object with config data passed-in.
 	 *
 	 * @since  1.0.0 Wireframe_Theme
 	 * @see    wireframe_theme_config_notices()
-	 * @return object Theme_Notices( @param array Object args. )
+	 * @return object Module_Notices( @param array Object args. )
 	 */
 	$wireframe_theme_container->notices = function () {
-		return new Theme_Notices( wireframe_theme_config_notices() );
+		return new Module_Notices( wireframe_theme_config_notices() );
 	};
 
 	/**
 	 * § 08. Service: UI.
 	 *
 	 * This closure registers a service with the Core_Container::$storage array,
-	 * and instantiates a new Theme_UI object with config data passed-in.
+	 * and instantiates a new Module_UI object with config data passed-in.
 	 *
 	 * @since  1.0.0 Wireframe_Theme
 	 * @see    wireframe_theme_config_ui()
-	 * @return object Theme_UI( @param array Object args. )
+	 * @return object Module_UI( @param array Object args. )
 	 */
 	$wireframe_theme_container->ui = function () {
-		return new Theme_UI( wireframe_theme_config_ui() );
+		return new Module_UI( wireframe_theme_config_ui() );
 	};
 
 	/**
 	 * § 08. Service: Navigation.
 	 *
 	 * This closure registers a service with the Core_Container::$storage array,
-	 * and instantiates a new Theme_Navigation object with config data passed-in.
+	 * and instantiates a new Module_Navigation object with config data passed-in.
 	 *
 	 * @since  1.0.0 Wireframe_Theme
 	 * @see    wireframe_theme_config_navigation()
-	 * @return object Theme_Navigation( @param array Object args. )
+	 * @return object Module_Navigation( @param array Object args. )
 	 */
 	$wireframe_theme_container->mainmenu = function () {
-		return new Theme_Navigation( wireframe_theme_config_navigation() );
+		return new Module_Navigation( wireframe_theme_config_navigation() );
 	};
 
 	/**
 	 * § 08. Service: Widgets.
 	 *
 	 * This closure registers a service with the Core_Container::$storage array,
-	 * and instantiates a new Theme_Widgets object with config data passed-in.
+	 * and instantiates a new Module_Widgets object with config data passed-in.
 	 *
 	 * @since  1.0.0 Wireframe_Theme
 	 * @see    wireframe_theme_config_widgets()
-	 * @return object Theme_Widgets( @param array Object args. )
+	 * @return object Module_Widgets( @param array Object args. )
 	 */
 	$wireframe_theme_container->widgets = function () {
-		return new Theme_Widgets( wireframe_theme_config_widgets() );
+		return new Module_Widgets( wireframe_theme_config_widgets() );
 	};
 
 	/**
 	 * § 08. Service: Features.
 	 *
 	 * This closure registers a service with the Core_Container::$storage array,
-	 * and instantiates a new Theme_Features object with config data passed-in.
+	 * and instantiates a new Module_Features object with config data passed-in.
 	 *
 	 * @since  1.0.0 Wireframe_Theme
 	 * @see    wireframe_theme_config_features()
-	 * @return object Theme_Features( @param array Object args. )
+	 * @return object Module_Features( @param array Object args. )
 	 */
 	$wireframe_theme_container->features = function () {
-		return new Theme_Features( wireframe_theme_config_features() );
+		return new Module_Features( wireframe_theme_config_features() );
 	};
 
 	/**
 	 * § 08. Service: Customizer.
 	 *
 	 * This closure registers a service with the Core_Container::$storage array,
-	 * and instantiates a new Theme_Customizer object with config data passed-in.
+	 * and instantiates a new Module_Customizer object with config data passed-in.
 	 *
 	 * @since  1.0.0 Wireframe_Theme
 	 * @see    wireframe_theme_config_customizer()
-	 * @return object Theme_Customizer( @param array Object args. )
+	 * @return object Module_Customizer( @param array Object args. )
 	 */
 	$wireframe_theme_container->customizer = function () {
-		return new Theme_Customizer( wireframe_theme_config_customizer() );
+		return new Module_Customizer( wireframe_theme_config_customizer() );
 	};
 
 	/**
 	 * § 08. Service: Editor.
 	 *
 	 * This closure registers a service with the Core_Container::$storage array,
-	 * and instantiates a new Theme_Editor object with config data passed-in.
+	 * and instantiates a new Module_Editor object with config data passed-in.
 	 *
 	 * @since  1.0.0 Wireframe_Theme
 	 * @see    wireframe_theme_config_editor()
-	 * @return object Theme_Editor( @param array Object args. )
+	 * @return object Module_Editor( @param array Object args. )
 	 */
 	$wireframe_theme_container->editor = function () {
-		return new Theme_Editor( wireframe_theme_config_editor() );
+		return new Module_Editor( wireframe_theme_config_editor() );
 	};
 
 	/**
 	 * § 08. Service: Admin.
 	 *
 	 * This closure registers a service with the Core_Container::$storage array,
-	 * and instantiates a new Theme_Admin object with config data passed-in.
+	 * and instantiates a new Module_Admin object with config data passed-in.
 	 *
 	 * @since  1.0.0 Wireframe_Theme
 	 * @see    wireframe_theme_config_admin()
-	 * @return object Theme_Admin( @param array Object args. )
+	 * @return object Module_Admin( @param array Object args. )
 	 */
 	$wireframe_theme_container->admin = function () {
-		return new Theme_Admin( wireframe_theme_config_admin() );
+		return new Module_Admin( wireframe_theme_config_admin() );
 	};
 
 	/**
@@ -484,14 +484,14 @@ if ( class_exists( 'MixaTheme\Wireframe\Theme\Core_Theme' ) ) :
 	 * @var    object $wireframe_theme
 	 * @return object Core_Theme(
 	 *         @param object Core_Language    DI the default language.
-	 *         @param object Theme_Notices    DI the default Notices.
-	 *         @param object Theme_UI         DI the default UI.
-	 *         @param object Theme_Mainmenu   DI the default Mainmenu.
-	 *         @param object Theme_Widgets    DI the default widgets.
-	 *         @param object Theme_Features   DI the default Theme Features.
-	 *         @param object Theme_Customizer DI the default Customizer.
-	 *         @param object Theme_Editor     DI the default Editor.
-	 *         @param object Theme_Admin      DI the default Admin area.
+	 *         @param object Module_Notices    DI the default Notices.
+	 *         @param object Module_UI         DI the default UI.
+	 *         @param object Module_Mainmenu   DI the default Mainmenu.
+	 *         @param object Module_Widgets    DI the default widgets.
+	 *         @param object Module_Features   DI the default Theme Features.
+	 *         @param object Module_Customizer DI the default Customizer.
+	 *         @param object Module_Editor     DI the default Editor.
+	 *         @param object Module_Admin      DI the default Admin area.
 	 * )
 	 */
 	$wireframe_theme = new Core_Theme(

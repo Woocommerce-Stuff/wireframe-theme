@@ -1,6 +1,6 @@
 <?php
 /**
- * Theme_Editor is a Wireframe theme class.
+ * Module_Editor is a Wireframe theme class.
  *
  * PHP version 5.6.0
  *
@@ -41,15 +41,15 @@ defined( 'ABSPATH' ) or die();
  *
  * @since 1.0.0 Wireframe_Theme
  */
-if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Theme_Editor' ) ) :
+if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Editor' ) ) :
 	/**
-	 * Theme_Editor is a theme class for wiring TinyMCE.
+	 * Module_Editor is a theme class for wiring TinyMCE.
 	 *
 	 * @since 2.9.0 WordPress
 	 * @since 1.0.0 Wireframe_Theme
 	 * @see   https://github.com/mixatheme/Wireframe
 	 */
-	final class Theme_Editor extends Core_Module_Abstract implements Theme_Editor_Interface {
+	final class Module_Editor extends Core_Module_Abstract implements Module_Editor_Interface {
 		/**
 		 * Editor Style.
 		 *
@@ -137,6 +137,6 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Theme_Editor' ) ) :
 			}
 		}
 
-	} // Theme_Editor.
+	} // Module_Editor.
 
 endif; // Thanks for using MixaTheme products!

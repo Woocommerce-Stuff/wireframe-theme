@@ -64,9 +64,9 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Core_Language' ) ) :
 		 * @since  1.0.0 Wireframe
 		 * @since  1.0.0 Wireframe_Theme
 		 * @since  1.0.0 Wireframe_Plugin
-		 * @var    string $_module The module type. Default: plugin
+		 * @var    string $_module The module type. Default: theme
 		 */
-		private $_module = 'plugin';
+		private $_module = 'theme';
 
 		/**
 		 * Path.
