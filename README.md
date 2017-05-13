@@ -4,7 +4,7 @@
 
 ***Clone it. Extend it. Sell it.***
 
-Wireframe Theme is a parent theme framework for OOP WordPress themes. Wireframe Theme enables WordPress Developers to rapidly wire [GPL](https://www.gnu.org/licenses/gpl-2.0.html) and [WordPress Coding Standards](https://github.com/WordPress-Coding-Standards) compliant themes for professional client projects or for selling premium themes in any marketplace.
+Wireframe Theme is an OOP WordPress parent theme boilerplate. Wireframe Theme enables WordPress Developers to rapidly wire [GPL](https://www.gnu.org/licenses/gpl-2.0.html) and [WordPress Coding Standards](https://github.com/WordPress-Coding-Standards) compliant themes for professional client projects or for selling premium themes in any marketplace.
 
 Wireframe Theme is part of the [Wireframe Suite](https://github.com/mixatheme/Wireframe) for WordPress by ![MIXA Logo](https://avatars3.githubusercontent.com/u/16634291?v=3&s=16) [MixaTheme](https://github.com/mixatheme/wireframe-theme#about-mixatheme).
 
