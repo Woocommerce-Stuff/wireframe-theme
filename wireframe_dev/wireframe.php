@@ -480,6 +480,11 @@ if ( class_exists( 'MixaTheme\Wireframe\Theme\Core_Theme' ) ) :
 	 *            own custom class, or make the `Core_Theme` class abstract,
 	 *            then extend it.
 	 *
+	 * Option #3: You can also use a Controller class to control your objects.
+	 *            If you use a Controller class, you only need to DI 1 (Controller)
+	 *            object. Too complex? Don't worry. Checkout our Wireframe_Plugin
+	 *            example: @see https://github.com/mixatheme/wireframe-plugin
+	 *
 	 * @since  1.0.0 Wireframe_Theme
 	 * @var    object $wireframe_theme
 	 * @return object Core_Theme(
