@@ -530,6 +530,7 @@ if ( class_exists( 'MixaTheme\Wireframe\Theme\Core_Theme' ) ) :
 	 * @var   object $wireframe_theme->customizer()
 	 * @var   object $wireframe_theme->editor()
 	 * @var   object $wireframe_theme->admin()
+	 * @todo  WIP. Use admin notice hook?
 	 */
 	if ( ! isset( $wireframe_theme ) ) {
 		esc_html_e( 'Wireframe Theme failed to initialize. Please verify your setup.', 'wireframe-theme' );
