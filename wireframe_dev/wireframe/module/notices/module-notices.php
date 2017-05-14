@@ -76,20 +76,20 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Notices' ) ) :
 		}
 
 		/**
-		 * Build Notice.
+		 * Get Notice.
 		 *
 		 * @since 1.0.0 Wireframe_Theme
-		 * @param string $tag The tag/method to call.
+		 * @param string $key The tag/method to call.
 		 */
-		public function build_notice( $tag ) {
+		public function get_notice( $key ) {
 
 			// Defaults.
 			$notice = '';
 			$value  = '';
 
-			// Get notice tag from the array of notices.
-			if ( isset( $this->_notices ) && isset( $tag ) ) {
-				$value = $this->_notices[ $tag ];
+			// Get key from the array of notices.
+			if ( isset( $key ) ) {
+				$value = $this->_notices[ $key ];
 			}
 
 			// Build notice.
@@ -103,18 +103,20 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Notices' ) ) :
 		}
 
 		/**
-		 * Notice: Init Failure.
+		 * Error: Init.
+		 *
+		 * This notice is triggered if Wireframe_Theme fails to initialize properly.
 		 *
 		 * @since 1.0.0 Wireframe_Theme
 		 */
-		public function init_failure() {
+		public function error_init() {
 			if ( isset( $this->_notices ) ) {
-				$this->build_notice( __FUNCTION__ );
+				$this->get_notice( __FUNCTION__ );
 			}
 		}
 
 		/**
-		 * Notice: Parent Theme.
+		 * Warn: Activated.
 		 *
 		 * This notice is triggered when the Wireframe_Theme parent theme is activated.
 		 * You can greet customers, instruct customizers to use child themes,
@@ -122,9 +124,9 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Notices' ) ) :
 		 *
 		 * @since 1.0.0 Wireframe_Theme
 		 */
-		public function parent_theme() {
+		public function warn_activated() {
 			if ( false === is_child_theme() && isset( $this->_notices ) ) {
-				$this->build_notice( __FUNCTION__ );
+				$this->get_notice( __FUNCTION__ );
 			}
 		}
 

@@ -55,12 +55,20 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Notices_Interface' ) ) :
 	 */
 	interface Module_Notices_Interface {
 		/**
-		 * Parent Theme.
+		 * Error: Init.
 		 *
-		 * @since 1.0.0 Wireframe_Theme
+		 * @since 1.0.0 Wireframe
 		 * @since 1.0.0 Wireframe_Theme
 		 */
-		public function parent_theme();
+		public function error_init();
+
+		/**
+		 * Warn: Activated.
+		 *
+		 * @since 1.0.0 Wireframe
+		 * @since 1.0.0 Wireframe_Theme
+		 */
+		public function warn_activated();
 
 	} // Module_Notices_Interface.
 

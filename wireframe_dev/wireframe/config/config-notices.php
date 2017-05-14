@@ -113,14 +113,14 @@ function wireframe_theme_config_notices() {
 	 * @var   array $notices Array of notices available to hook.
 	 */
 	$notices = array(
-		'init_failure' => array(
+		'error_init' => array(
 			'selectors' => 'notice notice-warning is-dismissible',
-			'subject'   => '<strong>Wireframe Theme Notice: Initialization Failure.</strong>',
+			'subject'   => '<strong>Wireframe Theme Notice: Error.</strong>',
 			'message'   => 'Wireframe Theme failed to initialize. Please verify your setup.',
 		),
-		'parent_theme' => array(
+		'warn_activated' => array(
 			'selectors' => 'notice notice-warning is-dismissible',
-			'subject'   => '<strong>Wireframe parent theme activated.</strong>',
+			'subject'   => '<strong>Wireframe Theme Notice: Warning.</strong>',
 			'message'   => 'This parent theme is intended for <em>Theme Developers</em> and <strong>does not have any styling</strong>. Did you know Wireframe also has a <a href="https://github.com/mixatheme/wireframe-child">child theme</a> with default styling? We recommend only Developers modify the parent theme. In most cases, creating unique and inspiring <a href="https://github.com/mixatheme/wireframe-child">child themes</a> is best practice.',
 		),
 	);

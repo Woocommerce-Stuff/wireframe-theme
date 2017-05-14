@@ -530,12 +530,11 @@ if ( class_exists( 'MixaTheme\Wireframe\Theme\Core_Theme' ) ) :
 	 * @var   object $wireframe_theme->customizer()
 	 * @var   object $wireframe_theme->editor()
 	 * @var   object $wireframe_theme->admin()
-	 * @todo  WIP. Use admin notice hook?
 	 */
 	if ( ! isset( $wireframe_theme ) ) {
 
 		// Init failed. Stop processing. Hook a failure notice.
-		add_action( 'admin_notices', array( $wireframe_theme_container->notices, 'init_failure' ) );
+		add_action( 'admin_notices', array( $wireframe_theme_container->notices, 'error_init' ), 10, 0 );
 
 	} else {
 
@@ -555,7 +554,7 @@ if ( class_exists( 'MixaTheme\Wireframe\Theme\Core_Theme' ) ) :
 		 * @since 1.0.0 Wireframe_Theme
 		 * @see   object $wireframe_theme Instance of Core_Theme.
 		 */
-		add_action( 'after_switch_theme', array( $wireframe_theme_container->notices, 'parent_theme' ) );
+		add_action( 'after_switch_theme', array( $wireframe_theme_container->notices, 'warn_activated' ), 10, 0 );
 	}
 
 endif; // Thanks for using MixaTheme products!
