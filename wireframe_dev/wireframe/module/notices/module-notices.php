@@ -76,7 +76,45 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Notices' ) ) :
 		}
 
 		/**
-		 * Parent Theme.
+		 * Build Notice.
+		 *
+		 * @since 1.0.0 Wireframe_Theme
+		 * @param string $tag The tag/method to call.
+		 */
+		public function build_notice( $tag ) {
+
+			// Defaults.
+			$notice = '';
+			$value  = '';
+
+			// Get notice tag from the array of notices.
+			if ( isset( $this->_notices ) && isset( $tag ) ) {
+				$value = $this->_notices[ $tag ];
+			}
+
+			// Build notice.
+			$notice .= '<div class="' . $value['selectors'] . '"><p>';
+			$notice .= $value['subject'] . '&nbsp;' . $value['message'];
+			$notice .= '</p></div>';
+
+			// The notice.
+			echo wp_kses_post( $notice );
+
+		}
+
+		/**
+		 * Notice: Init Failure.
+		 *
+		 * @since 1.0.0 Wireframe_Theme
+		 */
+		public function init_failure() {
+			if ( isset( $this->_notices ) ) {
+				$this->build_notice( __FUNCTION__ );
+			}
+		}
+
+		/**
+		 * Notice: Parent Theme.
 		 *
 		 * This notice is triggered when the Wireframe_Theme parent theme is activated.
 		 * You can greet customers, instruct customizers to use child themes,
@@ -85,23 +123,8 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Notices' ) ) :
 		 * @since 1.0.0 Wireframe_Theme
 		 */
 		public function parent_theme() {
-
-			// Default empty notice.
-			$notice = '';
-
-			// Check if not a child theme and if config has _notices.
 			if ( false === is_child_theme() && isset( $this->_notices ) ) {
-
-				// Get notice from the array of notices.
-				$value = $this->_notices['parent_theme'];
-
-				// Build notice.
-				$notice .= '<div class="' . $value['selectors'] . '"><p>';
-				$notice .= $value['subject'] . '&nbsp;' . $value['message'];
-				$notice .= '</p></div>';
-
-				// Output notice should use the `after_setup_theme` hook.
-				echo wp_kses_post( $notice );
+				$this->build_notice( __FUNCTION__ );
 			}
 		}
 

@@ -54,12 +54,20 @@ function wireframe_theme_config_notices() {
 	/**
 	 * Wired.
 	 *
-	 * Most objects can be wired to hook actions & filters when an object is
-	 * instantiated. This is optional, because some objects do not need any
-	 * actions or filters. Default: false
+	 * Wires the Module_Notices actions & filters at runtime. Since all plugins
+	 * & themes should have some notices, this should always be set to true.
 	 *
-	 * @since 1.0.0 Wireframe_Theme
-	 * @var   bool $wired Wire hooks via __construct().
+	 * Enable this configuration file:
+	 *
+	 * 		1. In this config file, set: $wired = true.
+	 * 		2. In this config file, modify any default `$notices` data you need.
+	 * 		3. When you need a notice, hook any public method in Module_Notices.
+	 *
+	 * @since 1.0.0 Wireframe
+	 * @since 1.0.0 Wireframe_Plugin
+	 * @see   object Module_Notices
+	 * @see   module-notices.php
+	 * @var   bool $wired Wire hooks via __construct(). Default: true
 	 */
 	$wired = true;
 
@@ -78,42 +86,38 @@ function wireframe_theme_config_notices() {
 	/**
 	 * Actions.
 	 *
-	 * Most objects will usually need actions to be hooked at some point.
-	 * You can set your actions in a multi-dimensional array and remember
-	 * to set the property $wired = true (above).
-	 *
 	 * @since 1.0.0 Wireframe_Theme
 	 * @var   array $actions Actions to hook.
 	 */
-	$actions = array(
-		'parent_theme' => array(
-			'tag'      => 'after_switch_theme',
-			'function' => 'parent_theme',
-			'priority' => null,
-			'args'     => null,
-		),
-	);
+	$actions = array();
 
 	/**
 	 * Filters.
 	 *
-	 * Objects don't generally need filters here, but you have the option.
-	 * You can set your filters in a multi-dimensional array and remember
-	 * to set the property $wired = true (above).
-	 *
 	 * @since 1.0.0 Wireframe_Theme
 	 * @var   array $filters Filters to hook.
-	 * @todo  WIP.
 	 */
 	$filters = array();
 
 	/**
 	 * Notices.
 	 *
+	 * The keys must match the method names in Module_Notices class.
+	 *
+	 * Note: Your notices will echo data passed through wp_kses_post(). We do it
+	 * this way to allow HTML. You may wish to modify Module_Notices->build_notice().
+	 *
 	 * @since 1.0.0 Wireframe_Theme
-	 * @var   array.
+	 * @see   object Module_Notices
+	 * @see   module-notices.php
+	 * @var   array $notices Array of notices available to hook.
 	 */
 	$notices = array(
+		'init_failure' => array(
+			'selectors' => 'notice notice-warning is-dismissible',
+			'subject'   => '<strong>Wireframe Theme Notice: Initialization Failure.</strong>',
+			'message'   => 'Wireframe Theme failed to initialize. Please verify your setup.',
+		),
 		'parent_theme' => array(
 			'selectors' => 'notice notice-warning is-dismissible',
 			'subject'   => '<strong>Wireframe parent theme activated.</strong>',

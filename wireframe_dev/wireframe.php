@@ -533,22 +533,29 @@ if ( class_exists( 'MixaTheme\Wireframe\Theme\Core_Theme' ) ) :
 	 * @todo  WIP. Use admin notice hook?
 	 */
 	if ( ! isset( $wireframe_theme ) ) {
-		esc_html_e( 'Wireframe Theme failed to initialize. Please verify your setup.', 'wireframe-theme' );
-	}
 
-	/**
-	 * § 11. Hooks.
-	 * =========================================================================
-	 *
-	 * Most objects are not required to be wired (hooked) when instantiated.
-	 * In your config data file(s), you can set the `$wired` value
-	 * to true or false. If false, you can decouple any hooks and declare
-	 * them here. If true, then objects fire hooks at runtime.
-	 *
-	 * Data files are located in: `wireframe_dev/wireframe/config/`
-	 *
-	 * @since 1.0.0 Wireframe_Theme
-	 * @see   object $wireframe_theme Instance of Core_Theme.
-	 */
+		// Init failed. Stop processing. Hook a failure notice.
+		add_action( 'admin_notices', array( $wireframe_theme_container->notices, 'init_failure' ) );
+
+	} else {
+
+		/**
+		 * § 11. Hooks.
+		 * =========================================================================
+		 *
+		 * Init success! Continue processing. Run any hooks you need.
+		 *
+		 * Note: Many objects are not required to be wired (hooked) when instantiated.
+		 * In your config data file(s), you can set the `$wired` value to true or false.
+		 * If false, you can de-couple any hooks and declare them here (below).
+		 * If $wired = true, then those objects will fire hooks onload.
+		 *
+		 * Data files are located in: `wireframe_dev/wireframe/config/`
+		 *
+		 * @since 1.0.0 Wireframe_Theme
+		 * @see   object $wireframe_theme Instance of Core_Theme.
+		 */
+		add_action( 'after_switch_theme', array( $wireframe_theme_container->notices, 'parent_theme' ) );
+	}
 
 endif; // Thanks for using MixaTheme products!
