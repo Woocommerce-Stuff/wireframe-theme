@@ -25,6 +25,7 @@
  * Namespaces.
  *
  * @since 5.3.0 PHP
+ * @since 1.0.0 Wireframe
  * @since 1.0.0 Wireframe_Theme
  */
 namespace MixaTheme\Wireframe\Theme;
@@ -32,6 +33,7 @@ namespace MixaTheme\Wireframe\Theme;
 /**
  * No direct access to this file.
  *
+ * @since 1.0.0 Wireframe
  * @since 1.0.0 Wireframe_Theme
  */
 defined( 'ABSPATH' ) or die();
@@ -39,6 +41,7 @@ defined( 'ABSPATH' ) or die();
 /**
  * Check if the class exists.
  *
+ * @since 1.0.0 Wireframe
  * @since 1.0.0 Wireframe_Theme
  */
 if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Features' ) ) :
@@ -48,6 +51,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Features' ) ) :
 	 * Using add_theme_support() must be hooked via 'after_setup_theme'.
 	 * The ‘init’ hook may be too late for some features.
 	 *
+	 * @since 1.0.0 Wireframe
 	 * @since 1.0.0 Wireframe_Theme
 	 * @see   https://developer.wordpress.org/reference/functions/add_theme_support/
 	 * @see   https://github.com/mixatheme/Wireframe
@@ -57,6 +61,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Features' ) ) :
 		 * Custom Header.
 		 *
 		 * @access private
+		 * @since  1.0.0 Wireframe
 		 * @since  1.0.0 Wireframe_Theme
 		 * @var    array $_custom_header
 		 */
@@ -66,6 +71,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Features' ) ) :
 		 * Content Width.
 		 *
 		 * @access private
+		 * @since  1.0.0 Wireframe
 		 * @since  1.0.0 Wireframe_Theme
 		 * @var    array $_content_width
 		 */
@@ -75,6 +81,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Features' ) ) :
 		 * Post Thumbnails.
 		 *
 		 * @access private
+		 * @since  1.0.0 Wireframe
 		 * @since  1.0.0 Wireframe_Theme
 		 * @var    array $_post_thumbnails
 		 */
@@ -84,6 +91,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Features' ) ) :
 		 * Post Thumbnails Size.
 		 *
 		 * @access private
+		 * @since  1.0.0 Wireframe
 		 * @since  1.0.0 Wireframe_Theme
 		 * @var    array $_post_thumbnails_size
 		 */
@@ -111,6 +119,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Features' ) ) :
 		 * Post Formats.
 		 *
 		 * @access private
+		 * @since  1.0.0 Wireframe
 		 * @since  1.0.0 Wireframe_Theme
 		 * @var    array $_post_formats
 		 */
@@ -120,6 +129,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Features' ) ) :
 		 * Custom Background.
 		 *
 		 * @access private
+		 * @since  1.0.0 Wireframe
 		 * @since  1.0.0 Wireframe_Theme
 		 * @var    array $_custom_background
 		 */
@@ -129,6 +139,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Features' ) ) :
 		 * HTML5.
 		 *
 		 * @access private
+		 * @since  1.0.0 Wireframe
 		 * @since  1.0.0 Wireframe_Theme
 		 * @var    array $_html5
 		 */
@@ -138,6 +149,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Features' ) ) :
 		 * Title Tag.
 		 *
 		 * @access private
+		 * @since  1.0.0 Wireframe
 		 * @since  1.0.0 Wireframe_Theme
 		 * @var    array $_title_tag
 		 */
@@ -147,6 +159,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Features' ) ) :
 		 * Custom Logo.
 		 *
 		 * @access private
+		 * @since  1.0.0 Wireframe
 		 * @since  1.0.0 Wireframe_Theme
 		 * @var    array $_custom_logo
 		 */
@@ -156,6 +169,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Features' ) ) :
 		 * Selective Refresh.
 		 *
 		 * @access private
+		 * @since  1.0.0 Wireframe
 		 * @since  1.0.0 Wireframe_Theme
 		 * @var    array $_selective_refresh
 		 */
@@ -164,6 +178,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Features' ) ) :
 		/**
 		 * Constructor runs when this class instantiates.
 		 *
+		 * @since 1.0.0 Wireframe
 		 * @since 1.0.0 Wireframe_Theme
 		 * @param array $config Data via config file.
 		 */
@@ -194,6 +209,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Features' ) ) :
 		 * in the theme top header section.
 		 *
 		 * @since 2.1.0 WordPress @see add_theme_support('custom-header')
+		 * @since 1.0.0 Wireframe
 		 * @since 1.0.0 Wireframe_Theme
 		 */
 		public function custom_header() {
@@ -215,6 +231,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Features' ) ) :
 		 *
 		 * @global $_content_width
 		 * @since  2.6.0 WordPress @see $GLOBALS['content_width']
+		 * @since  1.0.0 Wireframe
 		 * @since  1.0.0 Wireframe_Theme
 		 * @see    https://codex.wordpress.org/Content_Width
 		 * @see    https://core.trac.wordpress.org/ticket/21256
@@ -249,6 +266,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Features' ) ) :
 		 * To regenerate existing images, use the "Regenerate Thumbnails" plugin.
 		 *
 		 * @since 2.9.0 WordPress @see add_theme_support('post-thumbnails')
+		 * @since 1.0.0 Wireframe
 		 * @since 1.0.0 Wireframe_Theme
 		 */
 		public function post_thumbnails() {
@@ -265,6 +283,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Features' ) ) :
 		 * Post Thumbnails Size.
 		 *
 		 * @since 2.9.0 WordPress @see set_post_thumbnail_size()
+		 * @since 1.0.0 Wireframe
 		 * @since 1.0.0 Wireframe_Theme
 		 * @see   set_post_thumbnail_size()
 		 */
@@ -286,6 +305,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Features' ) ) :
 		 * `automatic_feed_links()` function.
 		 *
 		 * @since 3.0.0 WordPress @see add_theme_support('automatic-feed-links')
+		 * @since 1.0.0 Wireframe
 		 * @since 1.0.0 Wireframe_Theme
 		 */
 		public function feed_links() {
@@ -304,6 +324,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Features' ) ) :
 		 * Registers navigation menu locations for a theme.
 		 *
 		 * @since 3.0.0 WordPress @see register_nav_menus()
+		 * @since 1.0.0 Wireframe
 		 * @since 1.0.0 Wireframe_Theme
 		 * @see   register_nav_menus()
 		 */
@@ -325,6 +346,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Features' ) ) :
 		 * override the formats as defined by the parent theme, not add to it.
 		 *
 		 * @since 3.1.0 WordPress @see add_theme_support('post-formats')
+		 * @since 1.0.0 Wireframe
 		 * @since 1.0.0 Wireframe_Theme
 		 * @see   http://codex.wordpress.org/Post_Formats
 		 *
@@ -348,6 +370,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Features' ) ) :
 		 * of the background color and image.
 		 *
 		 * @since 3.4.0 WordPress @see add_theme_support('custom-background')
+		 * @since 1.0.0 Wireframe
 		 * @since 1.0.0 Wireframe_Theme
 		 */
 		public function custom_background() {
@@ -367,6 +390,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Features' ) ) :
 		 * comment forms, comment lists, gallery, and caption.
 		 *
 		 * @since 3.6.0 WordPress @see add_theme_support('html5')
+		 * @since 1.0.0 Wireframe
 		 * @since 1.0.0 Wireframe_Theme
 		 */
 		public function html5() {
@@ -386,6 +410,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Features' ) ) :
 		 * title tag. This should be used in place of wp_title() function.
 		 *
 		 * @since 4.1.0 WordPress @see add_theme_support('title-tag')
+		 * @since 1.0.0 Wireframe
 		 * @since 1.0.0 Wireframe_Theme
 		 * @see   https://codex.wordpress.org/Title_Tag
 		 */
@@ -405,6 +430,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Features' ) ) :
 		 * This feature allows themes to add custom logos.
 		 *
 		 * @since 4.5.0 WordPress @see add_theme_support('custom-logo')
+		 * @since 1.0.0 Wireframe
 		 * @since 1.0.0 Wireframe_Theme
 		 */
 		public function custom_logo() {
@@ -423,6 +449,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Features' ) ) :
 		 * Indicate widget sidebars can use selective refresh in the Customizer.
 		 *
 		 * @since 4.5.0 WordPress @see add_theme_support('customize-selective-refresh-widgets')
+		 * @since 1.0.0 Wireframe
 		 * @since 1.0.0 Wireframe_Theme
 		 */
 		public function selective_refresh() {

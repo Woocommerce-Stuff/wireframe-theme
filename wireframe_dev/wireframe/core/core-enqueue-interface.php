@@ -25,6 +25,7 @@
  * Namespaces.
  *
  * @since 5.3.0 PHP
+ * @since 1.0.0 Wireframe
  * @since 1.0.0 Wireframe_Theme
  */
 namespace MixaTheme\Wireframe\Theme;
@@ -32,6 +33,7 @@ namespace MixaTheme\Wireframe\Theme;
 /**
  * No direct access to this file.
  *
+ * @since 1.0.0 Wireframe
  * @since 1.0.0 Wireframe_Theme
  */
 defined( 'ABSPATH' ) or die();
@@ -39,12 +41,14 @@ defined( 'ABSPATH' ) or die();
 /**
  * Check if the class exists.
  *
+ * @since 1.0.0 Wireframe
  * @since 1.0.0 Wireframe_Theme
  */
 if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Core_Enqueue_Interface' ) ) :
 	/**
 	 * Core_Enqueue_Interface is a core theme contract for loading styles & scripts
 	 *
+	 * @since 1.0.0 Wireframe
 	 * @since 1.0.0 Wireframe_Theme
 	 * @see   https://github.com/mixatheme/Wireframe
 	 */
@@ -52,6 +56,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Core_Enqueue_Interface' ) ) :
 		/**
 		 * Enqueue the custom CSS files passed via functions.php.
 		 *
+		 * @since 1.0.0 Wireframe
 		 * @since 1.0.0 Wireframe_Theme
 		 * @see   wireframe_theme_version() Optional WP_DEBUG helper.
 		 */
@@ -60,6 +65,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Core_Enqueue_Interface' ) ) :
 		/**
 		 * Enqueue any custom JS files passed in.
 		 *
+		 * @since 1.0.0 Wireframe
 		 * @since 1.0.0 Wireframe_Theme
 		 * @see   wireframe_theme_version() Optional WP_DEBUG helper.
 		 * @see   https://codex.wordpress.org/Function_Reference/wp_localize_script
@@ -69,6 +75,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Core_Enqueue_Interface' ) ) :
 		/**
 		 * Enqueue the Media modal script.
 		 *
+		 * @since 1.0.0 Wireframe
 		 * @since 1.0.0 Wireframe_Theme
 		 * @todo  Should this be enqueued contextually somehow?
 		 */
@@ -77,6 +84,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Core_Enqueue_Interface' ) ) :
 		/**
 		 * Enqueue the main style.css stylesheet.
 		 *
+		 * @since 1.0.0 Wireframe
 		 * @since 1.0.0 Wireframe_Theme
 		 */
 		public function stylecss();
@@ -84,6 +92,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Core_Enqueue_Interface' ) ) :
 		/**
 		 * Enqueue the main `comment-reply` script.
 		 *
+		 * @since 1.0.0 Wireframe
 		 * @since 1.0.0 Wireframe_Theme
 		 */
 		public function commentjs();

@@ -25,6 +25,7 @@
  * Namespaces.
  *
  * @since 5.3.0 PHP
+ * @since 1.0.0 Wireframe
  * @since 1.0.0 Wireframe_Theme
  */
 namespace MixaTheme\Wireframe\Theme;
@@ -32,6 +33,7 @@ namespace MixaTheme\Wireframe\Theme;
 /**
  * No direct access to this file.
  *
+ * @since 1.0.0 Wireframe
  * @since 1.0.0 Wireframe_Theme
  */
 defined( 'ABSPATH' ) or die();
@@ -39,12 +41,14 @@ defined( 'ABSPATH' ) or die();
 /**
  * Check if the class exists.
  *
+ * @since 1.0.0 Wireframe
  * @since 1.0.0 Wireframe_Theme
  */
 if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Core_Language_Interface' ) ) :
 	/**
 	 * Core_Language_Interface is a core theme contract for i18n & l10n translation.
 	 *
+	 * @since 1.0.0 Wireframe
 	 * @since 1.0.0 Wireframe_Theme
 	 * @see   https://github.com/mixatheme/Wireframe
 	 * @todo  There's zero reason for this to be a class.
@@ -53,6 +57,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Core_Language_Interface' ) ) :
 		/**
 		 * Loads the theme's textdomain.
 		 *
+		 * @since 1.0.0 Wireframe
 		 * @since 3.1.0 WordPress
 		 * @since 1.0.0 Wireframe_Theme
 		 */

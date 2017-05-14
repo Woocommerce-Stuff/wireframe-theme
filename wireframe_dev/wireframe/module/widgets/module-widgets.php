@@ -25,6 +25,7 @@
  * Namespaces.
  *
  * @since 5.3.0 PHP
+ * @since 1.0.0 Wireframe
  * @since 1.0.0 Wireframe_Theme
  */
 namespace MixaTheme\Wireframe\Theme;
@@ -32,6 +33,7 @@ namespace MixaTheme\Wireframe\Theme;
 /**
  * No direct access to this file.
  *
+ * @since 1.0.0 Wireframe
  * @since 1.0.0 Wireframe_Theme
  */
 defined( 'ABSPATH' ) or die();
@@ -39,6 +41,7 @@ defined( 'ABSPATH' ) or die();
 /**
  * Check if the class exists.
  *
+ * @since 1.0.0 Wireframe
  * @since 1.0.0 Wireframe_Theme
  */
 if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Widgets' ) ) :
@@ -51,6 +54,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Widgets' ) ) :
 	 *
 	 * @example https://developer.wordpress.org/themes/advanced-topics/customizer-api/#widget-support
 	 *
+	 * @since 1.0.0 Wireframe
 	 * @since 1.0.0 Wireframe_Theme
 	 * @see   https://github.com/mixatheme/Wireframe
 	 */
@@ -59,6 +63,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Widgets' ) ) :
 		 * Registered.
 		 *
 		 * @access private
+		 * @since  1.0.0 Wireframe
 		 * @since  1.0.0 Wireframe_Theme
 		 * @var    array $_registered Regisered widgets.
 		 */
@@ -68,6 +73,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Widgets' ) ) :
 		 * Unregistered.
 		 *
 		 * @access private
+		 * @since  1.0.0 Wireframe
 		 * @since  1.0.0 Wireframe_Theme
 		 * @var    array $_unregistered Unregistered widgets.
 		 */
@@ -76,6 +82,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Widgets' ) ) :
 		/**
 		 * Constructor runs when this class is instantiated.
 		 *
+		 * @since 1.0.0 Wireframe
 		 * @since 1.0.0 Wireframe_Theme
 		 * @param array $config Config data.
 		 */
@@ -92,6 +99,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Widgets' ) ) :
 		/**
 		 * Register Widgets.
 		 *
+		 * @since 1.0.0 Wireframe
 		 * @since 1.0.0 Wireframe_Theme
 		 */
 		public function register() {
@@ -105,6 +113,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Widgets' ) ) :
 		/**
 		 * Unregister Widgets.
 		 *
+		 * @since 1.0.0 Wireframe
 		 * @since 1.0.0 Wireframe_Theme
 		 * @todo  Should this be baked-in or disallowed?
 		 */

@@ -25,6 +25,7 @@
  * Namespace.
  *
  * @since 5.3.0 PHP
+ * @since 1.0.0 Wireframe
  * @since 1.0.0 Wireframe_Theme
  */
 namespace MixaTheme\Wireframe\Theme;
@@ -32,6 +33,7 @@ namespace MixaTheme\Wireframe\Theme;
 /**
  * No direct access to this file.
  *
+ * @since 1.0.0 Wireframe
  * @since 1.0.0 Wireframe_Theme
  */
 defined( 'ABSPATH' ) or die();
@@ -39,6 +41,7 @@ defined( 'ABSPATH' ) or die();
 /**
  * Check if the class exists.
  *
+ * @since 1.0.0 Wireframe
  * @since 1.0.0 Wireframe_Theme
  */
 if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Customizer_Interface' ) ) :
@@ -49,6 +52,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Customizer_Interface' ) )
 	 * validate and/or sanitize untrusted data before entering into the database.
 	 * All untrusted data should be escaped before output.
 	 *
+	 * @since 1.0.0 Wireframe
 	 * @since 1.0.0 Wireframe_Theme
 	 * @see   https://codex.wordpress.org/Theme_Customization_API
 	 * @see   https://github.com/mixatheme/Wireframe
@@ -62,6 +66,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Customizer_Interface' ) )
 		 * Add postMessage support for site title and description for the Theme Customizer.
 		 *
 		 * @since 3.4.0 WordPress introduced `customize_register` action.
+		 * @since 1.0.0 Wireframe
 		 * @since 1.0.0 Wireframe_Theme
 		 * @param object $wp_customize WP_Customize_Manager.
 		 */
@@ -78,6 +83,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Customizer_Interface' ) )
 		 * you make available to Live Preview must also be added to the
 		 * `preview-scripts.js` file.
 		 *
+		 * @since 1.0.0 Wireframe
 		 * @since 1.0.0 Wireframe_Theme
 		 */
 		public function preview_scripts();
@@ -89,6 +95,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Customizer_Interface' ) )
 		 * WP head. If you add new settings with 'postMessage' for Live Preview,
 		 * you need to add a new line of dynamically generated CSS here.
 		 *
+		 * @since 1.0.0 Wireframe
 		 * @since 1.0.0 Wireframe_Theme
 		 * @see   add_action('wp_head')
 		 * @see   $this->css()
@@ -104,6 +111,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Customizer_Interface' ) )
 		 * This will generate a line of CSS for use in header output. If the
 		 * setting ($mod_name) has no defined value, the CSS will not be output.
 		 *
+		 * @since  1.0.0 Wireframe
 		 * @since  1.0.0 Wireframe_Theme
 		 * @see    get_theme_mod()
 		 * @param  string $selector CSS selector.

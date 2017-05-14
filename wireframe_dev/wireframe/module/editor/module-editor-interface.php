@@ -25,6 +25,7 @@
  * Namespace.
  *
  * @since 5.3.0 PHP
+ * @since 1.0.0 Wireframe
  * @since 1.0.0 Wireframe_Theme
  */
 namespace MixaTheme\Wireframe\Theme;
@@ -32,6 +33,7 @@ namespace MixaTheme\Wireframe\Theme;
 /**
  * No direct access to this file.
  *
+ * @since 1.0.0 Wireframe
  * @since 1.0.0 Wireframe_Theme
  */
 defined( 'ABSPATH' ) or die();
@@ -39,6 +41,7 @@ defined( 'ABSPATH' ) or die();
 /**
  * Check if the class exists.
  *
+ * @since 1.0.0 Wireframe
  * @since 1.0.0 Wireframe_Theme
  */
 if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Editor_Interface' ) ) :
@@ -50,6 +53,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Editor_Interface' ) ) :
 	 * All untrusted data should be escaped before output.
 	 *
 	 * @since 2.9.0 WordPress
+	 * @since 1.0.0 Wireframe
 	 * @since 1.0.0 Wireframe_Theme
 	 * @see   https://github.com/mixatheme/Wireframe
 	 */
@@ -57,6 +61,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Editor_Interface' ) ) :
 		/**
 		 * Editor Style.
 		 *
+		 * @since 1.0.0 Wireframe
 		 * @since 1.0.0 Wireframe_Theme
 		 */
 		public function editor_style();
@@ -67,6 +72,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Editor_Interface' ) ) :
 		 * Callback to insert 'styleselect' into the $buttons array.
 		 * Puts the buttons on Row 2.
 		 *
+		 * @since 1.0.0 Wireframe
 		 * @since 1.0.0 Wireframe_Theme
 		 * @param array $buttons Row 2 buttons.
 		 */
@@ -79,6 +85,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Editor_Interface' ) ) :
 		 * a JSON encoded array of $_style_formats. Each array child
 		 * is a format with it's own settings.
 		 *
+		 * @since 1.0.0 Wireframe
 		 * @since  1.0.0 Wireframe_Theme
 		 * @param  array $json Args for style formats.
 		 * @return array $json JSON formatted array.

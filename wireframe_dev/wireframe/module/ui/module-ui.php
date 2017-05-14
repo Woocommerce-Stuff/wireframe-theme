@@ -25,6 +25,7 @@
  * Namespaces.
  *
  * @since 5.3.0 PHP
+ * @since 1.0.0 Wireframe
  * @since 1.0.0 Wireframe_Theme
  */
 namespace MixaTheme\Wireframe\Theme;
@@ -32,6 +33,7 @@ namespace MixaTheme\Wireframe\Theme;
 /**
  * No direct access to this file.
  *
+ * @since 1.0.0 Wireframe
  * @since 1.0.0 Wireframe_Theme
  */
 defined( 'ABSPATH' ) or die();
@@ -39,12 +41,14 @@ defined( 'ABSPATH' ) or die();
 /**
  * Check if the class exists.
  *
+ * @since 1.0.0 Wireframe
  * @since 1.0.0 Wireframe_Theme
  */
 if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_UI' ) ) :
 	/**
 	 * Module_UI is a theme class for wiring front-end presentation methods.
 	 *
+	 * @since 1.0.0 Wireframe
 	 * @since 1.0.0 Wireframe_Theme
 	 * @see   https://github.com/mixatheme/Wireframe
 	 */
@@ -52,6 +56,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_UI' ) ) :
 		/**
 		 * Enqueue.
 		 *
+		 * @since 1.0.0 Wireframe
 		 * @since 1.0.0 Wireframe_Theme
 		 * @var   object $_enqueue
 		 */
@@ -60,6 +65,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_UI' ) ) :
 		/**
 		 * Constructor runs when this class instantiates.
 		 *
+		 * @since 1.0.0 Wireframe
 		 * @since 1.0.0 Wireframe_Theme
 		 * @param array $config Config data.
 		 */
@@ -75,6 +81,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_UI' ) ) :
 		/**
 		 * Enqueue Styles.
 		 *
+		 * @since 1.0.0 Wireframe
 		 * @since 1.0.0 Wireframe_Theme
 		 */
 		public function styles() {
@@ -86,6 +93,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_UI' ) ) :
 		/**
 		 * Enqueue Scripts.
 		 *
+		 * @since 1.0.0 Wireframe
 		 * @since 1.0.0 Wireframe_Theme
 		 */
 		public function scripts() {
@@ -97,6 +105,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_UI' ) ) :
 		/**
 		 * Enqueue Media Modal.
 		 *
+		 * @since 1.0.0 Wireframe
 		 * @since 1.0.0 Wireframe_Theme
 		 */
 		public function mediamodal() {
@@ -108,6 +117,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_UI' ) ) :
 		/**
 		 * Enqueue Style CSS.
 		 *
+		 * @since 1.0.0 Wireframe
 		 * @since 1.0.0 Wireframe_Theme
 		 */
 		public function stylecss() {
@@ -119,6 +129,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_UI' ) ) :
 		/**
 		 * Enqueue Comment-Reply JS.
 		 *
+		 * @since 1.0.0 Wireframe
 		 * @since 1.0.0 Wireframe_Theme
 		 */
 		public function commentjs() {

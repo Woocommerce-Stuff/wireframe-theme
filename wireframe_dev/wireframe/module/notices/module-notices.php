@@ -26,6 +26,7 @@
  * Namespaces.
  *
  * @since 5.3.0 PHP
+ * @since 1.0.0 Wireframe
  * @since 1.0.0 Wireframe_Theme
  */
 namespace MixaTheme\Wireframe\Theme;
@@ -33,6 +34,7 @@ namespace MixaTheme\Wireframe\Theme;
 /**
  * No direct access to this file.
  *
+ * @since 1.0.0 Wireframe
  * @since 1.0.0 Wireframe_Theme
  */
 defined( 'ABSPATH' ) or die();
@@ -40,13 +42,14 @@ defined( 'ABSPATH' ) or die();
 /**
  * Check if the class exists.
  *
+ * @since 1.0.0 Wireframe
  * @since 1.0.0 Wireframe_Theme
  */
 if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Notices' ) ) :
 	/**
 	 * Module_Notices is a theme class for wiring notifications.
 	 *
-	 * @since 1.0.0 Wireframe_Theme
+	 * @since 1.0.0 Wireframe
 	 * @since 1.0.0 Wireframe_Theme
 	 * @see   https://github.com/mixatheme/Wireframe
 	 */
@@ -55,6 +58,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Notices' ) ) :
 		 * Notices.
 		 *
 		 * @access private
+		 * @since  1.0.0 Wireframe
 		 * @since  1.0.0 Wireframe_Theme
 		 * @var    array $_notices
 		 */
@@ -63,6 +67,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Notices' ) ) :
 		/**
 		 * Constructor runs when this class instantiates.
 		 *
+		 * @since 1.0.0 Wireframe
 		 * @since 1.0.0 Wireframe_Theme
 		 * @param array $config Config data.
 		 */
@@ -78,6 +83,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Notices' ) ) :
 		/**
 		 * Get Notice.
 		 *
+		 * @since 1.0.0 Wireframe
 		 * @since 1.0.0 Wireframe_Theme
 		 * @param string $key The tag/method to call.
 		 */
@@ -107,6 +113,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Notices' ) ) :
 		 *
 		 * This notice is triggered if Wireframe_Theme fails to initialize properly.
 		 *
+		 * @since 1.0.0 Wireframe
 		 * @since 1.0.0 Wireframe_Theme
 		 */
 		public function error_init() {
@@ -122,6 +129,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Notices' ) ) :
 		 * You can greet customers, instruct customizers to use child themes,
 		 * recommended plugins to install, etc.
 		 *
+		 * @since 1.0.0 Wireframe
 		 * @since 1.0.0 Wireframe_Theme
 		 */
 		public function warn_activated() {

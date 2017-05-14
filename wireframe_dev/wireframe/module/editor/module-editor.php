@@ -25,6 +25,7 @@
  * Namespaces.
  *
  * @since 5.3.0 PHP
+ * @since 1.0.0 Wireframe
  * @since 1.0.0 Wireframe_Theme
  */
 namespace MixaTheme\Wireframe\Theme;
@@ -32,6 +33,7 @@ namespace MixaTheme\Wireframe\Theme;
 /**
  * No direct access to this file.
  *
+ * @since 1.0.0 Wireframe
  * @since 1.0.0 Wireframe_Theme
  */
 defined( 'ABSPATH' ) or die();
@@ -39,6 +41,7 @@ defined( 'ABSPATH' ) or die();
 /**
  * Check if the class exists.
  *
+ * @since 1.0.0 Wireframe
  * @since 1.0.0 Wireframe_Theme
  */
 if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Editor' ) ) :
@@ -46,6 +49,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Editor' ) ) :
 	 * Module_Editor is a theme class for wiring TinyMCE.
 	 *
 	 * @since 2.9.0 WordPress
+	 * @since 1.0.0 Wireframe
 	 * @since 1.0.0 Wireframe_Theme
 	 * @see   https://github.com/mixatheme/Wireframe
 	 */
@@ -54,6 +58,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Editor' ) ) :
 		 * Editor Style.
 		 *
 		 * @access private
+		 * @since  1.0.0 Wireframe
 		 * @since  1.0.0 Wireframe_Theme
 		 * @var    array $_editor_style
 		 */
@@ -63,6 +68,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Editor' ) ) :
 		 * Style Formats.
 		 *
 		 * @access private
+		 * @since  1.0.0 Wireframe
 		 * @since  1.0.0 Wireframe_Theme
 		 * @var    array $_style_formats
 		 */
@@ -71,6 +77,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Editor' ) ) :
 		/**
 		 * Constructor runs when this class is instantiated.
 		 *
+		 * @since 1.0.0 Wireframe
 		 * @since 1.0.0 Wireframe_Theme
 		 * @param array $config Config data.
 		 */
@@ -87,6 +94,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Editor' ) ) :
 		/**
 		 * Editor Style.
 		 *
+		 * @since 1.0.0 Wireframe
 		 * @since 1.0.0 Wireframe_Theme
 		 */
 		public function editor_style() {
@@ -105,6 +113,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Editor' ) ) :
 		 * Callback to insert 'styleselect' into the $buttons array.
 		 * Puts the buttons on Row 2.
 		 *
+		 * @since 1.0.0 Wireframe
 		 * @since 1.0.0 Wireframe_Theme
 		 * @param array $buttons Row 2 buttons.
 		 */
@@ -122,6 +131,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Editor' ) ) :
 		 * a JSON encoded array of $style_formats. Each array child
 		 * is a format with it's own settings.
 		 *
+		 * @since  1.0.0 Wireframe
 		 * @since  1.0.0 Wireframe_Theme
 		 * @param  array $json Args for style formats.
 		 * @return array $json JSON formatted array.

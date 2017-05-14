@@ -25,6 +25,7 @@
  * Namespaces.
  *
  * @since 5.3.0 PHP
+ * @since 1.0.0 Wireframe
  * @since 1.0.0 Wireframe_Theme
  */
 namespace MixaTheme\Wireframe\Theme;
@@ -32,6 +33,7 @@ namespace MixaTheme\Wireframe\Theme;
 /**
  * No direct access to this file.
  *
+ * @since 1.0.0 Wireframe
  * @since 1.0.0 Wireframe_Theme
  */
 defined( 'ABSPATH' ) or die();
@@ -39,12 +41,14 @@ defined( 'ABSPATH' ) or die();
 /**
  * Check if the class exists.
  *
+ * @since 1.0.0 Wireframe
  * @since 1.0.0 Wireframe_Theme
  */
 if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Core_Enqueue' ) ) :
 	/**
 	 * Core_Enqueue is a core theme class for wiring styles & scripts.
 	 *
+	 * @since 1.0.0 Wireframe
 	 * @since 1.0.0 Wireframe_Theme
 	 * @see   https://github.com/mixatheme/Wireframe
 	 */
@@ -53,6 +57,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Core_Enqueue' ) ) :
 		 * Prefix.
 		 *
 		 * @access private
+		 * @since  1.0.0 Wireframe
 		 * @since  1.0.0 Wireframe_Theme
 		 * @var    string $_prefix
 		 */
@@ -62,6 +67,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Core_Enqueue' ) ) :
 		 * Styles.
 		 *
 		 * @access private
+		 * @since  1.0.0 Wireframe
 		 * @since  1.0.0 Wireframe_Theme
 		 * @var    array $_styles
 		 */
@@ -71,6 +77,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Core_Enqueue' ) ) :
 		 * Scripts.
 		 *
 		 * @access private
+		 * @since  1.0.0 Wireframe
 		 * @since  1.0.0 Wireframe_Theme
 		 * @var    array $_scripts
 		 */
@@ -80,6 +87,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Core_Enqueue' ) ) :
 		 * Media Modal.
 		 *
 		 * @access private
+		 * @since  1.0.0 Wireframe
 		 * @since  1.0.0 Wireframe_Theme
 		 * @var    bool $_mediamodal
 		 */
@@ -89,6 +97,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Core_Enqueue' ) ) :
 		 * Style CSS.
 		 *
 		 * @access private
+		 * @since  1.0.0 Wireframe
 		 * @since  1.0.0 Wireframe_Theme
 		 * @var    bool $_stylecss
 		 */
@@ -98,6 +107,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Core_Enqueue' ) ) :
 		 * Comment Reply.
 		 *
 		 * @access private
+		 * @since  1.0.0 Wireframe
 		 * @since  1.0.0 Wireframe_Theme
 		 * @var    bool $_commentjs
 		 */
@@ -106,6 +116,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Core_Enqueue' ) ) :
 		/**
 		 * Constructor runs when this class is instantiated.
 		 *
+		 * @since 1.0.0 Wireframe
 		 * @since 1.0.0 Wireframe_Theme
 		 * @param string $prefix     Prefix for handles.
 		 * @param array  $styles     Styles to hook.
@@ -128,6 +139,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Core_Enqueue' ) ) :
 		/**
 		 * Core_Enqueue Styles.
 		 *
+		 * @since 1.0.0 Wireframe
 		 * @since 1.0.0 Wireframe_Theme
 		 */
 		public function styles() {
@@ -181,6 +193,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Core_Enqueue' ) ) :
 		/**
 		 * Core_Enqueue Scripts.
 		 *
+		 * @since 1.0.0 Wireframe
 		 * @since 1.0.0 Wireframe_Theme
 		 * @see   https://codex.wordpress.org/Function_Reference/wp_localize_script
 		 */
@@ -248,6 +261,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Core_Enqueue' ) ) :
 		/**
 		 * Core_Enqueue the Media modal script.
 		 *
+		 * @since 1.0.0 Wireframe
 		 * @since 1.0.0 Wireframe_Theme
 		 * @todo  Should this be enqueued contextually somehow?
 		 */
@@ -260,6 +274,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Core_Enqueue' ) ) :
 		/**
 		 * Core_Enqueue the main style.css stylesheet.
 		 *
+		 * @since 1.0.0 Wireframe
 		 * @since 1.0.0 Wireframe_Theme
 		 */
 		public function stylecss() {
@@ -275,6 +290,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Core_Enqueue' ) ) :
 		/**
 		 * Core_Enqueue the main `comment-reply` script.
 		 *
+		 * @since 1.0.0 Wireframe
 		 * @since 1.0.0 Wireframe_Theme
 		 */
 		public function commentjs() {

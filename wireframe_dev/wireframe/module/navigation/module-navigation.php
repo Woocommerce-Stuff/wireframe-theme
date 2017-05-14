@@ -25,6 +25,7 @@
  * Namespaces.
  *
  * @since 5.3.0 PHP
+ * @since 1.0.0 Wireframe
  * @since 1.0.0 Wireframe_Theme
  */
 namespace MixaTheme\Wireframe\Theme;
@@ -32,6 +33,7 @@ namespace MixaTheme\Wireframe\Theme;
 /**
  * No direct access to this file.
  *
+ * @since 1.0.0 Wireframe
  * @since 1.0.0 Wireframe_Theme
  */
 defined( 'ABSPATH' ) or die();
@@ -39,12 +41,14 @@ defined( 'ABSPATH' ) or die();
 /**
  * Check if the class exists.
  *
+ * @since 1.0.0 Wireframe
  * @since 1.0.0 Wireframe_Theme
  */
 if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Navigation' ) ) :
 	/**
 	 * Module_Navigation is a theme class for wiring nav menus.
 	 *
+	 * @since 1.0.0 Wireframe
 	 * @since 1.0.0 Wireframe_Theme
 	 * @see   https://github.com/mixatheme/Wireframe
 	 */
@@ -53,6 +57,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Navigation' ) ) :
 		 * Primary Menu.
 		 *
 		 * @access private
+		 * @since  1.0.0 Wireframe
 		 * @since  1.0.0 Wireframe_Theme
 		 * @var    array $_primary_menu
 		 */
@@ -62,6 +67,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Navigation' ) ) :
 		 * Secondary Menu.
 		 *
 		 * @access private
+		 * @since  1.0.0 Wireframe
 		 * @since  1.0.0 Wireframe_Theme
 		 * @var    array $_secondary_menu
 		 */
@@ -71,6 +77,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Navigation' ) ) :
 		 * Tertiary Menu.
 		 *
 		 * @access private
+		 * @since  1.0.0 Wireframe
 		 * @since  1.0.0 Wireframe_Theme
 		 * @var    array $_tertiary_menu
 		 */
@@ -80,6 +87,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Navigation' ) ) :
 		 * Constructor runs when this class instantiates.
 		 *
 		 * @access private
+		 * @since  1.0.0 Wireframe
 		 * @since  1.0.0 Wireframe_Theme
 		 * @param  array $config Config data.
 		 */
@@ -97,6 +105,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Navigation' ) ) :
 		/**
 		 * Set Primary menu.
 		 *
+		 * @since 1.0.0 Wireframe
 		 * @since 1.0.0 Wireframe_Theme
 		 * @see   wp_nav_menu()
 		 */
@@ -115,6 +124,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Navigation' ) ) :
 		/**
 		 * Set Secondary menu.
 		 *
+		 * @since 1.0.0 Wireframe
 		 * @since 1.0.0 Wireframe_Theme
 		 * @see   wp_nav_menu()
 		 */
@@ -133,6 +143,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Navigation' ) ) :
 		/**
 		 * Set Tertiary menu.
 		 *
+		 * @since 1.0.0 Wireframe
 		 * @since 1.0.0 Wireframe_Theme
 		 * @see   wp_nav_menu()
 		 */

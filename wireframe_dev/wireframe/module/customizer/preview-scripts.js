@@ -29,6 +29,7 @@
 	/**
 	 * Site Logo.
 	 *
+	 * @since 1.0.0 Wireframe
 	 * @since 1.0.0 Wireframe_Theme
 	 * @see   object Customizer
 	 */
@@ -56,6 +57,7 @@
 	/**
 	 * Site Title.
 	 *
+	 * @since 1.0.0 Wireframe
 	 * @since 1.0.0 Wireframe_Theme
 	 * @see   object Customizer
 	 */
@@ -68,6 +70,7 @@
 	/**
 	 * Site Description.
 	 *
+	 * @since 1.0.0 Wireframe
 	 * @since 1.0.0 Wireframe_Theme
 	 * @see   object Customizer
 	 */
@@ -80,6 +83,7 @@
 	/**
 	 * Link Color.
 	 *
+	 * @since 1.0.0 Wireframe
 	 * @since 1.0.0 Wireframe_Theme
 	 * @see   object Customizer
 	 */
@@ -92,6 +96,7 @@
 	/**
 	 * Main Text Color.
 	 *
+	 * @since 1.0.0 Wireframe
 	 * @since 1.0.0 Wireframe_Theme
 	 * @see   object Customizer
 	 */
@@ -104,6 +109,7 @@
 	/**
 	 * Navbar Title.
 	 *
+	 * @since 1.0.0 Wireframe
 	 * @since 1.0.0 Wireframe_Theme
 	 * @see   object Customizer
 	 */
@@ -120,6 +126,7 @@
 	/**
 	 * Header Text Color.
 	 *
+	 * @since 1.0.0 Wireframe
 	 * @since 1.0.0 Wireframe_Theme
 	 * @see   object Customizer
 	 *
@@ -147,6 +154,7 @@
 	/**
 	 * Navbar Contrast.
 	 *
+	 * @since 1.0.0 Wireframe
 	 * @since 1.0.0 Wireframe_Theme
 	 * @see   object Customizer
 	 */
