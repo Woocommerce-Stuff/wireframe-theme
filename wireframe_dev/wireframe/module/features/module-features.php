@@ -56,7 +56,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Features' ) ) :
 	 * @see   https://developer.wordpress.org/reference/functions/add_theme_support/
 	 * @see   https://github.com/mixatheme/Wireframe
 	 */
-	final class Module_Features extends Core_Module_Abstract implements Module_Features_Interface {
+	class Module_Features extends Core_Module_Abstract implements Module_Features_Interface {
 		/**
 		 * Custom Header.
 		 *

@@ -55,7 +55,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Customizer' ) ) :
 	 *
 	 * @internal Thanks: Weston Ruter, Otto, et al.
 	 */
-	final class Module_Customizer extends Core_Module_Abstract implements Module_Customizer_Interface {
+	class Module_Customizer extends Core_Module_Abstract implements Module_Customizer_Interface {
 		/**
 		 * Version.
 		 *

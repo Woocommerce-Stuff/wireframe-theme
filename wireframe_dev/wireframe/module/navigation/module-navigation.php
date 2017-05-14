@@ -52,7 +52,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Navigation' ) ) :
 	 * @since 1.0.0 Wireframe_Theme
 	 * @see   https://github.com/mixatheme/Wireframe
 	 */
-	final class Module_Navigation extends Core_Module_Abstract implements Module_Navigation_Interface {
+	class Module_Navigation extends Core_Module_Abstract implements Module_Navigation_Interface {
 		/**
 		 * Primary Menu.
 		 *
