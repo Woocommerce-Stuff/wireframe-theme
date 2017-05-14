@@ -22,7 +22,7 @@ Wireframe Theme is part of the [Wireframe Suite](https://github.com/mixatheme/Wi
 
 * **Created by:** [Tada Burke](https://twitter.com/tadaburke)
 * **Maintained by:** ![MixaTheme Logo](https://avatars3.githubusercontent.com/u/16634291?v=3&s=16) [MixaTheme](https://github.com/mixatheme/wireframe-theme#about-mixatheme)
-* **Phase:** Stable
+* **Phase:** Beta-1
 * **Version:** 1.0.0
 * **Tested:** WordPress 4.7+, PHP 7+
 
