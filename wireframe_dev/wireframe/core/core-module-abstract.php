@@ -167,6 +167,6 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Core_Module_Abstract' ) ) :
 			}
 		}
 
-	} // Wireframe.
+	} // Core_Module_Abstract.
 
 endif; // Thanks for using MixaTheme products!

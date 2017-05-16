@@ -540,7 +540,7 @@ if ( class_exists( 'MixaTheme\Wireframe\Theme\Core_Theme' ) ) :
 
 		/**
 		 * § 11. Hooks.
-		 * =========================================================================
+		 * =====================================================================
 		 *
 		 * Init success! Continue processing. Run any hooks you need.
 		 *
