@@ -24,6 +24,31 @@
  */
 
 /**
+ * Wireframe ThemeCompatibility: WordPress.
+ *
+ * This function is hooked via `functions.php` file if the version of
+ * WordPress is not compatible with this theme. You need to use a helper function
+ * because the Module_Notices class is not available yet.
+ *
+ * Note: This Admin notice does not use `is-dismissible` because the User
+ * should deactivate the theme, then update WordPress.
+ *
+ * Note: This should be hooked via `admin_notices` function.
+ *
+ * @since 1.0.0 Wireframe
+ * @since 1.0.0 Wireframe_Theme
+ * @see   functions.php
+ */
+function wireframe_theme_compat_wordpress() {
+	?>
+	<div class="notice notice-error">
+		<h1><?php esc_html_e( 'Wireframe Theme: Compatibility', 'wireframe-theme' ); ?></h1>
+		<p><?php esc_html_e( 'Hey there! Sorry to bother you, but it looks like you are using an older version of WordPress. Wireframe Theme is only compatible with WordPress 4.7.4 or later. Please deactivate Wireframe Theme and update WordPress to dismiss this notice. Thank you for using MixaTheme products!', 'wireframe-theme' ); ?></p>
+	</div>
+	<?php
+}
+
+/**
  * Hides the custom post template for pages on WordPress 4.6 and older
  *
  * @since  4.7.0 WordPress

@@ -23,27 +23,33 @@
  */
 
 /**
- * Wireframe Compatibility Checker.
+ * Compatibility Checker.
  *
- * Checks WordPress version, then initializes wireframe.php. In this example,
- * Wireframe_Theme only works with WordPress 4.7.4 or later. If the version is
- * incompatible, load any backwards compatibility helpers; else continue setup.
+ * In this example, Wireframe_Plugin only works with WordPress 4.7.4 or later.
+ * If the version is incompatible, load any backwards compatibility helpers;
+ * else continue bootstrapping wireframe.php.
  *
- * @since 1.0.0 Wireframe_Theme
- * @todo  Probably a better way to do this?
+ * Note: Whenever WordPress releases a new update, we will always sync this
+ * file on GitHub to reflect the latest WordPress version ;-)
+ *
+ * @since 1.0.0 Wireframe_Plugin
  */
-if ( version_compare( $GLOBALS['wp_version'], '4.7.4', '<' ) ) {
+if ( version_compare( $GLOBALS['wp_version'], '4.9.4', '<' ) ) {
 
-	// Load your backwards compatibility handlers.
+	// Incompatible version, but you still need the translation file.
+	load_theme_textdomain( 'wireframe-theme', get_template_directory() . '/wireframe_client/languages' );
+
+	// Load any backwards compatibility handlers.
 	require get_template_directory() . '/wireframe_dev/wireframe/functions/functions-compat.php';
 
-	// Stop processing.
-	return;
+	// Finally, hook any Admin notices to alert your customers.
+	add_action( 'admin_notices', 'wireframe_theme_compat_wordpress' );
 
 } else {
 
-	// Bootstrap your Wireframe theme.
+	// Version looks good! Bootstrap your Wireframe_Plugin...
 	require_once 'wireframe_dev/wireframe.php';
+
 }
 
 /** ADD YOUR CUSTOM FUNCTIONS BELOW THIS LINE... */
