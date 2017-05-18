@@ -203,8 +203,8 @@ function wireframe_theme_config_admin() {
 	 */
 	$menu_pages = array(
 		'theme_page' => array(
-			'page_title' => 'Wireframe Theme',
-			'menu_title' => 'Wireframe Theme',
+			'page_title' => WIREFRAME_THEME_PRODUCT,
+			'menu_title' => WIREFRAME_THEME_PRODUCT,
 			'capability' => 'manage_options',
 			'menu_slug'  => sanitize_title( WIREFRAME_THEME_TEXTDOMAIN ),
 			'callback'   => 'wireframe_theme_view_theme_page',

@@ -26,14 +26,14 @@ if ( ! function_exists( 'wireframe_theme_jetpack_features' ) ) :
 	/**
 	 * Jetpack theme support.
 	 *
-	 * @since 1.0.0 Wireframe_Theme
-	 * @uses  wireframe_theme_infinite_scroll_render()
-	 * @see   functions-jetpack.php
-	 * @see   https://jetpack.com/support/infinite-scroll/
-	 * @see   https://jetpack.com/support/responsive-videos/
-	 * @todo  Move this to Theme_Features class?
-	 *
-	 * @internal Thanks: _s
+	 * @since  1.0.0 Wireframe_Theme
+	 * @author Automattic
+	 * @author MixaTheme
+	 * @uses   wireframe_theme_infinite_scroll_render()
+	 * @see    functions-jetpack.php
+	 * @see    https://jetpack.com/support/infinite-scroll/
+	 * @see    https://jetpack.com/support/responsive-videos/
+	 * @todo   Move this to Theme_Features class?
 	 */
 	function wireframe_theme_jetpack_features() {
 		add_theme_support(
@@ -54,9 +54,11 @@ if ( ! function_exists( 'wireframe_theme_jetpack_infinite_scroll_render' ) ) :
 	/**
 	 * Infinite Scroll render.
 	 *
-	 * @since 1.0.0 Wireframe_Theme
-	 * @see   functions-jetpack.php
-	 * @see   https://jetpack.com/support/infinite-scroll/
+	 * @since  1.0.0 Wireframe_Theme
+	 * @author Automattic
+	 * @author MixaTheme
+	 * @see    functions-jetpack.php
+	 * @see    https://jetpack.com/support/infinite-scroll/
 	 *
 	 * @internal Thanks: _s
 	 */

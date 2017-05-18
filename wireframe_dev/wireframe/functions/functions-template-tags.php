@@ -132,9 +132,9 @@ if ( ! function_exists( 'wireframe_theme_posted_on' ) ) :
 	/**
 	 * Prints HTML with meta information for the current post-date/time and author.
 	 *
-	 * @since 1.0.0 Wireframe_Theme
-	 *
-	 * @internal Thanks: _s
+	 * @since  1.0.0 Wireframe_Theme
+	 * @author Automattic
+	 * @author MixaTheme
 	 */
 	function wireframe_theme_posted_on() {
 
@@ -169,9 +169,9 @@ if ( ! function_exists( 'wireframe_theme_entry_footer' ) ) :
 	/**
 	 * Prints HTML with meta information for the categories, tags and comments.
 	 *
-	 * @since 1.0.0 Wireframe_Theme
-	 *
-	 * @internal Thanks: _s
+	 * @since  1.0.0 Wireframe_Theme
+	 * @author Automattic
+	 * @author MixaTheme
 	 */
 	function wireframe_theme_entry_footer() {
 
@@ -214,9 +214,9 @@ if ( ! function_exists( 'wireframe_theme_categorized_blog' ) ) :
 	 * Returns true if a blog has more than 1 category.
 	 *
 	 * @since  1.0.0 Wireframe_Theme
+	 * @author Automattic
+	 * @author MixaTheme
 	 * @return bool Returns true if more than 1 category, or false otherwise.
-	 *
-	 * @internal Thanks: _s
 	 */
 	function wireframe_theme_categorized_blog() {
 
@@ -256,9 +256,9 @@ if ( ! function_exists( 'wireframe_theme_category_transient_flusher' ) ) :
 	/**
 	 * Flush out the transients used in wireframe_theme_categorized_blog.
 	 *
-	 * @since 1.0.0 Wireframe_Theme
-	 *
-	 * @internal Thanks: _s
+	 * @since  1.0.0 Wireframe_Theme
+	 * @author Automattic
+	 * @author MixaTheme
 	 */
 	function wireframe_theme_category_transient_flusher() {
 

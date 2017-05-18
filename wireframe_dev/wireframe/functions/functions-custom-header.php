@@ -29,10 +29,10 @@ if ( ! function_exists( 'wireframe_theme_custom_header' ) ) :
 	/**
 	 * Renders a Custom Header.
 	 *
-	 * @since 1.0.0 Wireframe_Theme
-	 * @see   header.php
-	 *
-	 * @internal Thanks: _s
+	 * @since  1.0.0 Wireframe_Theme
+	 * @author Automattic
+	 * @author MixaTheme
+	 * @see    header.php
 	 */
 	function wireframe_theme_custom_header() {
 		if ( get_header_image() ) { ?>
@@ -47,10 +47,10 @@ if ( ! function_exists( 'wireframe_theme_custom_header_css' ) ) :
 	/**
 	 * Styles the header image and text displayed on the blog.
 	 *
-	 * @since 1.0.0 Wireframe_Theme
-	 * @see   wireframe_theme_custom_header().
-	 *
-	 * @internal Thanks: _s
+	 * @since  1.0.0 Wireframe_Theme
+	 * @author Automattic
+	 * @author MixaTheme
+	 * @see    wireframe_theme_custom_header().
 	 */
 	function wireframe_theme_custom_header_css() {
 

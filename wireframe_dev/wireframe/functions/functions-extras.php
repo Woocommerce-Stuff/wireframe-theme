@@ -81,7 +81,9 @@ if ( ! function_exists( 'wireframe_theme_css_article' ) ) :
 	 * Adds extra CSS classes to an article element. This can be useful
 	 * for adding Microformats v2+, etc.
 	 *
-	 * @since 1.0.0 Wireframe_Theme
+	 * @since  1.0.0 Wireframe_Theme
+	 * @author Automattic
+	 * @author MixaTheme
 	 */
 	function wireframe_theme_css_article() {
 
@@ -101,7 +103,9 @@ if ( ! function_exists( 'wireframe_theme_read_more_link' ) ) :
 	/**
 	 * Wireframe Read More
 	 *
-	 * @since 1.0.0 Wireframe_Theme
+	 * @since  1.0.0 Wireframe_Theme
+	 * @author Automattic
+	 * @author MixaTheme
 	 */
 	function wireframe_theme_read_more_link() {
 		$readmore  = '&nbsp;';
@@ -140,8 +144,10 @@ if ( ! function_exists( 'wireframe_theme_tag_cloud_font' ) ) :
 	/**
 	 * Wireframe Tag Cloud description.
 	 *
-	 * @since 1.0.0 Wireframe_Theme
-	 * @param array $args Font sizes for tag cloud.
+	 * @since  1.0.0 Wireframe_Theme
+	 * @author Automattic
+	 * @author MixaTheme
+	 * @param  array $args Font sizes for tag cloud.
 	 */
 	function wireframe_theme_tag_cloud_font( $args ) {
 		$args['smallest'] = 9;
@@ -156,10 +162,10 @@ if ( ! function_exists( 'wireframe_theme_body_classes' ) ) :
 	 * Adds custom classes to the array of body classes.
 	 *
 	 * @since  1.0.0 Wireframe_Theme
+	 * @author Automattic
+	 * @author MixaTheme
 	 * @param  array $classes Classes for the body element.
 	 * @return array
-	 *
-	 * @internal Thanks: _s
 	 */
 	function wireframe_theme_body_classes( $classes ) {
 

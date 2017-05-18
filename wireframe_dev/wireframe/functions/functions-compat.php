@@ -24,7 +24,7 @@
  */
 
 /**
- * Wireframe ThemeCompatibility: WordPress.
+ * Wireframe Theme Compatibility: WordPress.
  *
  * This function is hooked via `functions.php` file if the version of
  * WordPress is not compatible with this theme. You need to use a helper function
@@ -40,12 +40,8 @@
  * @see   functions.php
  */
 function wireframe_theme_compat_wordpress() {
-	?>
-	<div class="notice notice-error">
-		<h1><?php esc_html_e( 'Wireframe Theme: Compatibility', 'wireframe-theme' ); ?></h1>
-		<p><?php esc_html_e( 'Hey there! Sorry to bother you, but it looks like you are using an older version of WordPress. Wireframe Theme is only compatible with the latest version of WordPress. Please deactivate Wireframe Theme and update WordPress to dismiss this notice. Thank you for using MixaTheme products!', 'wireframe-theme' ); ?></p>
-	</div>
-	<?php
+	$message = sprintf( __( '%1$s requires at least WordPress %2$s. You are running WordPress %3$s. Please upgrade WordPress and re-activate %1$s.', 'wireframe-theme' ), WIREFRAME_THEME_PRODUCT, WIREFRAME_THEME_WP, $GLOBALS['wp_version'] );
+	printf( __( '<div class="error"><p>%s</p></div>', 'wireframe-theme' ), $message ); // XSS ok.
 }
 
 /**
@@ -102,7 +98,7 @@ add_action( 'after_switch_theme', 'wireframe_theme_switch_theme' );
  * @internal Thanks: twentyseventeen
  */
 function wireframe_theme_upgrade_notice() {
-	$message = sprintf( __( 'Wireframe Theme requires at least WordPress 4.7. You are running WordPress %s. Please upgrade WordPress and try again.', 'wireframe-theme' ), $GLOBALS['wp_version'] );
+	$message = sprintf( __( '%1$s requires at least WordPress %2$s. You are running WordPress %3$s. Please upgrade WordPress and try again.', 'wireframe-theme' ), WIREFRAME_THEME_PRODUCT, WIREFRAME_THEME_WP, $GLOBALS['wp_version'] );
 	printf( __( '<div class="error"><p>%s</p></div>', 'wireframe-theme' ), $message ); // XSS ok.
 }
 
@@ -117,7 +113,7 @@ function wireframe_theme_upgrade_notice() {
  * @internal Thanks: twentyseventeen
  */
 function wireframe_theme_customize() {
-	wp_die( sprintf( __( 'Wireframe Theme requires at least WordPress 4.7. You are running WordPress %s. Please upgrade WordPress and try again.', 'wireframe-theme' ), $GLOBALS['wp_version'] ), '', array( // XSS ok.
+	wp_die( sprintf( __( '%1$s requires at least WordPress %2$s. You are running WordPress %3$s. Please upgrade WordPress and try again.', 'wireframe-theme' ), WIREFRAME_THEME_PRODUCT, WIREFRAME_THEME_WP, $GLOBALS['wp_version'] ), '', array( // XSS ok.
 		'back_link' => true,
 	) );
 }
@@ -135,7 +131,7 @@ add_action( 'load-customize.php', 'wireframe_theme_customize' );
  */
 function wireframe_theme_preview() {
 	if ( isset( $_GET['preview'] ) ) { // Input var ok.
-		wp_die( sprintf( __( 'Wireframe Theme requires at least WordPress 4.7. You are running WordPress %s. Please upgrade WordPress and try again.', 'wireframe-theme' ), $GLOBALS['wp_version'] ) ); // XSS ok.
+		wp_die( sprintf( __( '%1$s requires at least WordPress %2$s. You are running WordPress %3$s. Please upgrade WordPress and try again.', 'wireframe-theme' ), WIREFRAME_THEME_PRODUCT, WIREFRAME_THEME_WP, $GLOBALS['wp_version'] ) ); // XSS ok.
 	}
 }
 add_action( 'template_redirect', 'wireframe_theme_preview' );
