@@ -191,7 +191,7 @@ define( 'WIREFRAME_THEME_JS', WIREFRAME_THEME_URI . WIREFRAME_THEME_CLIENT . 'js
  *
  * @since 1.0.0 Wireframe_Theme
  */
-define( 'WIREFRAME_THEME_LANG', WIREFRAME_THEME_DIR . WIREFRAME_THEME_CLIENT . 'languages/' );
+define( 'WIREFRAME_THEME_LANG', WIREFRAME_THEME_DIR . WIREFRAME_THEME_CLIENT . 'lang/' );
 
 /**
  * § 01. Constant: Templates directory.
@@ -201,14 +201,13 @@ define( 'WIREFRAME_THEME_LANG', WIREFRAME_THEME_DIR . WIREFRAME_THEME_CLIENT . '
  *
  * @since 1.0.0 Wireframe_Theme
  */
-define( 'WIREFRAME_THEME_TPL', 'wireframe_client/template-parts/' );
+define( 'WIREFRAME_THEME_TPL', 'wireframe_client/tpl/' );
 
 /**
  * § 02. Compatibility: Checker.
  * =============================================================================
  *
- * In this example, Wireframe_Theme only works with WordPress 4.7.4 or later.
- * If the version is incompatible, load any backwards compatibility helpers;
+ * If WordPress version is incompatible, load backwards compatibility helpers;
  * else continue bootstrapping wireframe.php.
  *
  * Note: Whenever WordPress releases a new update, we will always sync this

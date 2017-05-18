@@ -89,6 +89,30 @@ function wireframe_theme_config_admin() {
 	 * You can set your actions in a multi-dimensional array and remember
 	 * to set the property $wired = true (above).
 	 *
+	 * Example theme page (in Appearance menu):
+	 *
+	 *		'theme_page' => array(
+	 *			'tag'      => 'admin_menu',
+	 *			'function' => 'theme_page',
+	 *			'priority' => 10,
+	 *			'args'     => 0,
+	 *		),
+	 *
+	 * Example menu pages (in Admin menu):
+	 *
+	 * 		'menu_pages' => array(
+	 * 			'tag'      => 'admin_menu',
+	 * 			'function' => 'menu_pages',
+	 * 			priority' => 10,
+	 * 			'args'     => 1,
+	 * 		),
+	 * 		'submenu_pages' => array(
+	 * 			'tag'      => 'admin_menu',
+	 * 			'function' => 'submenu_pages',
+	 * 			'priority' => 10,
+	 * 			'args'     => 1,
+	 * 		),
+	 *
 	 * @since 1.0.0 Wireframe_Theme
 	 * @var   array $actions Actions to hook.
 	 */
@@ -109,13 +133,13 @@ function wireframe_theme_config_admin() {
 			'tag'      => 'admin_menu',
 			'function' => 'menu_pages',
 			'priority' => 10,
-			'args'     => 1,
+			'args'     => null,
 		),
 		'submenu_pages' => array(
 			'tag'      => 'admin_menu',
 			'function' => 'submenu_pages',
 			'priority' => 10,
-			'args'     => 1,
+			'args'     => null,
 		),
 	);
 
@@ -195,21 +219,46 @@ function wireframe_theme_config_admin() {
 	$enqueue = new Core_Enqueue( $prefix, $styles, $scripts, $mediamodal );
 
 	/**
+	 * Theme page.
+	 *
+	 * Example:
+	 *
+	 * 		$theme_page = array(
+	 * 			'quickstart' => array(
+	 * 			'page_title' => WIREFRAME_THEME_PRODUCT,
+	 * 			'menu_title' => WIREFRAME_THEME_PRODUCT,
+	 * 			'capability' => 'manage_options',
+	 * 			'menu_slug'  => sanitize_title( WIREFRAME_THEME_TEXTDOMAIN ),
+	 * 			'function'   => 'wireframe_theme_admin_page_callback_quickstart',
+	 * 		),
+	 * 	);
+	 *
+	 * @since 1.0.0 Wireframe
+	 * @since 1.0.0 Wireframe_Theme
+	 * @var   array $menu_pages
+	 */
+	$theme_page = array();
+
+	/**
 	 * Top-level Admin pages.
+	 *
+	 * Note: Dependingn on the marketplace, they might have specific requirements
+	 * where you can add a theme page or upsell your products. If you're submitting
+	 * your theme to WordPress.org, you should probably use $theme_page (above).
 	 *
 	 * @since 1.0.0 Wireframe
 	 * @since 1.0.0 Wireframe_Theme
 	 * @var   array $menu_pages
 	 */
 	$menu_pages = array(
-		'theme_page' => array(
+		'menu_pages' => array(
 			'page_title' => WIREFRAME_THEME_PRODUCT,
 			'menu_title' => WIREFRAME_THEME_PRODUCT,
 			'capability' => 'manage_options',
 			'menu_slug'  => sanitize_title( WIREFRAME_THEME_TEXTDOMAIN ),
-			'callback'   => 'wireframe_theme_view_theme_page',
+			'function'   => 'wireframe_theme_admin_page_callback_quickstart',
 			'icon_url'   => esc_url( '' ),
-			'position'   => 9999,
+			'position'   => 8888,
 		),
 	);
 
@@ -221,7 +270,32 @@ function wireframe_theme_config_admin() {
 	 * @var   array $submenu_pages
 	 * @see   https://wordpress.stackexchange.com/questions/66498
 	 */
-	$submenu_pages = array();
+	$submenu_pages = array(
+		'quickstart' => array(
+			'parent_slug' => sanitize_title( WIREFRAME_THEME_TEXTDOMAIN ),
+			'page_title'  => 'Quickstart',
+			'menu_title'  => 'Quickstart',
+			'capability'  => 'manage_options',
+			'menu_slug'   => sanitize_title( WIREFRAME_THEME_TEXTDOMAIN ),
+			'function'    => 'wireframe_theme_admin_page_callback_quickstart',
+		),
+		'faq' => array(
+			'parent_slug' => sanitize_title( WIREFRAME_THEME_TEXTDOMAIN ),
+			'page_title'  => 'FAQ',
+			'menu_title'  => 'FAQ',
+			'capability'  => 'manage_options',
+			'menu_slug'   => sanitize_title( WIREFRAME_THEME_TEXTDOMAIN . '-faq' ),
+			'function'    => 'wireframe_theme_admin_page_callback_faq',
+		),
+		'support' => array(
+			'parent_slug' => sanitize_title( WIREFRAME_THEME_TEXTDOMAIN ),
+			'page_title'  => 'Support',
+			'menu_title'  => 'Support',
+			'capability'  => 'manage_options',
+			'menu_slug'   => sanitize_title( WIREFRAME_THEME_TEXTDOMAIN . '-support' ),
+			'function'    => 'wireframe_theme_admin_page_callback_support',
+		),
+	);
 
 	/**
 	 * Option #1: Return (array) of config data for passing into objects.
@@ -244,6 +318,7 @@ function wireframe_theme_config_admin() {
 		'actions'       => $actions,
 		'filters'       => $filters,
 		'enqueue'       => $enqueue,
+		'theme_page'    => $theme_page,
 		'menu_pages'    => $menu_pages,
 		'submenu_pages' => $submenu_pages,
 	);

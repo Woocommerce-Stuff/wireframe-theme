@@ -65,6 +65,16 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Admin' ) ) :
 		private $_enqueue;
 
 		/**
+		 * Theme Page.
+		 *
+		 * @access private
+		 * @since  1.0.0 Wireframe
+		 * @since  1.0.0 Wireframe_Theme
+		 * @var    array $_theme_page
+		 */
+		private $_theme_page;
+
+		/**
 		 * Menu Pages.
 		 *
 		 * @access private
@@ -95,6 +105,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Admin' ) ) :
 
 			// Declare custom properties required for this class.
 			$this->_enqueue       = $config['enqueue'];
+			$this->_theme_page    = $config['theme_page'];
 			$this->_menu_pages    = $config['menu_pages'];
 			$this->_submenu_pages = $config['submenu_pages'];
 
@@ -103,7 +114,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Admin' ) ) :
 		}
 
 		/**
-		 * Enqueue Styles.
+		 * Enqueue CSS Styles.
 		 *
 		 * @since 1.0.0 Wireframe
 		 * @since 1.0.0 Wireframe_Theme
@@ -115,7 +126,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Admin' ) ) :
 		}
 
 		/**
-		 * Enqueue Scripts.
+		 * Enqueue JS Scripts.
 		 *
 		 * @since 1.0.0 Wireframe
 		 * @since 1.0.0 Wireframe_Theme
@@ -127,7 +138,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Admin' ) ) :
 		}
 
 		/**
-		 * Enqueue Media Modal.
+		 * Enqueue JS Media Modal.
 		 *
 		 * @since 1.0.0 Wireframe
 		 * @since 1.0.0 Wireframe_Theme
@@ -139,10 +150,32 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Admin' ) ) :
 		}
 
 		/**
+		 * Add a theme page.
+		 *
+		 * @since 1.0.0 Wireframe
+		 * @since 1.0.0 Wireframe_Theme
+		 * @see   https://codex.wordpress.org/Function_Reference/add_theme_page
+		 */
+		public function theme_page() {
+			if ( isset( $this->_theme_page ) ) {
+				foreach ( $this->_theme_page as $key => $value ) {
+					add_theme_page(
+						$value['page_title'],
+						$value['menu_title'],
+						$value['capability'],
+						$value['menu_slug'],
+						$value['function']
+					);
+				}
+			}
+		}
+
+		/**
 		 * Add a top-level menu page.
 		 *
 		 * @since 1.0.0 Wireframe
 		 * @since 1.0.0 Wireframe_Theme
+		 * @see   https://developer.wordpress.org/reference/functions/add_menu_page/
 		 */
 		public function menu_pages() {
 			if ( isset( $this->_menu_pages ) ) {
@@ -152,7 +185,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Admin' ) ) :
 						$value['menu_title'],
 						$value['capability'],
 						$value['menu_slug'],
-						$value['callback'],
+						$value['function'],
 						$value['icon_url'],
 						$value['position']
 					);
@@ -165,6 +198,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Admin' ) ) :
 		 *
 		 * @since 1.0.0 Wireframe
 		 * @since 1.0.0 Wireframe_Theme
+		 * @see   https://developer.wordpress.org/reference/functions/add_submenu_page/
 		 */
 		public function submenu_pages() {
 			if ( isset( $this->_submenu_pages ) ) {
@@ -175,7 +209,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Admin' ) ) :
 						$value['menu_title'],
 						$value['capability'],
 						$value['menu_slug'],
-						$value['callback']
+						$value['function']
 					);
 				}
 			}
