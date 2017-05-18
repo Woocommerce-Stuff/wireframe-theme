@@ -109,7 +109,7 @@ define( 'WIREFRAME_THEME_URI', get_template_directory_uri() );
  *
  * @since 1.0.0 Wireframe_Theme
  */
-define( 'WIREFRAME_THEME_DEV', WIREFRAME_THEME_DIR . '/wireframe_dev/' );
+define( 'WIREFRAME_THEME_DEV', trailingslashit( WIREFRAME_THEME_DIR . '/wireframe_dev' ) );
 
 /**
  * § 01. Constant: Wireframe API.
@@ -121,7 +121,7 @@ define( 'WIREFRAME_THEME_DEV', WIREFRAME_THEME_DIR . '/wireframe_dev/' );
  *
  * @since 1.0.0 Wireframe_Theme
  */
-define( 'WIREFRAME_THEME_API', 'wireframe_dev/wireframe/' );
+define( 'WIREFRAME_THEME_API', trailingslashit( 'wireframe_dev/wireframe' ) );
 
 /**
  * § 01. Constant: Wireframe API.
@@ -131,7 +131,7 @@ define( 'WIREFRAME_THEME_API', 'wireframe_dev/wireframe/' );
  *
  * @since 1.0.0 Wireframe_Theme
  */
-define( 'WIREFRAME_THEME_OBJECTS', WIREFRAME_THEME_DIR . '/wireframe_dev/wireframe/' );
+define( 'WIREFRAME_THEME_OBJECTS', trailingslashit( WIREFRAME_THEME_DIR . '/wireframe_dev/wireframe' ) );
 
 /**
  * § 01. Constant: Client directory.
@@ -141,7 +141,7 @@ define( 'WIREFRAME_THEME_OBJECTS', WIREFRAME_THEME_DIR . '/wireframe_dev/wirefra
  *
  * @since 1.0.0 Wireframe_Theme
  */
-define( 'WIREFRAME_THEME_CLIENT', '/wireframe_client/' );
+define( 'WIREFRAME_THEME_CLIENT', trailingslashit( '/wireframe_client' ) );
 
 /**
  * § 01. Constant: URI for CSS.
@@ -151,7 +151,7 @@ define( 'WIREFRAME_THEME_CLIENT', '/wireframe_client/' );
  *
  * @since 1.0.0 Wireframe_Theme
  */
-define( 'WIREFRAME_THEME_CSS', WIREFRAME_THEME_URI . WIREFRAME_THEME_CLIENT . 'css/' );
+define( 'WIREFRAME_THEME_CSS', trailingslashit( WIREFRAME_THEME_URI . WIREFRAME_THEME_CLIENT . 'css' ) );
 
 /**
  * § 01. Constant: URI for fonts.
@@ -161,7 +161,7 @@ define( 'WIREFRAME_THEME_CSS', WIREFRAME_THEME_URI . WIREFRAME_THEME_CLIENT . 'c
  *
  * @since 1.0.0 Wireframe_Theme
  */
-define( 'WIREFRAME_THEME_FONTS', WIREFRAME_THEME_URI . WIREFRAME_THEME_CLIENT . 'fonts/' );
+define( 'WIREFRAME_THEME_FONTS', trailingslashit( WIREFRAME_THEME_URI . WIREFRAME_THEME_CLIENT . 'fonts' ) );
 
 /**
  * § 01. Constant: URI for images.
@@ -171,7 +171,7 @@ define( 'WIREFRAME_THEME_FONTS', WIREFRAME_THEME_URI . WIREFRAME_THEME_CLIENT . 
  *
  * @since 1.0.0 Wireframe_Theme
  */
-define( 'WIREFRAME_THEME_IMG', WIREFRAME_THEME_URI . WIREFRAME_THEME_CLIENT . 'img/' );
+define( 'WIREFRAME_THEME_IMG', trailingslashit( WIREFRAME_THEME_URI . WIREFRAME_THEME_CLIENT . 'img' ) );
 
 /**
  * § 01. Constant: URI for JavaScript.
@@ -181,7 +181,7 @@ define( 'WIREFRAME_THEME_IMG', WIREFRAME_THEME_URI . WIREFRAME_THEME_CLIENT . 'i
  *
  * @since 1.0.0 Wireframe_Theme
  */
-define( 'WIREFRAME_THEME_JS', WIREFRAME_THEME_URI . WIREFRAME_THEME_CLIENT . 'js/' );
+define( 'WIREFRAME_THEME_JS', trailingslashit( WIREFRAME_THEME_URI . WIREFRAME_THEME_CLIENT . 'js' ) );
 
 /**
  * § 01. Constant: Language path.
@@ -191,7 +191,7 @@ define( 'WIREFRAME_THEME_JS', WIREFRAME_THEME_URI . WIREFRAME_THEME_CLIENT . 'js
  *
  * @since 1.0.0 Wireframe_Theme
  */
-define( 'WIREFRAME_THEME_LANG', WIREFRAME_THEME_DIR . WIREFRAME_THEME_CLIENT . 'lang/' );
+define( 'WIREFRAME_THEME_LANG', trailingslashit( WIREFRAME_THEME_DIR . WIREFRAME_THEME_CLIENT . 'lang' ) );
 
 /**
  * § 01. Constant: Templates directory.
@@ -201,7 +201,7 @@ define( 'WIREFRAME_THEME_LANG', WIREFRAME_THEME_DIR . WIREFRAME_THEME_CLIENT . '
  *
  * @since 1.0.0 Wireframe_Theme
  */
-define( 'WIREFRAME_THEME_TPL', 'wireframe_client/tpl/' );
+define( 'WIREFRAME_THEME_TPL', trailingslashit( 'wireframe_client/tpl' ) );
 
 /**
  * § 02. Compatibility: Checker.
