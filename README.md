@@ -24,7 +24,7 @@ Wireframe Theme is part of the [Wireframe Suite](https://github.com/mixatheme/Wi
 * **Maintained by:** ![MixaTheme Logo](https://avatars3.githubusercontent.com/u/16634291?v=3&s=16) [MixaTheme](https://github.com/mixatheme/wireframe-theme#about-mixatheme)
 * **Phase:** Beta-1
 * **Version:** 1.0.0
-* **Tested:** WordPress 4.7.5, PHP 5.6+
+* **Tested:** WordPress 4.7.5, PHP 5.6-7.1
 
 [Top](https://github.com/mixatheme/wireframe-theme#wireframe-theme)
 
@@ -34,8 +34,8 @@ Wireframe Theme is part of the [Wireframe Suite](https://github.com/mixatheme/Wi
 
 Wireframe Theme encourages Developers to use the requirements listed below, but this is ultimately up to each Developer or Team. Due to the rapid advancement of tech these days, Wireframe Theme will generally support software no more than 2 major point releases behind.
 
-1. LAMP, LEMP or any server running PHP, MySQL or MariaDB.
-2. **PHP version 5.6** or greater is highly recommended.
+1. LAMP, LEMP or any server running PHP, MySQL or MariaDB. Nginx is highly recommended.
+2. **PHP version 5.6** or greater. PHP 7.1+ is highly recommended.
 3. MySQL version 5.5 or greater OR MariaDB version 10.0 or greater.
 4. WordPress version 4.7.5 or greater.
 5. Intermediate knowledge of the [Wordpress Codex](https://codex.wordpress.org), [Theme Development](https://developer.wordpress.org/themes/) and [Plugin Development](https://developer.wordpress.org/plugins/).
