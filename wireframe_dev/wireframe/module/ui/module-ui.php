@@ -46,7 +46,7 @@ defined( 'ABSPATH' ) or die();
  */
 if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_UI' ) ) :
 	/**
-	 * Module_UI is a theme class for wiring front-end presentation methods.
+	 * Module_UI is a module class for wiring front-end presentation methods.
 	 *
 	 * @since 1.0.0 Wireframe
 	 * @since 1.0.0 Wireframe Theme

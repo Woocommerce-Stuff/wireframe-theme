@@ -46,7 +46,7 @@ defined( 'ABSPATH' ) or die();
  */
 if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Admin' ) ) :
 	/**
-	 * Module_Admin class for adding new Admin menu pages & sub pages.
+	 * Module_Admin is a module class for registering Admin menu pages & sub pages.
 	 *
 	 * @since 1.0.0 Wireframe
 	 * @since 1.0.0 Wireframe Theme

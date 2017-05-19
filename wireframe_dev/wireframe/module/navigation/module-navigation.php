@@ -46,7 +46,7 @@ defined( 'ABSPATH' ) or die();
  */
 if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Navigation' ) ) :
 	/**
-	 * Module_Navigation is a theme class for wiring nav menus.
+	 * Module_Navigation is a module class for wiring walker nav menus.
 	 *
 	 * @since 1.0.0 Wireframe
 	 * @since 1.0.0 Wireframe Theme

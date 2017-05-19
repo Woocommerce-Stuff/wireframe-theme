@@ -46,7 +46,7 @@ defined( 'ABSPATH' ) or die();
  */
 if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Features' ) ) :
 	/**
-	 * Module_Features is a theme class for wiring theme features.
+	 * Module_Features is a module class for wiring theme features.
 	 *
 	 * Using add_theme_support() must be hooked via 'after_setup_theme'.
 	 * The ‘init’ hook may be too late for some features.

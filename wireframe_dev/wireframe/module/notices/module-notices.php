@@ -47,7 +47,7 @@ defined( 'ABSPATH' ) or die();
  */
 if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Notices' ) ) :
 	/**
-	 * Module_Notices is a theme class for wiring notifications.
+	 * Module_Notices is a module class for wiring notifications.
 	 *
 	 * @since 1.0.0 Wireframe
 	 * @since 1.0.0 Wireframe Theme

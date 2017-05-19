@@ -46,7 +46,7 @@ defined( 'ABSPATH' ) or die();
  */
 if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Customizer' ) ) :
 	/**
-	 * Module_Customizer is a theme class for wiring live preview modifications.
+	 * Module_Customizer is a module class for wiring live preview modifications.
 	 *
 	 * @since 1.0.0 Wireframe
 	 * @since 1.0.0 Wireframe Theme

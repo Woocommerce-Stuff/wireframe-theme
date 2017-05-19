@@ -46,7 +46,7 @@ defined( 'ABSPATH' ) or die();
  */
 if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Widgets' ) ) :
 	/**
-	 * Module_Widgets is a theme class for wiring sidebars & widgets.
+	 * Module_Widgets is a module class for wiring sidebars & widgets.
 	 *
 	 * If you create a custom widget sub-class, be advised that Wireframe Theme
 	 * supports `Selective Refresh` by default. However, your custom widgets

@@ -32,6 +32,7 @@
  * Note: Whenever WordPress releases a new update, we will always sync this
  * file on GitHub to reflect the latest WordPress version ;-)
  *
+ * @since 1.0.0 Wireframe
  * @since 1.0.0 Wireframe Theme
  */
 if ( version_compare( $GLOBALS['wp_version'], '4.7.5', '<' ) ) {

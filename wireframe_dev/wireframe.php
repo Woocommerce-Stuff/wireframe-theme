@@ -44,6 +44,7 @@
  * =============================================================================
  *
  * @since 5.3.0 PHP
+ * @since 1.0.0 Wireframe
  * @since 1.0.0 Wireframe Theme
  */
 namespace MixaTheme\Wireframe\Theme;
@@ -54,6 +55,7 @@ namespace MixaTheme\Wireframe\Theme;
  *
  * No direct access to this file.
  *
+ * @since 1.0.0 Wireframe
  * @since 1.0.0 Wireframe Theme
  */
 defined( 'ABSPATH' ) or die();
@@ -64,6 +66,7 @@ defined( 'ABSPATH' ) or die();
  *
  * The minimum version of WordPress compatible with Wireframe Theme.
  *
+ * @since 1.0.0 Wireframe
  * @since 1.0.0 Wireframe Theme
  */
 define( 'WIREFRAME_THEME_WP', '4.7.5' );
@@ -71,6 +74,7 @@ define( 'WIREFRAME_THEME_WP', '4.7.5' );
 /**
  * § 03. Constants: Theme text-domain (must match slug).
  *
+ * @since 1.0.0 Wireframe
  * @since 1.0.0 Wireframe Theme
  */
 define( 'WIREFRAME_THEME_TEXTDOMAIN', 'wireframe-theme' );
@@ -81,6 +85,7 @@ define( 'WIREFRAME_THEME_TEXTDOMAIN', 'wireframe-theme' );
  * Official product name for your theme. This is used in various headings,
  * titles and menus. Your official product name should maintain consistency.
  *
+ * @since 1.0.0 Wireframe
  * @since 1.0.0 Wireframe Theme
  */
 define( 'WIREFRAME_THEME_PRODUCT', 'Wireframe Theme' );
@@ -92,6 +97,7 @@ define( 'WIREFRAME_THEME_PRODUCT', 'Wireframe Theme' );
  * dependencies, especially when you enqueue your styles & scripts.
  * This can also be used for version checking backwards compatibility.
  *
+ * @since 1.0.0 Wireframe
  * @since 1.0.0 Wireframe Theme
  */
 define( 'WIREFRAME_THEME_VERSION', '1.0.0' );
@@ -102,6 +108,7 @@ define( 'WIREFRAME_THEME_VERSION', '1.0.0' );
  * A prefix for various strings, handles and helpers. This is primarily used
  * for keeping names short and helps avoid clashes. 3-8 characters preferred.
  *
+ * @since 1.0.0 Wireframe
  * @since 1.0.0 Wireframe Theme
  */
 define( 'WIREFRAME_THEME_PREFIX', 'wireframe_theme' );
@@ -114,6 +121,7 @@ define( 'WIREFRAME_THEME_PREFIX', 'wireframe_theme' );
  * `/srv/www/wordpress/htdocs/wp-content/themes/wireframe_theme` (not a URI).
  *
  * @since 1.5.0 WordPress
+ * @since 1.0.0 Wireframe
  * @since 1.0.0 Wireframe Theme
  */
 define( 'WIREFRAME_THEME_DIR', get_template_directory() );
@@ -126,6 +134,7 @@ define( 'WIREFRAME_THEME_DIR', get_template_directory() );
  * loading your theme assets.
  *
  * @since 1.5.0 WordPress
+ * @since 1.0.0 Wireframe
  * @since 1.0.0 Wireframe Theme
  */
 define( 'WIREFRAME_THEME_URI', get_template_directory_uri() );
@@ -136,6 +145,7 @@ define( 'WIREFRAME_THEME_URI', get_template_directory_uri() );
  * Absolute path to the `wireframe_dev` directory. This directory is specifically
  * for Developers and contains functions, classes, uncompiled JS/SCSS, etc.
  *
+ * @since 1.0.0 Wireframe
  * @since 1.0.0 Wireframe Theme
  */
 define( 'WIREFRAME_THEME_DEV', trailingslashit( WIREFRAME_THEME_DIR . '/wireframe_dev' ) );
@@ -148,6 +158,7 @@ define( 'WIREFRAME_THEME_DEV', trailingslashit( WIREFRAME_THEME_DIR . '/wirefram
  * should generally be used in conjunction with locate_template() so child
  * themes can overload any API files. NO leading slash. HAS trailing slash.
  *
+ * @since 1.0.0 Wireframe
  * @since 1.0.0 Wireframe Theme
  */
 define( 'WIREFRAME_THEME_API', trailingslashit( 'wireframe_dev/wireframe' ) );
@@ -158,6 +169,7 @@ define( 'WIREFRAME_THEME_API', trailingslashit( 'wireframe_dev/wireframe' ) );
  * Absolute path to the Wireframe API for loading class files. This should
  * only be used if you choose to NOT use Composer's autoloading feature.
  *
+ * @since 1.0.0 Wireframe
  * @since 1.0.0 Wireframe Theme
  */
 define( 'WIREFRAME_THEME_OBJECTS', trailingslashit( WIREFRAME_THEME_DIR . '/wireframe_dev/wireframe' ) );
@@ -168,6 +180,7 @@ define( 'WIREFRAME_THEME_OBJECTS', trailingslashit( WIREFRAME_THEME_DIR . '/wire
  * Relative path to the `wireframe_client` directory. This directory primarily
  * holds front-end assets, such as: images, fonts, scripts, stylesheets, etc.
  *
+ * @since 1.0.0 Wireframe
  * @since 1.0.0 Wireframe Theme
  */
 define( 'WIREFRAME_THEME_CLIENT', trailingslashit( '/wireframe_client' ) );
@@ -178,6 +191,7 @@ define( 'WIREFRAME_THEME_CLIENT', trailingslashit( '/wireframe_client' ) );
  * URI for stylesheets located in the `wireframe_client/css` directory. This is
  * primarily called by the `wp_enqueue_scripts()` function.
  *
+ * @since 1.0.0 Wireframe
  * @since 1.0.0 Wireframe Theme
  */
 define( 'WIREFRAME_THEME_CSS', trailingslashit( WIREFRAME_THEME_URI . WIREFRAME_THEME_CLIENT . 'css' ) );
@@ -188,6 +202,7 @@ define( 'WIREFRAME_THEME_CSS', trailingslashit( WIREFRAME_THEME_URI . WIREFRAME_
  * URI for fonts located in the `wireframe_client/fonts` directory. This is
  * primarily called by `.scss` files to compile the path to fonts.
  *
+ * @since 1.0.0 Wireframe
  * @since 1.0.0 Wireframe Theme
  */
 define( 'WIREFRAME_THEME_FONTS', trailingslashit( WIREFRAME_THEME_URI . WIREFRAME_THEME_CLIENT . 'fonts' ) );
@@ -198,6 +213,7 @@ define( 'WIREFRAME_THEME_FONTS', trailingslashit( WIREFRAME_THEME_URI . WIREFRAM
  * URI for images located in the `wireframe_client/img` directory. This is
  * primarily called by `.scss` files to compile the path to images.
  *
+ * @since 1.0.0 Wireframe
  * @since 1.0.0 Wireframe Theme
  */
 define( 'WIREFRAME_THEME_IMG', trailingslashit( WIREFRAME_THEME_URI . WIREFRAME_THEME_CLIENT . 'img' ) );
@@ -208,6 +224,7 @@ define( 'WIREFRAME_THEME_IMG', trailingslashit( WIREFRAME_THEME_URI . WIREFRAME_
  * URI for JavaScript files located in the `wireframe_client/js` directory. This is
  * primarily called by the `wp_enqueue_scripts()` function.
  *
+ * @since 1.0.0 Wireframe
  * @since 1.0.0 Wireframe Theme
  */
 define( 'WIREFRAME_THEME_JS', trailingslashit( WIREFRAME_THEME_URI . WIREFRAME_THEME_CLIENT . 'js' ) );
@@ -218,6 +235,7 @@ define( 'WIREFRAME_THEME_JS', trailingslashit( WIREFRAME_THEME_URI . WIREFRAME_T
  * Absolute path to the `wireframe_client/languages` directory. This directory
  * holds any `.mo` or `.po` or `.pot` files you package with your theme.
  *
+ * @since 1.0.0 Wireframe
  * @since 1.0.0 Wireframe Theme
  */
 define( 'WIREFRAME_THEME_LANG', trailingslashit( WIREFRAME_THEME_DIR . WIREFRAME_THEME_CLIENT . 'lang' ) );
@@ -228,6 +246,7 @@ define( 'WIREFRAME_THEME_LANG', trailingslashit( WIREFRAME_THEME_DIR . WIREFRAME
  * Relative path to the `wireframe_dev/template-parts` directory (NO leading slash).
  * This directory holds files called by the `get_template_part()` function.
  *
+ * @since 1.0.0 Wireframe
  * @since 1.0.0 Wireframe Theme
  */
 define( 'WIREFRAME_THEME_TPL', trailingslashit( 'wireframe_client/tpl' ) );
@@ -241,6 +260,7 @@ define( 'WIREFRAME_THEME_TPL', trailingslashit( 'wireframe_client/tpl' ) );
  * Wireframe Theme, these files can probably be merged to save on file count.
  * We use locate_template() function so child themes can overload.
  *
+ * @since 1.0.0 Wireframe
  * @since 1.0.0 Wireframe Theme
  */
 locate_template( WIREFRAME_THEME_API . 'functions/functions-helpers.php', true, true );
@@ -269,6 +289,7 @@ locate_template( WIREFRAME_THEME_API . 'functions/functions-extras.php', true, t
  * lines below with the `Autoload Example` above, `cd` to the directory where the
  * `composer.json` file is located, then execute: composer dump-autoload -o
  *
+ * @since 1.0.0 Wireframe
  * @since 1.0.0 Wireframe Theme
  * @since 1.1.2 Composer
  * @see   composer.json
@@ -316,6 +337,7 @@ if ( class_exists( 'MixaTheme\Wireframe\Theme\Core_Theme' ) ) :
 	 *
 	 * Wireframe Theme needs to wire objects to the Core_Container $_storage array.
 	 *
+	 * @since 1.0.0 Wireframe
 	 * @since 1.0.0 Wireframe Theme
 	 * @see   object   Core_Container
 	 * @var   callable $wireframe_theme_container
@@ -335,6 +357,7 @@ if ( class_exists( 'MixaTheme\Wireframe\Theme\Core_Theme' ) ) :
 	 *
 	 * Data files are located in: `wireframe_dev/wireframe/config/`
 	 *
+	 * @since 1.0.0 Wireframe
 	 * @since 1.0.0 Wireframe Theme
 	 */
 	locate_template( WIREFRAME_THEME_API . 'config/config-language.php', true, true );
@@ -354,6 +377,7 @@ if ( class_exists( 'MixaTheme\Wireframe\Theme\Core_Theme' ) ) :
 	 * This closure registers a service with the Core_Container::$storage array,
 	 * and instantiates a new Core_Language object with config data passed-in.
 	 *
+	 * @since  1.0.0 Wireframe
 	 * @since  1.0.0 Wireframe Theme
 	 * @see    wireframe_theme_config_language()
 	 * @return object Core_Language( @param array Object args. )
@@ -369,6 +393,7 @@ if ( class_exists( 'MixaTheme\Wireframe\Theme\Core_Theme' ) ) :
 	 * This closure registers a service with the Core_Container::$storage array,
 	 * and instantiates a new Module_Notices object with config data passed-in.
 	 *
+	 * @since  1.0.0 Wireframe
 	 * @since  1.0.0 Wireframe Theme
 	 * @see    wireframe_theme_config_notices()
 	 * @return object Module_Notices( @param array Object args. )
@@ -383,6 +408,7 @@ if ( class_exists( 'MixaTheme\Wireframe\Theme\Core_Theme' ) ) :
 	 * This closure registers a service with the Core_Container::$storage array,
 	 * and instantiates a new Module_UI object with config data passed-in.
 	 *
+	 * @since  1.0.0 Wireframe
 	 * @since  1.0.0 Wireframe Theme
 	 * @see    wireframe_theme_config_ui()
 	 * @return object Module_UI( @param array Object args. )
@@ -397,6 +423,7 @@ if ( class_exists( 'MixaTheme\Wireframe\Theme\Core_Theme' ) ) :
 	 * This closure registers a service with the Core_Container::$storage array,
 	 * and instantiates a new Module_Navigation object with config data passed-in.
 	 *
+	 * @since  1.0.0 Wireframe
 	 * @since  1.0.0 Wireframe Theme
 	 * @see    wireframe_theme_config_navigation()
 	 * @return object Module_Navigation( @param array Object args. )
@@ -411,6 +438,7 @@ if ( class_exists( 'MixaTheme\Wireframe\Theme\Core_Theme' ) ) :
 	 * This closure registers a service with the Core_Container::$storage array,
 	 * and instantiates a new Module_Widgets object with config data passed-in.
 	 *
+	 * @since  1.0.0 Wireframe
 	 * @since  1.0.0 Wireframe Theme
 	 * @see    wireframe_theme_config_widgets()
 	 * @return object Module_Widgets( @param array Object args. )
@@ -425,6 +453,7 @@ if ( class_exists( 'MixaTheme\Wireframe\Theme\Core_Theme' ) ) :
 	 * This closure registers a service with the Core_Container::$storage array,
 	 * and instantiates a new Module_Features object with config data passed-in.
 	 *
+	 * @since  1.0.0 Wireframe
 	 * @since  1.0.0 Wireframe Theme
 	 * @see    wireframe_theme_config_features()
 	 * @return object Module_Features( @param array Object args. )
@@ -439,6 +468,7 @@ if ( class_exists( 'MixaTheme\Wireframe\Theme\Core_Theme' ) ) :
 	 * This closure registers a service with the Core_Container::$storage array,
 	 * and instantiates a new Module_Customizer object with config data passed-in.
 	 *
+	 * @since  1.0.0 Wireframe
 	 * @since  1.0.0 Wireframe Theme
 	 * @see    wireframe_theme_config_customizer()
 	 * @return object Module_Customizer( @param array Object args. )
@@ -453,6 +483,7 @@ if ( class_exists( 'MixaTheme\Wireframe\Theme\Core_Theme' ) ) :
 	 * This closure registers a service with the Core_Container::$storage array,
 	 * and instantiates a new Module_Editor object with config data passed-in.
 	 *
+	 * @since  1.0.0 Wireframe
 	 * @since  1.0.0 Wireframe Theme
 	 * @see    wireframe_theme_config_editor()
 	 * @return object Module_Editor( @param array Object args. )
@@ -467,6 +498,7 @@ if ( class_exists( 'MixaTheme\Wireframe\Theme\Core_Theme' ) ) :
 	 * This closure registers a service with the Core_Container::$storage array,
 	 * and instantiates a new Module_Admin object with config data passed-in.
 	 *
+	 * @since  1.0.0 Wireframe
 	 * @since  1.0.0 Wireframe Theme
 	 * @see    wireframe_theme_config_admin()
 	 * @return object Module_Admin( @param array Object args. )
@@ -490,23 +522,19 @@ if ( class_exists( 'MixaTheme\Wireframe\Theme\Core_Theme' ) ) :
 	 *            own custom class, or make the `Core_Theme` class abstract,
 	 *            then extend it.
 	 *
-	 * Option #3: You can also use a Controller class to control your objects.
-	 *            If you use a Controller class, you only need to DI 1 (Controller)
-	 *            object. Too complex? Don't worry. Checkout our Wireframe_Plugin
-	 *            example: @see https://github.com/mixatheme/wireframe-plugin
-	 *
+	 * @since  1.0.0 Wireframe
 	 * @since  1.0.0 Wireframe Theme
 	 * @var    object $wireframe_theme
 	 * @return object Core_Theme(
-	 *         @param object Core_Language    DI the default language.
-	 *         @param object Module_Notices    DI the default Notices.
-	 *         @param object Module_UI         DI the default UI.
-	 *         @param object Module_Mainmenu   DI the default Mainmenu.
-	 *         @param object Module_Widgets    DI the default widgets.
-	 *         @param object Module_Features   DI the default Theme Features.
-	 *         @param object Module_Customizer DI the default Customizer.
-	 *         @param object Module_Editor     DI the default Editor.
-	 *         @param object Module_Admin      DI the default Admin area.
+	 *         @param object Core_Language     DI core class for wiring i18n & l10n translation.
+	 *         @param object Module_Notices    DI module class for wiring notifications.
+	 *         @param object Module_UI         DI module class for wiring front-end presentation methods.
+	 *         @param object Module_Navigation DI module class for wiring walker nav menus.
+	 *         @param object Module_Widgets    DI module class for wiring sidebars & widgets.
+	 *         @param object Module_Features   DI module class for wiring theme features.
+	 *         @param object Module_Customizer DI module class for wiring live preview modifications.
+	 *         @param object Module_Editor     DI module class for wiring TinyMCE WYSIWYG text editor.
+	 *         @param object Module_Admin      DI module class for registering Admin menu pages & sub pages.
 	 * )
 	 */
 	$wireframe_theme = new Core_Theme(
@@ -529,17 +557,21 @@ if ( class_exists( 'MixaTheme\Wireframe\Theme\Core_Theme' ) ) :
 	 * clean-up tasks here, or simply output a warning if `$wireframe_theme`
 	 * fails. Your template files now have access to objects beyond this point.
 	 *
+	 * How to access your service objects:
+	 *
+	 * 		$wireframe_theme
+	 * 		$wireframe_theme->language()
+	 * 		$wireframe_theme->notices()
+	 * 		$wireframe_theme->ui()
+	 * 		$wireframe_theme->mainmenu()
+	 * 		$wireframe_theme->widgets()
+	 * 		$wireframe_theme->features()
+	 * 		$wireframe_theme->customizer()
+	 * 		$wireframe_theme->editor()
+	 * 		$wireframe_theme->admin()
+	 *
+	 * @since 1.0.0 Wireframe
 	 * @since 1.0.0 Wireframe Theme
-	 * @var   object $wireframe_theme
-	 * @var   object $wireframe_theme->language()
-	 * @var   object $wireframe_theme->notices()
-	 * @var   object $wireframe_theme->ui()
-	 * @var   object $wireframe_theme->mainmenu()
-	 * @var   object $wireframe_theme->widgets()
-	 * @var   object $wireframe_theme->features()
-	 * @var   object $wireframe_theme->customizer()
-	 * @var   object $wireframe_theme->editor()
-	 * @var   object $wireframe_theme->admin()
 	 */
 	if ( ! isset( $wireframe_theme ) ) {
 
@@ -561,6 +593,7 @@ if ( class_exists( 'MixaTheme\Wireframe\Theme\Core_Theme' ) ) :
 		 *
 		 * Data files are located in: `wireframe_dev/wireframe/config/`
 		 *
+		 * @since 1.0.0 Wireframe
 		 * @since 1.0.0 Wireframe Theme
 		 * @see   object $wireframe_theme Instance of Core_Theme.
 		 */

@@ -46,7 +46,7 @@ defined( 'ABSPATH' ) or die();
  */
 if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Editor' ) ) :
 	/**
-	 * Module_Editor is a theme class for wiring TinyMCE.
+	 * Module_Editor is a module class for wiring TinyMCE WYSIWYG text editor.
 	 *
 	 * @since 2.9.0 WordPress
 	 * @since 1.0.0 Wireframe
