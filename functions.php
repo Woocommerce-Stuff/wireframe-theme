@@ -34,7 +34,7 @@
  *
  * @since 1.0.0 Wireframe Theme
  */
-if ( version_compare( $GLOBALS['wp_version'], '4.9.5', '<' ) ) {
+if ( version_compare( $GLOBALS['wp_version'], '4.7.5', '<' ) ) {
 
 	// Incompatible WP: Load backwards compatibility handlers.
 	require_once get_template_directory() . '/wireframe_dev/wireframe/functions/functions-compat.php';
@@ -43,7 +43,7 @@ if ( version_compare( $GLOBALS['wp_version'], '4.9.5', '<' ) ) {
 	do_action( 'wireframe_theme_hook_language_loader', '/wireframe_client/lang' );
 
 	// Incompatible WP: Display update notice to Admins.
-	do_action( 'wireframe_theme_hook_update_wordpress', 'Wireframe Theme', '4.9.5' );
+	do_action( 'wireframe_theme_hook_update_wordpress', 'Wireframe Theme', '4.7.5' );
 
 } else {
 
