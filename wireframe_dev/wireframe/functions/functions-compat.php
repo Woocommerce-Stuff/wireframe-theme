@@ -24,6 +24,29 @@
  */
 
 /**
+ * Wireframe Theme: Textdomain Loader.
+ *
+ * @since 1.0.0 Wireframe Theme
+ * @param string $path Path to the language directory.
+ */
+function wireframe_theme_language_loader( $path ) {
+
+	// Check for child theme.
+	if ( is_child_theme() ) {
+
+		// Load child theme language.
+		load_theme_textdomain( get_option( 'stylesheet' ), get_stylesheet_directory() . $path );
+
+	} else {
+
+		// Load parent themem language.
+		load_theme_textdomain( get_option( 'template' ), get_template_directory() . $path );
+	}
+
+}
+add_action( 'wireframe_theme_hook_language_loader', 'wireframe_theme_language_loader', 10, 1 );
+
+/**
  * Wireframe Theme Compatibility: WordPress.
  *
  * This function is hooked via `functions.php` file if the version of
@@ -38,11 +61,21 @@
  * @since 1.0.0 Wireframe
  * @since 1.0.0 Wireframe Theme
  * @see   functions.php
+ * @param string $product The name of this product.
+ * @param string $compat  The WordPress version compatible with this product.
  */
-function wireframe_theme_compat_wordpress() {
-	$message = sprintf( __( '%1$s requires at least WordPress %2$s. You are running WordPress %3$s. Please upgrade WordPress and re-activate %1$s.', 'wireframe-theme' ), WIREFRAME_THEME_PRODUCT, WIREFRAME_THEME_WP, $GLOBALS['wp_version'] );
-	printf( __( '<div class="error"><p>%s</p></div>', 'wireframe-theme' ), $message ); // XSS ok.
+function wireframe_theme_update_wordpress( $product, $compat ) {
+
+	// Notice text.
+	$notice = sprintf( __( '%1$s requires at least WordPress %2$s. You are running WordPress %3$s. Please upgrade WordPress and re-activate %1$s.', 'wireframe-theme' ), $product, $compat, $GLOBALS['wp_version'] );
+
+	// Display notice to Admins.
+	if ( is_admin() ) {
+		printf( __( '<div class="error"><p>%s</p></div>', 'wireframe-theme' ), $notice ); // XSS ok.
+	}
+
 }
+add_action( 'wireframe_theme_hook_update_wordpress', 'wireframe_theme_update_wordpress', 10, 2 );
 
 /**
  * Hides the custom post template for pages on WordPress 4.6 and older
