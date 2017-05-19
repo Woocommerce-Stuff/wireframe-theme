@@ -1,6 +1,6 @@
 <?php
 /**
- * Archive template file for Wireframe themes.
+ * Archive template file for Wireframe Theme.
  *
  * The archive template is used when visitors request posts by category,
  * author, or date. Note: this template will be overridden if more specific
@@ -8,9 +8,9 @@
  *
  * PHP version 5.6.0
  *
- * @package   Wireframe_Theme
+ * @package   Wireframe Theme
  * @author    MixaTheme, Tada Burke
- * @version   1.0.0 Wireframe_Theme
+ * @version   1.0.0 Wireframe Theme
  * @copyright 2016 MixaTheme
  * @license   GPL-2.0+
  * @see       https://mixatheme.com

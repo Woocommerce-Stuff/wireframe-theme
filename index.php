@@ -1,6 +1,6 @@
 <?php
 /**
- * Index template file for Wireframe themes.
+ * Index template file for Wireframe Theme.
  *
  * This is the most generic template file in a WordPress theme
  * and one of the two required files for a theme (the other being style.css).
@@ -9,9 +9,9 @@
  *
  * PHP version 5.6.0
  *
- * @package   Wireframe_Theme
+ * @package   Wireframe Theme
  * @author    MixaTheme, Tada Burke
- * @version   1.0.0 Wireframe_Theme
+ * @version   1.0.0 Wireframe Theme
  * @copyright 2016 MixaTheme
  * @license   GPL-2.0+
  * @see       https://mixatheme.com

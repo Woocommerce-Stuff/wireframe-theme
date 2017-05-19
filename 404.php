@@ -1,15 +1,15 @@
 <?php
 /**
- * 404 template file for Wireframe themes.
+ * 404 template file for Wireframe Theme.
  *
  * The 404 template is used when WordPress cannot find a post, page,
  * or other content that matches the visitor’s request.
  *
  * PHP version 5.6.0
  *
- * @package   Wireframe_Theme
+ * @package   Wireframe Theme
  * @author    MixaTheme, Tada Burke
- * @version   1.0.0 Wireframe_Theme
+ * @version   1.0.0 Wireframe Theme
  * @copyright 2016 MixaTheme
  * @license   GPL-2.0+
  * @see       https://mixatheme.com

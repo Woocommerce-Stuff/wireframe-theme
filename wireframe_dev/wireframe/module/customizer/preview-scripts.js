@@ -4,9 +4,9 @@
  * Theme Customizer enhancements for a better user experience. Contains handlers
  * to make Theme Customizer preview reload changes asynchronously.
  *
- * @package   Wireframe_Theme
+ * @package   Wireframe Theme
  * @author    MixaTheme, Tada Burke
- * @version   1.0.0 Wireframe_Theme
+ * @version   1.0.0 Wireframe Theme
  * @copyright 2016 MixaTheme
  * @license   GPL-2.0+
  * @see       https://mixatheme.com
@@ -30,7 +30,7 @@
 	 * Site Logo.
 	 *
 	 * @since 1.0.0 Wireframe
-	 * @since 1.0.0 Wireframe_Theme
+	 * @since 1.0.0 Wireframe Theme
 	 * @see   object Customizer
 	 */
 	api( 'logo_top', function( value ) {
@@ -58,7 +58,7 @@
 	 * Site Title.
 	 *
 	 * @since 1.0.0 Wireframe
-	 * @since 1.0.0 Wireframe_Theme
+	 * @since 1.0.0 Wireframe Theme
 	 * @see   object Customizer
 	 */
 	api( 'blogname', function( value ) {
@@ -71,7 +71,7 @@
 	 * Site Description.
 	 *
 	 * @since 1.0.0 Wireframe
-	 * @since 1.0.0 Wireframe_Theme
+	 * @since 1.0.0 Wireframe Theme
 	 * @see   object Customizer
 	 */
 	api( 'blogdescription', function( value ) {
@@ -84,7 +84,7 @@
 	 * Link Color.
 	 *
 	 * @since 1.0.0 Wireframe
-	 * @since 1.0.0 Wireframe_Theme
+	 * @since 1.0.0 Wireframe Theme
 	 * @see   object Customizer
 	 */
 	api( 'link_color', function( value ) {
@@ -97,7 +97,7 @@
 	 * Main Text Color.
 	 *
 	 * @since 1.0.0 Wireframe
-	 * @since 1.0.0 Wireframe_Theme
+	 * @since 1.0.0 Wireframe Theme
 	 * @see   object Customizer
 	 */
 	api( 'main_text_color', function( value ) {
@@ -110,7 +110,7 @@
 	 * Navbar Title.
 	 *
 	 * @since 1.0.0 Wireframe
-	 * @since 1.0.0 Wireframe_Theme
+	 * @since 1.0.0 Wireframe Theme
 	 * @see   object Customizer
 	 */
 	api( 'navbar_title', function( value ) {
@@ -127,7 +127,7 @@
 	 * Header Text Color.
 	 *
 	 * @since 1.0.0 Wireframe
-	 * @since 1.0.0 Wireframe_Theme
+	 * @since 1.0.0 Wireframe Theme
 	 * @see   object Customizer
 	 *
 	 * @internal Thanks: Underscores.
@@ -155,7 +155,7 @@
 	 * Navbar Contrast.
 	 *
 	 * @since 1.0.0 Wireframe
-	 * @since 1.0.0 Wireframe_Theme
+	 * @since 1.0.0 Wireframe Theme
 	 * @see   object Customizer
 	 */
 	api( 'navbar_contrast', function ( value ) {

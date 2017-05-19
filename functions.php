@@ -1,12 +1,12 @@
 <?php
 /**
- * Functions file for Wireframe themes.
+ * Functions file for Wireframe Theme.
  *
  * PHP version 5.6.0
  *
- * @package   Wireframe_Theme
+ * @package   Wireframe Theme
  * @author    MixaTheme, Tada Burke
- * @version   1.0.0 Wireframe_Theme
+ * @version   1.0.0 Wireframe Theme
  * @copyright 2016 MixaTheme
  * @license   GPL-2.0+
  * @see       https://mixatheme.com
@@ -33,16 +33,16 @@
  * § 01. Constant: WordPress Version.
  * =============================================================================
  *
- * The minimum version of WordPress compatible with Wireframe_Theme.
+ * The minimum version of WordPress compatible with Wireframe Theme.
  *
- * @since 1.0.0 Wireframe_Theme
+ * @since 1.0.0 Wireframe Theme
  */
 define( 'WIREFRAME_THEME_WP', '4.7.5' );
 
 /**
  * § 01. Constant: Theme text-domain (must match slug).
  *
- * @since 1.0.0 Wireframe_Theme
+ * @since 1.0.0 Wireframe Theme
  */
 define( 'WIREFRAME_THEME_TEXTDOMAIN', 'wireframe-theme' );
 
@@ -52,7 +52,7 @@ define( 'WIREFRAME_THEME_TEXTDOMAIN', 'wireframe-theme' );
  * Official product name for your theme. This is used in various headings,
  * titles and menus. Your official product name should maintain consistency.
  *
- * @since 1.0.0 Wireframe_Theme
+ * @since 1.0.0 Wireframe Theme
  */
 define( 'WIREFRAME_THEME_PRODUCT', 'Wireframe Theme' );
 
@@ -63,7 +63,7 @@ define( 'WIREFRAME_THEME_PRODUCT', 'Wireframe Theme' );
  * dependencies, especially when you enqueue your styles & scripts.
  * This can also be used for version checking backwards compatibility.
  *
- * @since 1.0.0 Wireframe_Theme
+ * @since 1.0.0 Wireframe Theme
  */
 define( 'WIREFRAME_THEME_VERSION', '1.0.0' );
 
@@ -73,7 +73,7 @@ define( 'WIREFRAME_THEME_VERSION', '1.0.0' );
  * A prefix for various strings, handles and helpers. This is primarily used
  * for keeping names short and helps avoid clashes. 3-8 characters preferred.
  *
- * @since 1.0.0 Wireframe_Theme
+ * @since 1.0.0 Wireframe Theme
  */
 define( 'WIREFRAME_THEME_PREFIX', 'wireframe_theme' );
 
@@ -85,7 +85,7 @@ define( 'WIREFRAME_THEME_PREFIX', 'wireframe_theme' );
  * `/srv/www/wordpress/htdocs/wp-content/themes/wireframe_theme` (not a URI).
  *
  * @since 1.5.0 WordPress
- * @since 1.0.0 Wireframe_Theme
+ * @since 1.0.0 Wireframe Theme
  */
 define( 'WIREFRAME_THEME_DIR', get_template_directory() );
 
@@ -97,7 +97,7 @@ define( 'WIREFRAME_THEME_DIR', get_template_directory() );
  * loading your theme assets.
  *
  * @since 1.5.0 WordPress
- * @since 1.0.0 Wireframe_Theme
+ * @since 1.0.0 Wireframe Theme
  */
 define( 'WIREFRAME_THEME_URI', get_template_directory_uri() );
 
@@ -107,7 +107,7 @@ define( 'WIREFRAME_THEME_URI', get_template_directory_uri() );
  * Absolute path to the `wireframe_dev` directory. This directory is specifically
  * for Developers and contains functions, classes, uncompiled JS/SCSS, etc.
  *
- * @since 1.0.0 Wireframe_Theme
+ * @since 1.0.0 Wireframe Theme
  */
 define( 'WIREFRAME_THEME_DEV', trailingslashit( WIREFRAME_THEME_DIR . '/wireframe_dev' ) );
 
@@ -119,7 +119,7 @@ define( 'WIREFRAME_THEME_DEV', trailingslashit( WIREFRAME_THEME_DIR . '/wirefram
  * should generally be used in conjunction with locate_template() so child
  * themes can overload any API files. NO leading slash. HAS trailing slash.
  *
- * @since 1.0.0 Wireframe_Theme
+ * @since 1.0.0 Wireframe Theme
  */
 define( 'WIREFRAME_THEME_API', trailingslashit( 'wireframe_dev/wireframe' ) );
 
@@ -129,7 +129,7 @@ define( 'WIREFRAME_THEME_API', trailingslashit( 'wireframe_dev/wireframe' ) );
  * Absolute path to the Wireframe API for loading class files. This should
  * only be used if you choose to NOT use Composer's autoloading feature.
  *
- * @since 1.0.0 Wireframe_Theme
+ * @since 1.0.0 Wireframe Theme
  */
 define( 'WIREFRAME_THEME_OBJECTS', trailingslashit( WIREFRAME_THEME_DIR . '/wireframe_dev/wireframe' ) );
 
@@ -139,7 +139,7 @@ define( 'WIREFRAME_THEME_OBJECTS', trailingslashit( WIREFRAME_THEME_DIR . '/wire
  * Relative path to the `wireframe_client` directory. This directory primarily
  * holds front-end assets, such as: images, fonts, scripts, stylesheets, etc.
  *
- * @since 1.0.0 Wireframe_Theme
+ * @since 1.0.0 Wireframe Theme
  */
 define( 'WIREFRAME_THEME_CLIENT', trailingslashit( '/wireframe_client' ) );
 
@@ -149,7 +149,7 @@ define( 'WIREFRAME_THEME_CLIENT', trailingslashit( '/wireframe_client' ) );
  * URI for stylesheets located in the `wireframe_client/css` directory. This is
  * primarily called by the `wp_enqueue_scripts()` function.
  *
- * @since 1.0.0 Wireframe_Theme
+ * @since 1.0.0 Wireframe Theme
  */
 define( 'WIREFRAME_THEME_CSS', trailingslashit( WIREFRAME_THEME_URI . WIREFRAME_THEME_CLIENT . 'css' ) );
 
@@ -159,7 +159,7 @@ define( 'WIREFRAME_THEME_CSS', trailingslashit( WIREFRAME_THEME_URI . WIREFRAME_
  * URI for fonts located in the `wireframe_client/fonts` directory. This is
  * primarily called by `.scss` files to compile the path to fonts.
  *
- * @since 1.0.0 Wireframe_Theme
+ * @since 1.0.0 Wireframe Theme
  */
 define( 'WIREFRAME_THEME_FONTS', trailingslashit( WIREFRAME_THEME_URI . WIREFRAME_THEME_CLIENT . 'fonts' ) );
 
@@ -169,7 +169,7 @@ define( 'WIREFRAME_THEME_FONTS', trailingslashit( WIREFRAME_THEME_URI . WIREFRAM
  * URI for images located in the `wireframe_client/img` directory. This is
  * primarily called by `.scss` files to compile the path to images.
  *
- * @since 1.0.0 Wireframe_Theme
+ * @since 1.0.0 Wireframe Theme
  */
 define( 'WIREFRAME_THEME_IMG', trailingslashit( WIREFRAME_THEME_URI . WIREFRAME_THEME_CLIENT . 'img' ) );
 
@@ -179,7 +179,7 @@ define( 'WIREFRAME_THEME_IMG', trailingslashit( WIREFRAME_THEME_URI . WIREFRAME_
  * URI for JavaScript files located in the `wireframe_client/js` directory. This is
  * primarily called by the `wp_enqueue_scripts()` function.
  *
- * @since 1.0.0 Wireframe_Theme
+ * @since 1.0.0 Wireframe Theme
  */
 define( 'WIREFRAME_THEME_JS', trailingslashit( WIREFRAME_THEME_URI . WIREFRAME_THEME_CLIENT . 'js' ) );
 
@@ -189,7 +189,7 @@ define( 'WIREFRAME_THEME_JS', trailingslashit( WIREFRAME_THEME_URI . WIREFRAME_T
  * Absolute path to the `wireframe_client/languages` directory. This directory
  * holds any `.mo` or `.po` or `.pot` files you package with your theme.
  *
- * @since 1.0.0 Wireframe_Theme
+ * @since 1.0.0 Wireframe Theme
  */
 define( 'WIREFRAME_THEME_LANG', trailingslashit( WIREFRAME_THEME_DIR . WIREFRAME_THEME_CLIENT . 'lang' ) );
 
@@ -199,7 +199,7 @@ define( 'WIREFRAME_THEME_LANG', trailingslashit( WIREFRAME_THEME_DIR . WIREFRAME
  * Relative path to the `wireframe_dev/template-parts` directory (NO leading slash).
  * This directory holds files called by the `get_template_part()` function.
  *
- * @since 1.0.0 Wireframe_Theme
+ * @since 1.0.0 Wireframe Theme
  */
 define( 'WIREFRAME_THEME_TPL', trailingslashit( 'wireframe_client/tpl' ) );
 
@@ -213,7 +213,7 @@ define( 'WIREFRAME_THEME_TPL', trailingslashit( 'wireframe_client/tpl' ) );
  * Note: Whenever WordPress releases a new update, we will always sync this
  * file on GitHub to reflect the latest WordPress version ;-)
  *
- * @since 1.0.0 Wireframe_Theme
+ * @since 1.0.0 Wireframe Theme
  */
 if ( version_compare( $GLOBALS['wp_version'], '4.7.5', '<' ) ) {
 
@@ -228,7 +228,7 @@ if ( version_compare( $GLOBALS['wp_version'], '4.7.5', '<' ) ) {
 
 } else {
 
-	// Version looks good! Bootstrap your Wireframe_Theme...
+	// Version looks good! Bootstrap your Wireframe Theme...
 	require_once WIREFRAME_THEME_DEV . 'wireframe.php';
 
 }

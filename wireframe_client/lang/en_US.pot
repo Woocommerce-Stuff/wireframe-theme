@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: 1.0.0 Wireframe_Theme\n"
+"Project-Id-Version: 1.0.0 Wireframe Theme\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/tags/_s\n"
 "POT-Creation-Date: 2016-12-02 13:14-0500\n"
 "PO-Revision-Date: 2016-12-02 13:14-0500\n"

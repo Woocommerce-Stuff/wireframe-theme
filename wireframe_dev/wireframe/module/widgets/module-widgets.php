@@ -1,12 +1,12 @@
 <?php
 /**
- * Module_Widgets is a Wireframe theme class packaged with WPWWireframe ThemeFT.
+ * Module_Widgets is a Wireframe module class.
  *
  * PHP version 5.6.0
  *
- * @package   Wireframe_Theme
+ * @package   Wireframe Theme
  * @author    MixaTheme, Tada Burke
- * @version   1.0.0 Wireframe_Theme
+ * @version   1.0.0 Wireframe Theme
  * @copyright 2016 MixaTheme
  * @license   GPL-2.0+
  * @see       https://mixatheme.com
@@ -26,7 +26,7 @@
  *
  * @since 5.3.0 PHP
  * @since 1.0.0 Wireframe
- * @since 1.0.0 Wireframe_Theme
+ * @since 1.0.0 Wireframe Theme
  */
 namespace MixaTheme\Wireframe\Theme;
 
@@ -34,7 +34,7 @@ namespace MixaTheme\Wireframe\Theme;
  * No direct access to this file.
  *
  * @since 1.0.0 Wireframe
- * @since 1.0.0 Wireframe_Theme
+ * @since 1.0.0 Wireframe Theme
  */
 defined( 'ABSPATH' ) or die();
 
@@ -42,7 +42,7 @@ defined( 'ABSPATH' ) or die();
  * Check if the class exists.
  *
  * @since 1.0.0 Wireframe
- * @since 1.0.0 Wireframe_Theme
+ * @since 1.0.0 Wireframe Theme
  */
 if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Widgets' ) ) :
 	/**
@@ -55,7 +55,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Widgets' ) ) :
 	 * @example https://developer.wordpress.org/themes/advanced-topics/customizer-api/#widget-support
 	 *
 	 * @since 1.0.0 Wireframe
-	 * @since 1.0.0 Wireframe_Theme
+	 * @since 1.0.0 Wireframe Theme
 	 * @see   https://github.com/mixatheme/Wireframe
 	 */
 	final class Module_Widgets extends Core_Module_Abstract implements Module_Widgets_Interface {
@@ -64,7 +64,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Widgets' ) ) :
 		 *
 		 * @access private
 		 * @since  1.0.0 Wireframe
-		 * @since  1.0.0 Wireframe_Theme
+		 * @since  1.0.0 Wireframe Theme
 		 * @var    array $_registered Regisered widgets.
 		 */
 		private $_registered;
@@ -74,7 +74,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Widgets' ) ) :
 		 *
 		 * @access private
 		 * @since  1.0.0 Wireframe
-		 * @since  1.0.0 Wireframe_Theme
+		 * @since  1.0.0 Wireframe Theme
 		 * @var    array $_unregistered Unregistered widgets.
 		 */
 		private $_unregistered;
@@ -83,7 +83,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Widgets' ) ) :
 		 * Constructor runs when this class is instantiated.
 		 *
 		 * @since 1.0.0 Wireframe
-		 * @since 1.0.0 Wireframe_Theme
+		 * @since 1.0.0 Wireframe Theme
 		 * @param array $config Config data.
 		 */
 		public function __construct( $config ) {
@@ -100,7 +100,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Widgets' ) ) :
 		 * Register Widgets.
 		 *
 		 * @since 1.0.0 Wireframe
-		 * @since 1.0.0 Wireframe_Theme
+		 * @since 1.0.0 Wireframe Theme
 		 */
 		public function register() {
 			if ( isset( $this->_registered ) ) {
@@ -114,7 +114,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Widgets' ) ) :
 		 * Unregister Widgets.
 		 *
 		 * @since 1.0.0 Wireframe
-		 * @since 1.0.0 Wireframe_Theme
+		 * @since 1.0.0 Wireframe Theme
 		 * @todo  Should this be baked-in or disallowed?
 		 */
 		public function unregister() {

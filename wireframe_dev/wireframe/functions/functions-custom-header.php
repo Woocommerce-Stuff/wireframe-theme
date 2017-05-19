@@ -1,16 +1,16 @@
 <?php
 /**
- * Custom Header helper functions for Wireframe themes.
+ * Custom Header helper functions for Wireframe Theme.
  *
  * Sample implementation of the Custom Header feature.
  *
  * PHP version 5.6.0
  *
- * @package   Wireframe_Theme
+ * @package   Wireframe Theme
  * @author    MixaTheme, Tada Burke
  * @copyright 2016 MixaTheme
  * @license   GPL-2.0+
- * @version   1.0.0 Wireframe_Theme
+ * @version   1.0.0 Wireframe Theme
  * @see       https://mixatheme.com
  * @see       https://github.com/mixatheme/Wireframe
  * @see       https://developer.wordpress.org/themes/basics/theme-functions
@@ -29,7 +29,7 @@ if ( ! function_exists( 'wireframe_theme_custom_header' ) ) :
 	/**
 	 * Renders a Custom Header.
 	 *
-	 * @since  1.0.0 Wireframe_Theme
+	 * @since  1.0.0 Wireframe Theme
 	 * @author Automattic
 	 * @author MixaTheme
 	 * @see    header.php
@@ -47,7 +47,7 @@ if ( ! function_exists( 'wireframe_theme_custom_header_css' ) ) :
 	/**
 	 * Styles the header image and text displayed on the blog.
 	 *
-	 * @since  1.0.0 Wireframe_Theme
+	 * @since  1.0.0 Wireframe Theme
 	 * @author Automattic
 	 * @author MixaTheme
 	 * @see    wireframe_theme_custom_header().

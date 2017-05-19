@@ -1,12 +1,12 @@
 <?php
 /**
- * Views callback functions for Wireframe_Theme.
+ * Views callback functions for Wireframe Theme.
  *
  * PHP version 5.6.0
  *
- * @package   Wireframe_Theme
+ * @package   Wireframe Theme
  * @author    MixaTheme, Tada Burke
- * @version   1.0.0 Wireframe_Theme
+ * @version   1.0.0 Wireframe Theme
  * @copyright 2016 MixaTheme
  * @license   GPL-2.0+
  * @see       https://mixatheme.com
@@ -22,7 +22,7 @@
  */
 
 /**
- * Wireframe_Theme Admin Page: Quickstart tabs.
+ * Wireframe Theme Admin Page: Quickstart tabs.
  *
  * These tabs are called by each Admin page. The tabs were modeled after the
  * core WordPress `about.php` page, therefore we maintain a level of WordPress
@@ -40,7 +40,7 @@
  *  </script>
  *
  * @since 1.0.0 Wireframe
- * @since 1.0.0 Wireframe_Theme
+ * @since 1.0.0 Wireframe Theme
  * @see   functions.php The text-domain to use.
  */
 function wireframe_theme_admin_page_tabs_quickstart() {
@@ -54,7 +54,7 @@ function wireframe_theme_admin_page_tabs_quickstart() {
 }
 
 /**
- * Wireframe_Theme Admin Page: FAQ tabs.
+ * Wireframe Theme Admin Page: FAQ tabs.
  *
  * These tabs are called by each Admin page. The tabs were modeled after the
  * core WordPress `about.php` page, therefore we maintain a level of WordPress
@@ -72,7 +72,7 @@ function wireframe_theme_admin_page_tabs_quickstart() {
  *  </script>
  *
  * @since 1.0.0 Wireframe
- * @since 1.0.0 Wireframe_Theme
+ * @since 1.0.0 Wireframe Theme
  * @see   wireframe.php The text-domain to use.
  */
 function wireframe_theme_admin_page_tabs_faq() {
@@ -86,7 +86,7 @@ function wireframe_theme_admin_page_tabs_faq() {
 }
 
 /**
- * Wireframe_Theme Admin Page: Support tabs.
+ * Wireframe Theme Admin Page: Support tabs.
  *
  * These tabs are called by each Admin page. The tabs were modeled after the
  * core WordPress `about.php` page, therefore we maintain a level of WordPress
@@ -104,7 +104,7 @@ function wireframe_theme_admin_page_tabs_faq() {
  *  </script>
  *
  * @since 1.0.0 Wireframe
- * @since 1.0.0 Wireframe_Theme
+ * @since 1.0.0 Wireframe Theme
  * @see   functions-helpers.php
  * @see   wireframe.php The text-domain to use.
  */
@@ -119,7 +119,7 @@ function wireframe_theme_admin_page_tabs_support() {
 }
 
 /**
- * Wireframe_Theme Admin Page: Badge.
+ * Wireframe Theme Admin Page: Badge.
  *
  * This is the badge graphic which appears on the Admin page.
  *
@@ -132,7 +132,7 @@ function wireframe_theme_admin_page_tabs_support() {
  *      5. Export the graphic as a PNG file with the same filename.
  *
  * @since 1.0.0 Wireframe
- * @since 1.0.0 Wireframe_Theme
+ * @since 1.0.0 Wireframe Theme
  * @see   functions-helpers.php Admin check function.
  * @see   wp-admin/images/wordpress-logo-white.svg
  * @see   wireframe-theme/wireframe_client/img/wireframe-theme-badge-white.svg
@@ -150,12 +150,12 @@ function wireframe_theme_admin_page_badge() {
 }
 
 /**
- * Wireframe_Theme Admin Page: Header.
+ * Wireframe Theme Admin Page: Header.
  *
  * This is the persistent header on all Admin pages for your plugin.
  *
  * @since 1.0.0 Wireframe
- * @since 1.0.0 Wireframe_Theme
+ * @since 1.0.0 Wireframe Theme
  * @see   functions-helpers.php Admin check function.
  */
 function wireframe_theme_admin_page_header() {
@@ -170,7 +170,7 @@ function wireframe_theme_admin_page_header() {
 }
 
 /**
- * Wireframe_Theme Admin Page: Quickstart page callback.
+ * Wireframe Theme Admin Page: Quickstart page callback.
  *
  * This is a callback when your plugin hooks a new menu page. This is just an
  * example. Often, these pages can get complex with jQuery, AJAX, APIs, etc.
@@ -181,7 +181,7 @@ function wireframe_theme_admin_page_header() {
  *      4. Loads any specific content for this Admin page.
  *
  * @since 1.0.0 Wireframe
- * @since 1.0.0 Wireframe_Theme
+ * @since 1.0.0 Wireframe Theme
  * @see   config-admin.php      Hooks into this callback function.
  * @see   functions-helpers.php Admin check function.
  */
@@ -198,7 +198,7 @@ function wireframe_theme_admin_page_callback_quickstart() {
 }
 
 /**
- * Wireframe_Theme Admin Page: FAQ page callback.
+ * Wireframe Theme Admin Page: FAQ page callback.
  *
  * This is a callback when your plugin hooks a new menu page. This is just an
  * example. Often, these pages can get complex with jQuery, AJAX, APIs, etc.
@@ -209,7 +209,7 @@ function wireframe_theme_admin_page_callback_quickstart() {
  *      4. Loads any specific content for this Admin page.
  *
  * @since 1.0.0 Wireframe
- * @since 1.0.0 Wireframe_Theme
+ * @since 1.0.0 Wireframe Theme
  * @see   config-admin.php      Hooks into this callback function.
  * @see   functions-helpers.php Admin check function.
  */
@@ -226,7 +226,7 @@ function wireframe_theme_admin_page_callback_faq() {
 }
 
 /**
- * Wireframe_Theme Admin Page: Support page callback.
+ * Wireframe Theme Admin Page: Support page callback.
  *
  * This is a callback when your plugin hooks a new menu page. This is just an
  * example. Often, these pages can get complex with jQuery, AJAX, APIs, etc.
@@ -237,7 +237,7 @@ function wireframe_theme_admin_page_callback_faq() {
  *      4. Loads any specific content for this Admin page.
  *
  * @since 1.0.0 Wireframe
- * @since 1.0.0 Wireframe_Theme
+ * @since 1.0.0 Wireframe Theme
  * @see   config-admin.php      Hooks into this callback function.
  * @see   functions-helpers.php Admin check function.
  */

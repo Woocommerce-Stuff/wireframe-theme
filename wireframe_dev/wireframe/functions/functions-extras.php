@@ -1,14 +1,14 @@
 <?php
 /**
- * Extras helper functions for Wireframe themes.
+ * Extras helper functions for Wireframe Theme.
  *
  * PHP version 5.6.0
  *
- * @package   Wireframe_Theme
+ * @package   Wireframe Theme
  * @author    MixaTheme, Tada Burke
  * @copyright 2016 MixaTheme
  * @license   GPL-2.0+
- * @version   1.0.0 Wireframe_Theme
+ * @version   1.0.0 Wireframe Theme
  * @see       https://mixatheme.com
  * @see       https://github.com/mixatheme/Wireframe
  * @see       https://developer.wordpress.org/themes/basics/theme-functions
@@ -30,7 +30,7 @@ if ( ! function_exists( 'wireframe_theme_is_home' ) ) :
 	 * various template parts. If you don't need to support PHP 5.2, then you
 	 * may wish to use a closure instead in the Customizer.
 	 *
-	 * @since 1.0.0 Wireframe_Theme
+	 * @since 1.0.0 Wireframe Theme
 	 * @see   https://developer.wordpress.org/themes/advanced-topics/customizer-api/
 	 */
 	function wireframe_theme_is_home() {
@@ -48,7 +48,7 @@ if ( ! function_exists( 'wireframe_theme_is_single' ) ) :
 	 * various template parts. If you don't need to support PHP 5.2, then you
 	 * may wish to use a closure instead in the Customizer.
 	 *
-	 * @since 1.0.0 Wireframe_Theme
+	 * @since 1.0.0 Wireframe Theme
 	 * @see   https://developer.wordpress.org/themes/advanced-topics/customizer-api/
 	 */
 	function wireframe_theme_is_single() {
@@ -66,7 +66,7 @@ if ( ! function_exists( 'wireframe_theme_is_page' ) ) :
 	 * various template parts. If you don't need to support PHP 5.2, then you
 	 * may wish to use a closure instead in the Customizer.
 	 *
-	 * @since 1.0.0 Wireframe_Theme
+	 * @since 1.0.0 Wireframe Theme
 	 * @see   https://developer.wordpress.org/themes/advanced-topics/customizer-api/
 	 */
 	function wireframe_theme_is_page() {
@@ -81,7 +81,7 @@ if ( ! function_exists( 'wireframe_theme_css_article' ) ) :
 	 * Adds extra CSS classes to an article element. This can be useful
 	 * for adding Microformats v2+, etc.
 	 *
-	 * @since  1.0.0 Wireframe_Theme
+	 * @since  1.0.0 Wireframe Theme
 	 * @author Automattic
 	 * @author MixaTheme
 	 */
@@ -103,7 +103,7 @@ if ( ! function_exists( 'wireframe_theme_read_more_link' ) ) :
 	/**
 	 * Wireframe Read More
 	 *
-	 * @since  1.0.0 Wireframe_Theme
+	 * @since  1.0.0 Wireframe Theme
 	 * @author Automattic
 	 * @author MixaTheme
 	 */
@@ -123,7 +123,7 @@ if ( ! function_exists( 'wireframe_theme_search_form_button' ) ) :
 	 * Adds the ability to override the widget search form button.
 	 *
 	 * @since 2.7.0 WordPress
-	 * @since 1.0.0 Wireframe_Theme
+	 * @since 1.0.0 Wireframe Theme
 	 * @param string $text Replaces the form elements.
 	 * @see   https://developer.wordpress.org/reference/functions/get_search_form/
 	 * @todo  Glyphicon vs Font Awesome?
@@ -144,7 +144,7 @@ if ( ! function_exists( 'wireframe_theme_tag_cloud_font' ) ) :
 	/**
 	 * Wireframe Tag Cloud description.
 	 *
-	 * @since  1.0.0 Wireframe_Theme
+	 * @since  1.0.0 Wireframe Theme
 	 * @author Automattic
 	 * @author MixaTheme
 	 * @param  array $args Font sizes for tag cloud.
@@ -161,7 +161,7 @@ if ( ! function_exists( 'wireframe_theme_body_classes' ) ) :
 	/**
 	 * Adds custom classes to the array of body classes.
 	 *
-	 * @since  1.0.0 Wireframe_Theme
+	 * @since  1.0.0 Wireframe Theme
 	 * @author Automattic
 	 * @author MixaTheme
 	 * @param  array $classes Classes for the body element.

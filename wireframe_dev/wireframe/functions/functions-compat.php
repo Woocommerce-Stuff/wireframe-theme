@@ -1,14 +1,14 @@
 <?php
 /**
- * Backwards compatibility helper functions for Wireframe themes.
+ * Backwards compatibility helper functions for Wireframe Theme.
  *
  * PHP version 5.6.0
  *
- * @package   Wireframe_Theme
+ * @package   Wireframe Theme
  * @author    MixaTheme, Tada Burke
  * @copyright 2016 MixaTheme
  * @license   GPL-2.0+
- * @version   1.0.0 Wireframe_Theme
+ * @version   1.0.0 Wireframe Theme
  * @see       https://mixatheme.com
  * @see       https://github.com/mixatheme/Wireframe
  * @see       https://developer.wordpress.org/themes/basics/theme-functions
@@ -36,7 +36,7 @@
  * Note: This should be hooked via `admin_notices` function.
  *
  * @since 1.0.0 Wireframe
- * @since 1.0.0 Wireframe_Theme
+ * @since 1.0.0 Wireframe Theme
  * @see   functions.php
  */
 function wireframe_theme_compat_wordpress() {
@@ -48,7 +48,7 @@ function wireframe_theme_compat_wordpress() {
  * Hides the custom post template for pages on WordPress 4.6 and older
  *
  * @since  4.7.0 WordPress
- * @since  1.0.0 Wireframe_Theme
+ * @since  1.0.0 Wireframe Theme
  * @author Pascal Birchler
  * @author MixaTheme
  * @see    https://make.wordpress.org/core/2016/11/03/post-type-templates-in-4-7/
@@ -69,7 +69,7 @@ function wireframe_theme_exclude_page_templates( $post_templates ) {
  *
  * Switches to the default theme.
  *
- * @since  1.0.0 Wireframe_Theme
+ * @since  1.0.0 Wireframe Theme
  * @author Automattic
  * @author MixaTheme
  *
@@ -90,7 +90,7 @@ add_action( 'after_switch_theme', 'wireframe_theme_switch_theme' );
  * Prints an update nag after an unsuccessful attempt to switch to
  * Wireframe Theme on WordPress versions prior to 4.7.
  *
- * @since  1.0.0 Wireframe_Theme
+ * @since  1.0.0 Wireframe Theme
  * @author Automattic
  * @author MixaTheme
  * @global string $GLOBALS['wp_version'] WordPress version.
@@ -105,7 +105,7 @@ function wireframe_theme_upgrade_notice() {
 /**
  * Prevents the Customizer from being loaded on WordPress versions prior to 4.7.
  *
- * @since  1.0.0 Wireframe_Theme
+ * @since  1.0.0 Wireframe Theme
  * @author Automattic
  * @author MixaTheme
  * @global string $GLOBALS['wp_version'] WordPress version.
@@ -122,7 +122,7 @@ add_action( 'load-customize.php', 'wireframe_theme_customize' );
 /**
  * Prevents the Theme Preview from being loaded on WordPress versions prior to 4.7.
  *
- * @since  1.0.0 Wireframe_Theme
+ * @since  1.0.0 Wireframe Theme
  * @author Automattic
  * @author MixaTheme
  * @global string $GLOBALS['wp_version'] WordPress version.

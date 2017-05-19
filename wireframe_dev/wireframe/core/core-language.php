@@ -4,7 +4,7 @@
  *
  * PHP version 5.6.0
  *
- * @package   Wireframe_Theme
+ * @package   Wireframe Theme
  * @author    MixaTheme, Tada Burke
  * @version   1.0.0 Wireframe
  * @copyright 2016 MixaTheme
@@ -26,7 +26,7 @@
  *
  * @since 5.3.0 PHP
  * @since 1.0.0 Wireframe
- * @since 1.0.0 Wireframe_Theme
+ * @since 1.0.0 Wireframe Theme
  */
 namespace MixaTheme\Wireframe\Theme;
 use WP_Error;
@@ -35,7 +35,7 @@ use WP_Error;
  * No direct access to this file.
  *
  * @since 1.0.0 Wireframe
- * @since 1.0.0 Wireframe_Theme
+ * @since 1.0.0 Wireframe Theme
  */
 defined( 'ABSPATH' ) or die();
 
@@ -43,14 +43,14 @@ defined( 'ABSPATH' ) or die();
  * Check if the class exists.
  *
  * @since 1.0.0 Wireframe
- * @since 1.0.0 Wireframe_Theme
+ * @since 1.0.0 Wireframe Theme
  */
 if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Core_Language' ) ) :
 	/**
 	 * Core_Language is a Wireframe core class for wiring i18n & l10n translation.
 	 *
 	 * @since 1.0.0 Wireframe
-	 * @since 1.0.0 Wireframe_Theme
+	 * @since 1.0.0 Wireframe Theme
 	 * @since 1.0.0 Wireframe_Plugin
 	 * @see   https://github.com/mixatheme/Wireframe
 	 */
@@ -62,7 +62,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Core_Language' ) ) :
 		 *
 		 * @access private
 		 * @since  1.0.0 Wireframe
-		 * @since  1.0.0 Wireframe_Theme
+		 * @since  1.0.0 Wireframe Theme
 		 * @since  1.0.0 Wireframe_Plugin
 		 * @var    string $_module The module type. Default: theme
 		 */
@@ -73,7 +73,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Core_Language' ) ) :
 		 *
 		 * @access private
 		 * @since  1.0.0 Wireframe
-		 * @since  1.0.0 Wireframe_Theme
+		 * @since  1.0.0 Wireframe Theme
 		 * @since  1.0.0 Wireframe_Plugin
 		 * @var    array $_path Path to language file.
 		 */
@@ -84,7 +84,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Core_Language' ) ) :
 		 *
 		 * @access private
 		 * @since  1.0.0 Wireframe
-		 * @since  1.0.0 Wireframe_Theme
+		 * @since  1.0.0 Wireframe Theme
 		 * @since  1.0.0 Wireframe_Plugin
 		 * @var    bool $_deprecated
 		 */
@@ -94,7 +94,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Core_Language' ) ) :
 		 * Constructor runs when this class is instantiated.
 		 *
 		 * @since 1.0.0 Wireframe
-		 * @since 1.0.0 Wireframe_Theme
+		 * @since 1.0.0 Wireframe Theme
 		 * @since 1.0.0 Wireframe_Plugin
 		 * @param array $config Data via config file.
 		 */
@@ -114,7 +114,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Core_Language' ) ) :
 		 *
 		 * @since 3.1.0 WordPress
 		 * @since 1.0.0 Wireframe
-		 * @since 1.0.0 Wireframe_Theme
+		 * @since 1.0.0 Wireframe Theme
 		 * @since 1.0.0 Wireframe_Plugin
 		 */
 		public function textdomain() {

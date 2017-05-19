@@ -1,12 +1,12 @@
 <?php
 /**
- * Module_Editor is a Wireframe theme class.
+ * Module_Editor is a Wireframe module class.
  *
  * PHP version 5.6.0
  *
- * @package   Wireframe_Theme
+ * @package   Wireframe Theme
  * @author    MixaTheme, Tada Burke
- * @version   1.0.0 Wireframe_Theme
+ * @version   1.0.0 Wireframe Theme
  * @copyright 2016 MixaTheme
  * @license   GPL-2.0+
  * @see       https://mixatheme.com
@@ -26,7 +26,7 @@
  *
  * @since 5.3.0 PHP
  * @since 1.0.0 Wireframe
- * @since 1.0.0 Wireframe_Theme
+ * @since 1.0.0 Wireframe Theme
  */
 namespace MixaTheme\Wireframe\Theme;
 
@@ -34,7 +34,7 @@ namespace MixaTheme\Wireframe\Theme;
  * No direct access to this file.
  *
  * @since 1.0.0 Wireframe
- * @since 1.0.0 Wireframe_Theme
+ * @since 1.0.0 Wireframe Theme
  */
 defined( 'ABSPATH' ) or die();
 
@@ -42,7 +42,7 @@ defined( 'ABSPATH' ) or die();
  * Check if the class exists.
  *
  * @since 1.0.0 Wireframe
- * @since 1.0.0 Wireframe_Theme
+ * @since 1.0.0 Wireframe Theme
  */
 if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Editor' ) ) :
 	/**
@@ -50,7 +50,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Editor' ) ) :
 	 *
 	 * @since 2.9.0 WordPress
 	 * @since 1.0.0 Wireframe
-	 * @since 1.0.0 Wireframe_Theme
+	 * @since 1.0.0 Wireframe Theme
 	 * @see   https://github.com/mixatheme/Wireframe
 	 */
 	final class Module_Editor extends Core_Module_Abstract implements Module_Editor_Interface {
@@ -59,7 +59,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Editor' ) ) :
 		 *
 		 * @access private
 		 * @since  1.0.0 Wireframe
-		 * @since  1.0.0 Wireframe_Theme
+		 * @since  1.0.0 Wireframe Theme
 		 * @var    array $_editor_style
 		 */
 		private $_editor_style;
@@ -69,7 +69,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Editor' ) ) :
 		 *
 		 * @access private
 		 * @since  1.0.0 Wireframe
-		 * @since  1.0.0 Wireframe_Theme
+		 * @since  1.0.0 Wireframe Theme
 		 * @var    array $_style_formats
 		 */
 		private $_style_formats;
@@ -78,7 +78,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Editor' ) ) :
 		 * Constructor runs when this class is instantiated.
 		 *
 		 * @since 1.0.0 Wireframe
-		 * @since 1.0.0 Wireframe_Theme
+		 * @since 1.0.0 Wireframe Theme
 		 * @param array $config Config data.
 		 */
 		public function __construct( $config ) {
@@ -95,7 +95,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Editor' ) ) :
 		 * Editor Style.
 		 *
 		 * @since 1.0.0 Wireframe
-		 * @since 1.0.0 Wireframe_Theme
+		 * @since 1.0.0 Wireframe Theme
 		 */
 		public function editor_style() {
 			if ( isset( $this->_editor_style ) ) {
@@ -114,7 +114,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Editor' ) ) :
 		 * Puts the buttons on Row 2.
 		 *
 		 * @since 1.0.0 Wireframe
-		 * @since 1.0.0 Wireframe_Theme
+		 * @since 1.0.0 Wireframe Theme
 		 * @param array $buttons Row 2 buttons.
 		 */
 		public function buttons_2( $buttons ) {
@@ -132,7 +132,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Editor' ) ) :
 		 * is a format with it's own settings.
 		 *
 		 * @since  1.0.0 Wireframe
-		 * @since  1.0.0 Wireframe_Theme
+		 * @since  1.0.0 Wireframe Theme
 		 * @param  array $json Args for style formats.
 		 * @return array $json JSON formatted array.
 		 */

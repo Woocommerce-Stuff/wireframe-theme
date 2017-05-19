@@ -1,12 +1,12 @@
 <?php
 /**
- * Module_Navigation is a Wireframe theme class.
+ * Module_Navigation is a Wireframe module class.
  *
  * PHP version 5.6.0
  *
- * @package   Wireframe_Theme
+ * @package   Wireframe Theme
  * @author    MixaTheme, Tada Burke
- * @version   1.0.0 Wireframe_Theme
+ * @version   1.0.0 Wireframe Theme
  * @copyright 2016 MixaTheme
  * @license   GPL-2.0+
  * @see       https://mixatheme.com
@@ -26,7 +26,7 @@
  *
  * @since 5.3.0 PHP
  * @since 1.0.0 Wireframe
- * @since 1.0.0 Wireframe_Theme
+ * @since 1.0.0 Wireframe Theme
  */
 namespace MixaTheme\Wireframe\Theme;
 
@@ -34,7 +34,7 @@ namespace MixaTheme\Wireframe\Theme;
  * No direct access to this file.
  *
  * @since 1.0.0 Wireframe
- * @since 1.0.0 Wireframe_Theme
+ * @since 1.0.0 Wireframe Theme
  */
 defined( 'ABSPATH' ) or die();
 
@@ -42,14 +42,14 @@ defined( 'ABSPATH' ) or die();
  * Check if the class exists.
  *
  * @since 1.0.0 Wireframe
- * @since 1.0.0 Wireframe_Theme
+ * @since 1.0.0 Wireframe Theme
  */
 if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Navigation' ) ) :
 	/**
 	 * Module_Navigation is a theme class for wiring nav menus.
 	 *
 	 * @since 1.0.0 Wireframe
-	 * @since 1.0.0 Wireframe_Theme
+	 * @since 1.0.0 Wireframe Theme
 	 * @see   https://github.com/mixatheme/Wireframe
 	 */
 	class Module_Navigation extends Core_Module_Abstract implements Module_Navigation_Interface {
@@ -58,7 +58,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Navigation' ) ) :
 		 *
 		 * @access private
 		 * @since  1.0.0 Wireframe
-		 * @since  1.0.0 Wireframe_Theme
+		 * @since  1.0.0 Wireframe Theme
 		 * @var    array $_primary_menu
 		 */
 		private $_primary_menu;
@@ -68,7 +68,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Navigation' ) ) :
 		 *
 		 * @access private
 		 * @since  1.0.0 Wireframe
-		 * @since  1.0.0 Wireframe_Theme
+		 * @since  1.0.0 Wireframe Theme
 		 * @var    array $_secondary_menu
 		 */
 		private $_secondary_menu;
@@ -78,7 +78,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Navigation' ) ) :
 		 *
 		 * @access private
 		 * @since  1.0.0 Wireframe
-		 * @since  1.0.0 Wireframe_Theme
+		 * @since  1.0.0 Wireframe Theme
 		 * @var    array $_tertiary_menu
 		 */
 		private $_tertiary_menu;
@@ -88,7 +88,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Navigation' ) ) :
 		 *
 		 * @access private
 		 * @since  1.0.0 Wireframe
-		 * @since  1.0.0 Wireframe_Theme
+		 * @since  1.0.0 Wireframe Theme
 		 * @param  array $config Config data.
 		 */
 		public function __construct( $config ) {
@@ -106,7 +106,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Navigation' ) ) :
 		 * Set Primary menu.
 		 *
 		 * @since 1.0.0 Wireframe
-		 * @since 1.0.0 Wireframe_Theme
+		 * @since 1.0.0 Wireframe Theme
 		 * @see   wp_nav_menu()
 		 */
 		public function primary_menu() {
@@ -125,7 +125,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Navigation' ) ) :
 		 * Set Secondary menu.
 		 *
 		 * @since 1.0.0 Wireframe
-		 * @since 1.0.0 Wireframe_Theme
+		 * @since 1.0.0 Wireframe Theme
 		 * @see   wp_nav_menu()
 		 */
 		public function secondary_menu() {
@@ -144,7 +144,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Navigation' ) ) :
 		 * Set Tertiary menu.
 		 *
 		 * @since 1.0.0 Wireframe
-		 * @since 1.0.0 Wireframe_Theme
+		 * @since 1.0.0 Wireframe Theme
 		 * @see   wp_nav_menu()
 		 */
 		public function tertiary_menu() {

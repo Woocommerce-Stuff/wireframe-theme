@@ -1,12 +1,12 @@
 <?php
 /**
- * Module_Admin is a Wireframe module.
+ * Module_Admin is a Wireframe module class.
  *
  * PHP version 5.6.0
  *
- * @package   Wireframe_Theme
+ * @package   Wireframe Theme
  * @author    MixaTheme, Tada Burke
- * @version   1.0.0 Wireframe_Theme
+ * @version   1.0.0 Wireframe Theme
  * @copyright 2016 MixaTheme
  * @license   GPL-2.0+
  * @see       https://mixatheme.com
@@ -26,7 +26,7 @@
  *
  * @since 5.3.0 PHP
  * @since 1.0.0 Wireframe
- * @since 1.0.0 Wireframe_Theme
+ * @since 1.0.0 Wireframe Theme
  */
 namespace MixaTheme\Wireframe\Theme;
 
@@ -34,7 +34,7 @@ namespace MixaTheme\Wireframe\Theme;
  * No direct access to this file.
  *
  * @since 1.0.0 Wireframe
- * @since 1.0.0 Wireframe_Theme
+ * @since 1.0.0 Wireframe Theme
  */
 defined( 'ABSPATH' ) or die();
 
@@ -42,14 +42,14 @@ defined( 'ABSPATH' ) or die();
  * Check if the class exists.
  *
  * @since 1.0.0 Wireframe
- * @since 1.0.0 Wireframe_Theme
+ * @since 1.0.0 Wireframe Theme
  */
 if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Admin' ) ) :
 	/**
 	 * Module_Admin class for adding new Admin menu pages & sub pages.
 	 *
 	 * @since 1.0.0 Wireframe
-	 * @since 1.0.0 Wireframe_Theme
+	 * @since 1.0.0 Wireframe Theme
 	 * @see   https://codex.wordpress.org/Administration_Menus
 	 * @see   https://github.com/mixatheme/Wireframe
 	 */
@@ -59,7 +59,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Admin' ) ) :
 		 *
 		 * @access private
 		 * @since  1.0.0 Wireframe
-		 * @since  1.0.0 Wireframe_Theme
+		 * @since  1.0.0 Wireframe Theme
 		 * @var    object $_enqueue
 		 */
 		private $_enqueue;
@@ -69,7 +69,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Admin' ) ) :
 		 *
 		 * @access private
 		 * @since  1.0.0 Wireframe
-		 * @since  1.0.0 Wireframe_Theme
+		 * @since  1.0.0 Wireframe Theme
 		 * @var    array $_theme_page
 		 */
 		private $_theme_page;
@@ -79,7 +79,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Admin' ) ) :
 		 *
 		 * @access private
 		 * @since  1.0.0 Wireframe
-		 * @since  1.0.0 Wireframe_Theme
+		 * @since  1.0.0 Wireframe Theme
 		 * @var    array $_menu_pages
 		 */
 		private $_menu_pages;
@@ -89,7 +89,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Admin' ) ) :
 		 *
 		 * @access private
 		 * @since  1.0.0 Wireframe
-		 * @since  1.0.0 Wireframe_Theme
+		 * @since  1.0.0 Wireframe Theme
 		 * @var    array $_submenu_pages
 		 */
 		private $_submenu_pages;
@@ -98,7 +98,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Admin' ) ) :
 		 * Constructor runs when this class is instantiated.
 		 *
 		 * @since 1.0.0 Wireframe
-		 * @since 1.0.0 Wireframe_Theme
+		 * @since 1.0.0 Wireframe Theme
 		 * @param array $config Required array of config variables.
 		 */
 		public function __construct( $config ) {
@@ -117,7 +117,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Admin' ) ) :
 		 * Enqueue CSS Styles.
 		 *
 		 * @since 1.0.0 Wireframe
-		 * @since 1.0.0 Wireframe_Theme
+		 * @since 1.0.0 Wireframe Theme
 		 */
 		public function styles() {
 			if ( null !== $this->_enqueue->styles() ) {
@@ -129,7 +129,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Admin' ) ) :
 		 * Enqueue JS Scripts.
 		 *
 		 * @since 1.0.0 Wireframe
-		 * @since 1.0.0 Wireframe_Theme
+		 * @since 1.0.0 Wireframe Theme
 		 */
 		public function scripts() {
 			if ( null !== $this->_enqueue->scripts() ) {
@@ -141,7 +141,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Admin' ) ) :
 		 * Enqueue JS Media Modal.
 		 *
 		 * @since 1.0.0 Wireframe
-		 * @since 1.0.0 Wireframe_Theme
+		 * @since 1.0.0 Wireframe Theme
 		 */
 		public function mediamodal() {
 			if ( null !== $this->_enqueue->mediamodal() ) {
@@ -153,7 +153,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Admin' ) ) :
 		 * Add a theme page.
 		 *
 		 * @since 1.0.0 Wireframe
-		 * @since 1.0.0 Wireframe_Theme
+		 * @since 1.0.0 Wireframe Theme
 		 * @see   https://codex.wordpress.org/Function_Reference/add_theme_page
 		 */
 		public function theme_page() {
@@ -174,7 +174,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Admin' ) ) :
 		 * Add a top-level menu page.
 		 *
 		 * @since 1.0.0 Wireframe
-		 * @since 1.0.0 Wireframe_Theme
+		 * @since 1.0.0 Wireframe Theme
 		 * @see   https://developer.wordpress.org/reference/functions/add_menu_page/
 		 */
 		public function menu_pages() {
@@ -197,7 +197,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Admin' ) ) :
 		 * Add a submenu page.
 		 *
 		 * @since 1.0.0 Wireframe
-		 * @since 1.0.0 Wireframe_Theme
+		 * @since 1.0.0 Wireframe Theme
 		 * @see   https://developer.wordpress.org/reference/functions/add_submenu_page/
 		 */
 		public function submenu_pages() {

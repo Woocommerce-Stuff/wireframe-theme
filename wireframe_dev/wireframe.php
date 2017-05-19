@@ -6,9 +6,9 @@
  *
  * PHP version 5.6.0
  *
- * @package   Wireframe_Theme
+ * @package   Wireframe Theme
  * @author    MixaTheme, Tada Burke
- * @version   1.0.0 Wireframe_Theme
+ * @version   1.0.0 Wireframe Theme
  * @copyright 2016 MixaTheme
  * @license   GPL-2.0+
  * @see       https://mixatheme.com
@@ -43,7 +43,7 @@
  * =============================================================================
  *
  * @since 5.3.0 PHP
- * @since 1.0.0 Wireframe_Theme
+ * @since 1.0.0 Wireframe Theme
  */
 namespace MixaTheme\Wireframe\Theme;
 
@@ -53,7 +53,7 @@ namespace MixaTheme\Wireframe\Theme;
  *
  * No direct access to this file.
  *
- * @since 1.0.0 Wireframe_Theme
+ * @since 1.0.0 Wireframe Theme
  */
 defined( 'ABSPATH' ) or die();
 
@@ -63,10 +63,10 @@ defined( 'ABSPATH' ) or die();
  *
  * Loads helper functions and callbacks. These functions should load before your
  * classes, so they become available to your objects. Once you get the hang of
- * Wireframem Theme, these files can probably be merged to save on file count.
+ * Wireframe Theme, these files can probably be merged to save on file count.
  * We use locate_template() function so child themes can overload.
  *
- * @since 1.0.0 Wireframe_Theme
+ * @since 1.0.0 Wireframe Theme
  */
 locate_template( WIREFRAME_THEME_API . 'functions/functions-helpers.php', true, true );
 locate_template( WIREFRAME_THEME_API . 'functions/functions-template-tags.php', true, true );
@@ -94,7 +94,7 @@ locate_template( WIREFRAME_THEME_API . 'functions/functions-extras.php', true, t
  * lines below with the `Autoload Example` above, `cd` to the directory where the
  * `composer.json` file is located, then execute: composer dump-autoload -o
  *
- * @since 1.0.0 Wireframe_Theme
+ * @since 1.0.0 Wireframe Theme
  * @since 1.1.2 Composer
  * @see   composer.json
  * @see   https://getcomposer.org
@@ -132,7 +132,7 @@ require_once WIREFRAME_THEME_OBJECTS . 'module/widgets/module-widgets.php';
 /**
  * Check if the `Core_Theme` class exists then configure defaults.
  *
- * @since 1.0.0 Wireframe_Theme
+ * @since 1.0.0 Wireframe Theme
  */
 if ( class_exists( 'MixaTheme\Wireframe\Theme\Core_Theme' ) ) :
 	/**
@@ -141,7 +141,7 @@ if ( class_exists( 'MixaTheme\Wireframe\Theme\Core_Theme' ) ) :
 	 *
 	 * Wireframe Theme needs to wire objects to the Core_Container $_storage array.
 	 *
-	 * @since 1.0.0 Wireframe_Theme
+	 * @since 1.0.0 Wireframe Theme
 	 * @see   object   Core_Container
 	 * @var   callable $wireframe_theme_container
 	 */
@@ -160,7 +160,7 @@ if ( class_exists( 'MixaTheme\Wireframe\Theme\Core_Theme' ) ) :
 	 *
 	 * Data files are located in: `wireframe_dev/wireframe/config/`
 	 *
-	 * @since 1.0.0 Wireframe_Theme
+	 * @since 1.0.0 Wireframe Theme
 	 */
 	locate_template( WIREFRAME_THEME_API . 'config/config-language.php', true, true );
 	locate_template( WIREFRAME_THEME_API . 'config/config-notices.php', true, true );
@@ -179,7 +179,7 @@ if ( class_exists( 'MixaTheme\Wireframe\Theme\Core_Theme' ) ) :
 	 * This closure registers a service with the Core_Container::$storage array,
 	 * and instantiates a new Core_Language object with config data passed-in.
 	 *
-	 * @since  1.0.0 Wireframe_Theme
+	 * @since  1.0.0 Wireframe Theme
 	 * @see    wireframe_theme_config_language()
 	 * @return object Core_Language( @param array Object args. )
 	 */
@@ -194,7 +194,7 @@ if ( class_exists( 'MixaTheme\Wireframe\Theme\Core_Theme' ) ) :
 	 * This closure registers a service with the Core_Container::$storage array,
 	 * and instantiates a new Module_Notices object with config data passed-in.
 	 *
-	 * @since  1.0.0 Wireframe_Theme
+	 * @since  1.0.0 Wireframe Theme
 	 * @see    wireframe_theme_config_notices()
 	 * @return object Module_Notices( @param array Object args. )
 	 */
@@ -208,7 +208,7 @@ if ( class_exists( 'MixaTheme\Wireframe\Theme\Core_Theme' ) ) :
 	 * This closure registers a service with the Core_Container::$storage array,
 	 * and instantiates a new Module_UI object with config data passed-in.
 	 *
-	 * @since  1.0.0 Wireframe_Theme
+	 * @since  1.0.0 Wireframe Theme
 	 * @see    wireframe_theme_config_ui()
 	 * @return object Module_UI( @param array Object args. )
 	 */
@@ -222,7 +222,7 @@ if ( class_exists( 'MixaTheme\Wireframe\Theme\Core_Theme' ) ) :
 	 * This closure registers a service with the Core_Container::$storage array,
 	 * and instantiates a new Module_Navigation object with config data passed-in.
 	 *
-	 * @since  1.0.0 Wireframe_Theme
+	 * @since  1.0.0 Wireframe Theme
 	 * @see    wireframe_theme_config_navigation()
 	 * @return object Module_Navigation( @param array Object args. )
 	 */
@@ -236,7 +236,7 @@ if ( class_exists( 'MixaTheme\Wireframe\Theme\Core_Theme' ) ) :
 	 * This closure registers a service with the Core_Container::$storage array,
 	 * and instantiates a new Module_Widgets object with config data passed-in.
 	 *
-	 * @since  1.0.0 Wireframe_Theme
+	 * @since  1.0.0 Wireframe Theme
 	 * @see    wireframe_theme_config_widgets()
 	 * @return object Module_Widgets( @param array Object args. )
 	 */
@@ -250,7 +250,7 @@ if ( class_exists( 'MixaTheme\Wireframe\Theme\Core_Theme' ) ) :
 	 * This closure registers a service with the Core_Container::$storage array,
 	 * and instantiates a new Module_Features object with config data passed-in.
 	 *
-	 * @since  1.0.0 Wireframe_Theme
+	 * @since  1.0.0 Wireframe Theme
 	 * @see    wireframe_theme_config_features()
 	 * @return object Module_Features( @param array Object args. )
 	 */
@@ -264,7 +264,7 @@ if ( class_exists( 'MixaTheme\Wireframe\Theme\Core_Theme' ) ) :
 	 * This closure registers a service with the Core_Container::$storage array,
 	 * and instantiates a new Module_Customizer object with config data passed-in.
 	 *
-	 * @since  1.0.0 Wireframe_Theme
+	 * @since  1.0.0 Wireframe Theme
 	 * @see    wireframe_theme_config_customizer()
 	 * @return object Module_Customizer( @param array Object args. )
 	 */
@@ -278,7 +278,7 @@ if ( class_exists( 'MixaTheme\Wireframe\Theme\Core_Theme' ) ) :
 	 * This closure registers a service with the Core_Container::$storage array,
 	 * and instantiates a new Module_Editor object with config data passed-in.
 	 *
-	 * @since  1.0.0 Wireframe_Theme
+	 * @since  1.0.0 Wireframe Theme
 	 * @see    wireframe_theme_config_editor()
 	 * @return object Module_Editor( @param array Object args. )
 	 */
@@ -292,7 +292,7 @@ if ( class_exists( 'MixaTheme\Wireframe\Theme\Core_Theme' ) ) :
 	 * This closure registers a service with the Core_Container::$storage array,
 	 * and instantiates a new Module_Admin object with config data passed-in.
 	 *
-	 * @since  1.0.0 Wireframe_Theme
+	 * @since  1.0.0 Wireframe Theme
 	 * @see    wireframe_theme_config_admin()
 	 * @return object Module_Admin( @param array Object args. )
 	 */
@@ -320,7 +320,7 @@ if ( class_exists( 'MixaTheme\Wireframe\Theme\Core_Theme' ) ) :
 	 *            object. Too complex? Don't worry. Checkout our Wireframe_Plugin
 	 *            example: @see https://github.com/mixatheme/wireframe-plugin
 	 *
-	 * @since  1.0.0 Wireframe_Theme
+	 * @since  1.0.0 Wireframe Theme
 	 * @var    object $wireframe_theme
 	 * @return object Core_Theme(
 	 *         @param object Core_Language    DI the default language.
@@ -354,7 +354,7 @@ if ( class_exists( 'MixaTheme\Wireframe\Theme\Core_Theme' ) ) :
 	 * clean-up tasks here, or simply output a warning if `$wireframe_theme`
 	 * fails. Your template files now have access to objects beyond this point.
 	 *
-	 * @since 1.0.0 Wireframe_Theme
+	 * @since 1.0.0 Wireframe Theme
 	 * @var   object $wireframe_theme
 	 * @var   object $wireframe_theme->language()
 	 * @var   object $wireframe_theme->notices()
@@ -386,7 +386,7 @@ if ( class_exists( 'MixaTheme\Wireframe\Theme\Core_Theme' ) ) :
 		 *
 		 * Data files are located in: `wireframe_dev/wireframe/config/`
 		 *
-		 * @since 1.0.0 Wireframe_Theme
+		 * @since 1.0.0 Wireframe Theme
 		 * @see   object $wireframe_theme Instance of Core_Theme.
 		 */
 		add_action( 'after_switch_theme', array( $wireframe_theme_container->notices, 'warn_activated' ), 10, 0 );

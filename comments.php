@@ -1,15 +1,15 @@
 <?php
 /**
- * Comments template file for Wireframe themes.
+ * Comments template file for Wireframe Theme.
  *
  * The template for displaying the comments area of the page that contains
  * both the current comments and the comment form.
  *
  * PHP version 5.6.0
  *
- * @package   Wireframe_Theme
+ * @package   Wireframe Theme
  * @author    MixaTheme, Tada Burke
- * @version   1.0.0 Wireframe_Theme
+ * @version   1.0.0 Wireframe Theme
  * @copyright 2016 MixaTheme
  * @license   GPL-2.0+
  * @see       https://mixatheme.com

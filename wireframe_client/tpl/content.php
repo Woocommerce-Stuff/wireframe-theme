@@ -1,14 +1,14 @@
 <?php
 /**
- * Content Default template file for Wireframe themes.
+ * Content Default template file for Wireframe Theme.
  *
  * Template part for displaying posts.
  *
  * PHP version 5.6.0
  *
- * @package   Wireframe_Theme
+ * @package   Wireframe Theme
  * @author    MixaTheme, Tada Burke, Automattic
- * @version   1.0.0 Wireframe_Theme
+ * @version   1.0.0 Wireframe Theme
  * @copyright 2016 MixaTheme
  * @license   GPL-2.0+
  * @see       https://mixatheme.com

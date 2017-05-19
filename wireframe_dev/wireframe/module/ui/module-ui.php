@@ -1,12 +1,12 @@
 <?php
 /**
- * Module_UI is a Wireframe power theme class..
+ * Module_UI is a Wireframe module class.
  *
  * PHP version 5.6.0
  *
- * @package   Wireframe_Theme
+ * @package   Wireframe Theme
  * @author    MixaTheme, Tada Burke
- * @version   1.0.0 Wireframe_Theme
+ * @version   1.0.0 Wireframe Theme
  * @copyright 2016 MixaTheme
  * @license   GPL-2.0+
  * @see       https://mixatheme.com
@@ -26,7 +26,7 @@
  *
  * @since 5.3.0 PHP
  * @since 1.0.0 Wireframe
- * @since 1.0.0 Wireframe_Theme
+ * @since 1.0.0 Wireframe Theme
  */
 namespace MixaTheme\Wireframe\Theme;
 
@@ -34,7 +34,7 @@ namespace MixaTheme\Wireframe\Theme;
  * No direct access to this file.
  *
  * @since 1.0.0 Wireframe
- * @since 1.0.0 Wireframe_Theme
+ * @since 1.0.0 Wireframe Theme
  */
 defined( 'ABSPATH' ) or die();
 
@@ -42,14 +42,14 @@ defined( 'ABSPATH' ) or die();
  * Check if the class exists.
  *
  * @since 1.0.0 Wireframe
- * @since 1.0.0 Wireframe_Theme
+ * @since 1.0.0 Wireframe Theme
  */
 if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_UI' ) ) :
 	/**
 	 * Module_UI is a theme class for wiring front-end presentation methods.
 	 *
 	 * @since 1.0.0 Wireframe
-	 * @since 1.0.0 Wireframe_Theme
+	 * @since 1.0.0 Wireframe Theme
 	 * @see   https://github.com/mixatheme/Wireframe
 	 */
 	final class Module_UI extends Core_Module_Abstract implements Module_UI_Interface {
@@ -57,7 +57,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_UI' ) ) :
 		 * Enqueue.
 		 *
 		 * @since 1.0.0 Wireframe
-		 * @since 1.0.0 Wireframe_Theme
+		 * @since 1.0.0 Wireframe Theme
 		 * @var   object $_enqueue
 		 */
 		private $_enqueue;
@@ -66,7 +66,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_UI' ) ) :
 		 * Constructor runs when this class instantiates.
 		 *
 		 * @since 1.0.0 Wireframe
-		 * @since 1.0.0 Wireframe_Theme
+		 * @since 1.0.0 Wireframe Theme
 		 * @param array $config Config data.
 		 */
 		public function __construct( $config ) {
@@ -82,7 +82,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_UI' ) ) :
 		 * Enqueue Styles.
 		 *
 		 * @since 1.0.0 Wireframe
-		 * @since 1.0.0 Wireframe_Theme
+		 * @since 1.0.0 Wireframe Theme
 		 */
 		public function styles() {
 			if ( null !== $this->_enqueue->styles() ) {
@@ -94,7 +94,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_UI' ) ) :
 		 * Enqueue Scripts.
 		 *
 		 * @since 1.0.0 Wireframe
-		 * @since 1.0.0 Wireframe_Theme
+		 * @since 1.0.0 Wireframe Theme
 		 */
 		public function scripts() {
 			if ( null !== $this->_enqueue->scripts() ) {
@@ -106,7 +106,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_UI' ) ) :
 		 * Enqueue Media Modal.
 		 *
 		 * @since 1.0.0 Wireframe
-		 * @since 1.0.0 Wireframe_Theme
+		 * @since 1.0.0 Wireframe Theme
 		 */
 		public function mediamodal() {
 			if ( null !== $this->_enqueue->mediamodal() ) {
@@ -118,7 +118,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_UI' ) ) :
 		 * Enqueue Style CSS.
 		 *
 		 * @since 1.0.0 Wireframe
-		 * @since 1.0.0 Wireframe_Theme
+		 * @since 1.0.0 Wireframe Theme
 		 */
 		public function stylecss() {
 			if ( null !== $this->_enqueue->stylecss() ) {
@@ -130,7 +130,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_UI' ) ) :
 		 * Enqueue Comment-Reply JS.
 		 *
 		 * @since 1.0.0 Wireframe
-		 * @since 1.0.0 Wireframe_Theme
+		 * @since 1.0.0 Wireframe Theme
 		 */
 		public function commentjs() {
 			if ( null !== $this->_enqueue->commentjs() ) {

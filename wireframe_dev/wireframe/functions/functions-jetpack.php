@@ -1,14 +1,14 @@
 <?php
 /**
- * Jetpack helper functions for Wireframe themes.
+ * Jetpack helper functions for Wireframe Theme.
  *
  * PHP version 5.6.0
  *
- * @package   Wireframe_Theme
+ * @package   Wireframe Theme
  * @author    MixaTheme, Tada Burke
  * @copyright 2016 MixaTheme
  * @license   GPL-2.0+
- * @version   1.0.0 Wireframe_Theme
+ * @version   1.0.0 Wireframe Theme
  * @see       https://mixatheme.com
  * @see       https://github.com/mixatheme/Wireframe
  * @see       https://developer.wordpress.org/themes/basics/theme-functions
@@ -26,7 +26,7 @@ if ( ! function_exists( 'wireframe_theme_jetpack_features' ) ) :
 	/**
 	 * Jetpack theme support.
 	 *
-	 * @since  1.0.0 Wireframe_Theme
+	 * @since  1.0.0 Wireframe Theme
 	 * @author Automattic
 	 * @author MixaTheme
 	 * @uses   wireframe_theme_infinite_scroll_render()
@@ -54,7 +54,7 @@ if ( ! function_exists( 'wireframe_theme_jetpack_infinite_scroll_render' ) ) :
 	/**
 	 * Infinite Scroll render.
 	 *
-	 * @since  1.0.0 Wireframe_Theme
+	 * @since  1.0.0 Wireframe Theme
 	 * @author Automattic
 	 * @author MixaTheme
 	 * @see    functions-jetpack.php

@@ -1,12 +1,12 @@
 <?php
 /**
- * Module_Customizer_Interface is a Wireframe theme interface.
+ * Module_Customizer_Interface is a Wireframe module interface.
  *
  * PHP version 5.6.0
  *
- * @package   Wireframe_Theme
+ * @package   Wireframe Theme
  * @author    MixaTheme, Tada Burke
- * @version   1.0.0 Wireframe_Theme
+ * @version   1.0.0 Wireframe Theme
  * @copyright 2016 MixaTheme
  * @license   GPL-2.0+
  * @see       https://mixatheme.com
@@ -26,7 +26,7 @@
  *
  * @since 5.3.0 PHP
  * @since 1.0.0 Wireframe
- * @since 1.0.0 Wireframe_Theme
+ * @since 1.0.0 Wireframe Theme
  */
 namespace MixaTheme\Wireframe\Theme;
 
@@ -34,7 +34,7 @@ namespace MixaTheme\Wireframe\Theme;
  * No direct access to this file.
  *
  * @since 1.0.0 Wireframe
- * @since 1.0.0 Wireframe_Theme
+ * @since 1.0.0 Wireframe Theme
  */
 defined( 'ABSPATH' ) or die();
 
@@ -42,7 +42,7 @@ defined( 'ABSPATH' ) or die();
  * Check if the class exists.
  *
  * @since 1.0.0 Wireframe
- * @since 1.0.0 Wireframe_Theme
+ * @since 1.0.0 Wireframe Theme
  */
 if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Customizer_Interface' ) ) :
 	/**
@@ -53,7 +53,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Customizer_Interface' ) )
 	 * All untrusted data should be escaped before output.
 	 *
 	 * @since 1.0.0 Wireframe
-	 * @since 1.0.0 Wireframe_Theme
+	 * @since 1.0.0 Wireframe Theme
 	 * @see   https://codex.wordpress.org/Theme_Customization_API
 	 * @see   https://github.com/mixatheme/Wireframe
 	 *
@@ -67,7 +67,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Customizer_Interface' ) )
 		 *
 		 * @since 3.4.0 WordPress introduced `customize_register` action.
 		 * @since 1.0.0 Wireframe
-		 * @since 1.0.0 Wireframe_Theme
+		 * @since 1.0.0 Wireframe Theme
 		 * @param object $wp_customize WP_Customize_Manager.
 		 */
 		public function register( $wp_customize );
@@ -84,7 +84,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Customizer_Interface' ) )
 		 * `preview-scripts.js` file.
 		 *
 		 * @since 1.0.0 Wireframe
-		 * @since 1.0.0 Wireframe_Theme
+		 * @since 1.0.0 Wireframe Theme
 		 */
 		public function preview_scripts();
 
@@ -96,7 +96,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Customizer_Interface' ) )
 		 * you need to add a new line of dynamically generated CSS here.
 		 *
 		 * @since 1.0.0 Wireframe
-		 * @since 1.0.0 Wireframe_Theme
+		 * @since 1.0.0 Wireframe Theme
 		 * @see   add_action('wp_head')
 		 * @see   $this->css()
 		 * @todo  Generated CSS should be decoupled in @version 1.0.1.
@@ -112,7 +112,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Customizer_Interface' ) )
 		 * setting ($mod_name) has no defined value, the CSS will not be output.
 		 *
 		 * @since  1.0.0 Wireframe
-		 * @since  1.0.0 Wireframe_Theme
+		 * @since  1.0.0 Wireframe Theme
 		 * @see    get_theme_mod()
 		 * @param  string $selector CSS selector.
 		 * @param  string $style    The name of the CSS *property* to modify.

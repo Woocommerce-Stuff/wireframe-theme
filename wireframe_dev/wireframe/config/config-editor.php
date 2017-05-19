@@ -1,12 +1,12 @@
 <?php
 /**
- * Theme_Editor config data file for Wireframe themes.
+ * Theme_Editor config data file for Wireframe Theme.
  *
  * PHP version 5.6.0
  *
- * @package   Wireframe_Theme
+ * @package   Wireframe Theme
  * @author    MixaTheme, Tada Burke
- * @version   1.0.0 Wireframe_Theme
+ * @version   1.0.0 Wireframe Theme
  * @copyright 2016 MixaTheme
  * @license   GPL-2.0+
  * @see       https://mixatheme.com
@@ -25,14 +25,14 @@
  * Namespaces.
  *
  * @since 5.3.0 PHP
- * @since 1.0.0 Wireframe_Theme
+ * @since 1.0.0 Wireframe Theme
  */
 namespace MixaTheme\Wireframe\Theme;
 
 /**
  * No direct access to this file.
  *
- * @since 1.0.0 Wireframe_Theme
+ * @since 1.0.0 Wireframe Theme
  */
 defined( 'ABSPATH' ) or die();
 
@@ -46,7 +46,7 @@ defined( 'ABSPATH' ) or die();
  *            Another alternative is putting all your object configs into one
  *            single config file to minimize your file count.
  *
- * @since  1.0.0 Wireframe_Theme
+ * @since  1.0.0 Wireframe Theme
  * @see    object Theme_Editor
  * @return array  Default configuration values.
  */
@@ -62,7 +62,7 @@ function wireframe_theme_config_editor() {
 	 * is instantiated. This is optional, because some objects do not need any
 	 * actions or filters.
 	 *
-	 * @since 1.0.0 Wireframe_Theme
+	 * @since 1.0.0 Wireframe Theme
 	 * @var   bool $wired Wire hooks via __construct(). Default: true
 	 */
 	$wired = true;
@@ -74,7 +74,7 @@ function wireframe_theme_config_editor() {
 	 * Generally, you should use a constant defined in wireframe.php. However,
 	 * you can change it here if needed. Default: WIREFRAME_THEME_PREFIX
 	 *
-	 * @since 1.0.0 Wireframe_Theme
+	 * @since 1.0.0 Wireframe Theme
 	 * @var   string $prefix Prefix for handles.
 	 */
 	$prefix = WIREFRAME_THEME_PREFIX;
@@ -86,7 +86,7 @@ function wireframe_theme_config_editor() {
 	 * You can set your actions in a multi-dimensional array and remember
 	 * to set the property $wired = true (above).
 	 *
-	 * @since 1.0.0 Wireframe_Theme
+	 * @since 1.0.0 Wireframe Theme
 	 * @var   array $actions Actions to hook.
 	 */
 	$actions = array();
@@ -98,7 +98,7 @@ function wireframe_theme_config_editor() {
 	 * You can set your filters in a multi-dimensional array and remember
 	 * to set the property $wired = true (above).
 	 *
-	 * @since 1.0.0 Wireframe_Theme
+	 * @since 1.0.0 Wireframe Theme
 	 * @var   array $filters Filters to hook.
 	 * @todo  WIP.
 	 */
@@ -107,7 +107,7 @@ function wireframe_theme_config_editor() {
 	/**
 	 * Path to the `TinyMCE` editor custom stylesheet.
 	 *
-	 * @since 1.0.0 Wireframe_Theme
+	 * @since 1.0.0 Wireframe Theme
 	 * @var   string $editor_style Path to the stylesheet.
 	 */
 	$editor_style = WIREFRAME_THEME_CSS . 'editor-style-min';
@@ -119,7 +119,7 @@ function wireframe_theme_config_editor() {
 	 * End-Users: The `TinyMCE` editor's `Toolbar Toggle` button must be
 	 * clicked to reveal the `Formats` select dropdown menu.
 	 *
-	 * @since 1.0.0 Wireframe_Theme
+	 * @since 1.0.0 Wireframe Theme
 	 * @var   array $style_formats Array of style formats.
 	 * @see   https://codex.wordpress.org/TinyMCE_Custom_Styles
 	 */
@@ -137,7 +137,7 @@ function wireframe_theme_config_editor() {
 	 * to use `apply_filters` or `wp_json_encode` or `add_setting` or `add_option`
 	 * whenever appropriate. Consider Admin pages for modifying settings & options.
 	 *
-	 * @since  1.0.0 Wireframe_Theme
+	 * @since  1.0.0 Wireframe Theme
 	 * @return array|object
 	 */
 	return array(

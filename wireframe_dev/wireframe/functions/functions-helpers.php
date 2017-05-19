@@ -1,12 +1,12 @@
 <?php
 /**
- * Default helper functions for Wireframe_Theme.
+ * Default helper functions for Wireframe Theme.
  *
  * PHP version 5.6.0
  *
- * @package   Wireframe_Theme
+ * @package   Wireframe Theme
  * @author    MixaTheme, Tada Burke
- * @version   1.0.0 Wireframe_Theme
+ * @version   1.0.0 Wireframe Theme
  * @copyright 2016 MixaTheme
  * @license   GPL-2.0+
  * @see       https://mixatheme.com
@@ -22,12 +22,12 @@
  */
 
 /**
- * Wireframe_Theme Admin Check.
+ * Wireframe Theme Admin Check.
  *
  * Check if the current user has Admin permmissions.
  *
  * @since 1.0.0 Wireframe
- * @since 1.0.0 Wireframe_Theme
+ * @since 1.0.0 Wireframe Theme
  */
 function wireframe_theme_admin_check() {
 	if ( ! is_admin() ) {

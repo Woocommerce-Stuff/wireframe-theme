@@ -1,12 +1,12 @@
 <?php
 /**
- * Module_Features_Interface is a Wireframe theme interface.
+ * Module_Features_Interface is a Wireframe module interface.
  *
  * PHP version 5.6.0
  *
- * @package   Wireframe_Theme
+ * @package   Wireframe Theme
  * @author    MixaTheme, Tada Burke
- * @version   1.0.0 Wireframe_Theme
+ * @version   1.0.0 Wireframe Theme
  * @copyright 2016 MixaTheme
  * @license   GPL-2.0+
  * @see       https://mixatheme.com
@@ -26,7 +26,7 @@
  *
  * @since 5.3.0 PHP
  * @since 1.0.0 Wireframe
- * @since 1.0.0 Wireframe_Theme
+ * @since 1.0.0 Wireframe Theme
  */
 namespace MixaTheme\Wireframe\Theme;
 
@@ -34,7 +34,7 @@ namespace MixaTheme\Wireframe\Theme;
  * No direct access to this file.
  *
  * @since 1.0.0 Wireframe
- * @since 1.0.0 Wireframe_Theme
+ * @since 1.0.0 Wireframe Theme
  */
 defined( 'ABSPATH' ) or die();
 
@@ -42,7 +42,7 @@ defined( 'ABSPATH' ) or die();
  * Check if the class exists.
  *
  * @since 1.0.0 Wireframe
- * @since 1.0.0 Wireframe_Theme
+ * @since 1.0.0 Wireframe Theme
  */
 if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Features_Interface' ) ) :
 	/**
@@ -53,7 +53,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Features_Interface' ) ) :
 	 * All untrusted data should be escaped before output.
 	 *
 	 * @since 1.0.0 Wireframe
-	 * @since 1.0.0 Wireframe_Theme
+	 * @since 1.0.0 Wireframe Theme
 	 * @see   https://developer.wordpress.org/reference/functions/add_theme_support/
 	 * @see   https://github.com/mixatheme/Wireframe
 	 */
@@ -66,7 +66,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Features_Interface' ) ) :
 		 *
 		 * @since 2.1.0 WordPress @see add_theme_support('custom-header')
 		 * @since 1.0.0 Wireframe
-		 * @since 1.0.0 Wireframe_Theme
+		 * @since 1.0.0 Wireframe Theme
 		 */
 		public function custom_header();
 		/**
@@ -79,7 +79,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Features_Interface' ) ) :
 		 * @global $content_width
 		 * @since  2.6.0 WordPress @see $GLOBALS['content_width']
 		 * @since  1.0.0 Wireframe
-		 * @since  1.0.0 Wireframe_Theme
+		 * @since  1.0.0 Wireframe Theme
 		 * @see    https://codex.wordpress.org/Content_Width
 		 * @see    https://core.trac.wordpress.org/ticket/21256
 		 *
@@ -106,7 +106,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Features_Interface' ) ) :
 		 *
 		 * @since 2.9.0 WordPress @see add_theme_support('post-thumbnails')
 		 * @since 1.0.0 Wireframe
-		 * @since 1.0.0 Wireframe_Theme
+		 * @since 1.0.0 Wireframe Theme
 		 */
 		public function post_thumbnails();
 
@@ -115,7 +115,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Features_Interface' ) ) :
 		 *
 		 * @since 2.9.0 WordPress @see set_post_thumbnail_size()
 		 * @since 1.0.0 Wireframe
-		 * @since 1.0.0 Wireframe_Theme
+		 * @since 1.0.0 Wireframe Theme
 		 * @see   set_post_thumbnail_size()
 		 */
 		public function post_thumbnails_size();
@@ -129,7 +129,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Features_Interface' ) ) :
 		 *
 		 * @since 3.0.0 WordPress @see add_theme_support('automatic-feed-links')
 		 * @since 1.0.0 Wireframe
-		 * @since 1.0.0 Wireframe_Theme
+		 * @since 1.0.0 Wireframe Theme
 		 */
 		public function feed_links();
 
@@ -140,7 +140,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Features_Interface' ) ) :
 		 *
 		 * @since 3.0.0 WordPress @see register_nav_menus()
 		 * @since 1.0.0 Wireframe
-		 * @since 1.0.0 Wireframe_Theme
+		 * @since 1.0.0 Wireframe Theme
 		 * @see   register_nav_menus()
 		 */
 		public function nav_menus();
@@ -154,7 +154,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Features_Interface' ) ) :
 		 *
 		 * @since 3.1.0 WordPress @see add_theme_support('post-formats')
 		 * @since 1.0.0 Wireframe
-		 * @since 1.0.0 Wireframe_Theme
+		 * @since 1.0.0 Wireframe Theme
 		 * @see   http://codex.wordpress.org/Post_Formats
 		 *
 		 * @internal If Post Formats are enabled, "Standard" will always be a format.
@@ -170,7 +170,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Features_Interface' ) ) :
 		 *
 		 * @since 3.4.0 WordPress @see add_theme_support('custom-background')
 		 * @since 1.0.0 Wireframe
-		 * @since 1.0.0 Wireframe_Theme
+		 * @since 1.0.0 Wireframe Theme
 		 */
 		public function custom_background();
 
@@ -182,7 +182,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Features_Interface' ) ) :
 		 *
 		 * @since 3.6.0 WordPress @see add_theme_support('html5')
 		 * @since 1.0.0 Wireframe
-		 * @since 1.0.0 Wireframe_Theme
+		 * @since 1.0.0 Wireframe Theme
 		 */
 		public function html5();
 
@@ -194,7 +194,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Features_Interface' ) ) :
 		 *
 		 * @since 4.1.0 WordPress @see add_theme_support('title-tag')
 		 * @since 1.0.0 Wireframe
-		 * @since 1.0.0 Wireframe_Theme
+		 * @since 1.0.0 Wireframe Theme
 		 * @see   https://codex.wordpress.org/Title_Tag
 		 */
 		public function title_tag();
@@ -206,7 +206,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Features_Interface' ) ) :
 		 *
 		 * @since 4.5.0 WordPress @see add_theme_support('custom-logo')
 		 * @since 1.0.0 Wireframe
-		 * @since 1.0.0 Wireframe_Theme
+		 * @since 1.0.0 Wireframe Theme
 		 */
 		public function custom_logo();
 
@@ -217,7 +217,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Features_Interface' ) ) :
 		 *
 		 * @since 4.5.0 WordPress @see add_theme_support('customize-selective-refresh-widgets')
 		 * @since 1.0.0 Wireframe
-		 * @since 1.0.0 Wireframe_Theme
+		 * @since 1.0.0 Wireframe Theme
 		 */
 		public function selective_refresh();
 

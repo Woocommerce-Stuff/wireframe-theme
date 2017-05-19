@@ -1,17 +1,17 @@
 <?php
 /**
- * Template Tags helper functions for Wireframe themes.
+ * Template Tags helper functions for Wireframe Theme.
  *
  * Custom template tags for this theme. Eventually, some of the functionality here
  * could be replaced by core features.
  *
  * PHP version 5.6.0
  *
- * @package   Wireframe_Theme
+ * @package   Wireframe Theme
  * @author    MixaTheme, Tada Burke
  * @copyright 2016 MixaTheme
  * @license   GPL-2.0+
- * @version   1.0.0 Wireframe_Theme
+ * @version   1.0.0 Wireframe Theme
  * @see       https://mixatheme.com
  * @see       https://github.com/mixatheme/Wireframe
  * @see       https://developer.wordpress.org/themes/basics/theme-functions
@@ -33,7 +33,7 @@ if ( ! function_exists( 'wireframe_theme_template_part' ) ) :
 	 * the standard `get_template_part()` or `locate_template()` also works well.
 	 * We use `include( locate_template() )` which allows object vars (if needed).
 	 *
-	 * @since 1.0.0 Wireframe_Theme
+	 * @since 1.0.0 Wireframe Theme
 	 * @param string $path Path to the template file.
 	 * @param bool   $load If true the template file will be loaded if it is found.
 	 * @param bool   $once Whether to require_once or require. Default true. Has no effect if $load is false.
@@ -86,7 +86,7 @@ if ( ! function_exists( 'wireframe_theme_version' ) ) :
 	 * Prevents caching while debugging or in Customizer. Generates a random version number
 	 * if WP_DEBUG is true or in Live Preview, else use the $version parameter.
 	 *
-	 * @since  1.0.0 Wireframe_Theme
+	 * @since  1.0.0 Wireframe Theme
 	 * @param  string $version The package version number.
 	 * @return mixed  $version A randomly generated string or the $version arg.
 	 */
@@ -114,7 +114,7 @@ if ( ! function_exists( 'wireframe_theme_custom_logo' ) ) :
 	 * Renders a Custom Logo.
 	 *
 	 * @since 4.5.0 WordPress
-	 * @since 1.0.0 Wireframe_Theme
+	 * @since 1.0.0 Wireframe Theme
 	 * @see   https://codex.wordpress.org/Theme_Logo
 	 */
 	function wireframe_theme_custom_logo() {
@@ -132,7 +132,7 @@ if ( ! function_exists( 'wireframe_theme_posted_on' ) ) :
 	/**
 	 * Prints HTML with meta information for the current post-date/time and author.
 	 *
-	 * @since  1.0.0 Wireframe_Theme
+	 * @since  1.0.0 Wireframe Theme
 	 * @author Automattic
 	 * @author MixaTheme
 	 */
@@ -169,7 +169,7 @@ if ( ! function_exists( 'wireframe_theme_entry_footer' ) ) :
 	/**
 	 * Prints HTML with meta information for the categories, tags and comments.
 	 *
-	 * @since  1.0.0 Wireframe_Theme
+	 * @since  1.0.0 Wireframe Theme
 	 * @author Automattic
 	 * @author MixaTheme
 	 */
@@ -213,7 +213,7 @@ if ( ! function_exists( 'wireframe_theme_categorized_blog' ) ) :
 	/**
 	 * Returns true if a blog has more than 1 category.
 	 *
-	 * @since  1.0.0 Wireframe_Theme
+	 * @since  1.0.0 Wireframe Theme
 	 * @author Automattic
 	 * @author MixaTheme
 	 * @return bool Returns true if more than 1 category, or false otherwise.
@@ -256,7 +256,7 @@ if ( ! function_exists( 'wireframe_theme_category_transient_flusher' ) ) :
 	/**
 	 * Flush out the transients used in wireframe_theme_categorized_blog.
 	 *
-	 * @since  1.0.0 Wireframe_Theme
+	 * @since  1.0.0 Wireframe Theme
 	 * @author Automattic
 	 * @author MixaTheme
 	 */
