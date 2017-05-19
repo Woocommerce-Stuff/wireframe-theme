@@ -91,7 +91,7 @@ function wireframe_theme_config_navigation() {
 	 */
 	$actions = array(
 		'primary_menu' => array(
-			'tag'      => 'wireframe_theme_mainmenu',
+			'tag'      => 'wireframe_theme_navigation',
 			'function' => 'primary_menu',
 			'priority' => 10,
 			'args'     => null,

@@ -65,7 +65,7 @@
 
 			<nav id="site-navigation" class="main-navigation" role="navigation">
 
-				<?php do_action( 'wireframe_theme_mainmenu' ); ?><!-- wireframe_theme_mainmenu -->
+				<?php do_action( 'wireframe_theme_navigation' ); ?><!-- wireframe_theme_navigation -->
 
 			</nav><!-- #site-navigation -->
 

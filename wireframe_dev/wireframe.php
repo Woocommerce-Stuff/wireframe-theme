@@ -428,7 +428,7 @@ if ( class_exists( 'MixaTheme\Wireframe\Theme\Core_Theme' ) ) :
 	 * @see    wireframe_theme_config_navigation()
 	 * @return object Module_Navigation( @param array Object args. )
 	 */
-	$wireframe_theme_container->mainmenu = function () {
+	$wireframe_theme_container->navigation = function () {
 		return new Module_Navigation( wireframe_theme_config_navigation() );
 	};
 
@@ -541,7 +541,7 @@ if ( class_exists( 'MixaTheme\Wireframe\Theme\Core_Theme' ) ) :
 		$wireframe_theme_container->language,
 		$wireframe_theme_container->notices,
 		$wireframe_theme_container->ui,
-		$wireframe_theme_container->mainmenu,
+		$wireframe_theme_container->navigation,
 		$wireframe_theme_container->widgets,
 		$wireframe_theme_container->features,
 		$wireframe_theme_container->customizer,
@@ -563,7 +563,7 @@ if ( class_exists( 'MixaTheme\Wireframe\Theme\Core_Theme' ) ) :
 	 * 		$wireframe_theme->language()
 	 * 		$wireframe_theme->notices()
 	 * 		$wireframe_theme->ui()
-	 * 		$wireframe_theme->mainmenu()
+	 * 		$wireframe_theme->navigation()
 	 * 		$wireframe_theme->widgets()
 	 * 		$wireframe_theme->features()
 	 * 		$wireframe_theme->customizer()
