@@ -207,7 +207,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Features' ) ) :
 			$this->_title_tag            = $config['title_tag'];
 			$this->_custom_logo          = $config['custom_logo'];
 			$this->_selective_refresh    = $config['selective_refresh'];
-			$this->_starter_content      = $config['starter_content  '];
+			$this->_starter_content      = $config['starter_content'];
 
 			// Get parent Constructor.
 			parent::__construct( $config );
