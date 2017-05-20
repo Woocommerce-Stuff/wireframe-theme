@@ -176,6 +176,16 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Features' ) ) :
 		private $_selective_refresh;
 
 		/**
+		 * Starter Content.
+		 *
+		 * @access private
+		 * @since  1.0.0 Wireframe
+		 * @since  1.0.0 Wireframe Theme
+		 * @var    array $_starter_content
+		 */
+		private $_starter_content;
+
+		/**
 		 * Constructor runs when this class instantiates.
 		 *
 		 * @since 1.0.0 Wireframe
@@ -197,6 +207,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Features' ) ) :
 			$this->_title_tag            = $config['title_tag'];
 			$this->_custom_logo          = $config['custom_logo'];
 			$this->_selective_refresh    = $config['selective_refresh'];
+			$this->_starter_content      = $config['starter_content  '];
 
 			// Get parent Constructor.
 			parent::__construct( $config );
@@ -459,6 +470,25 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Features' ) ) :
 					$this->_selective_refresh
 				);
 				add_theme_support( 'customize-selective-refresh-widgets', $filterable );
+			}
+		}
+
+		/**
+		 * Starter Content.
+		 *
+		 * Ability to add starter content to a fresh WordPress install.
+		 *
+		 * @since 4.7.0 WordPress @see add_theme_support('starter-content')
+		 * @since 1.0.0 Wireframe
+		 * @since 1.0.0 Wireframe Theme
+		 */
+		public function starter_content() {
+			if ( isset( $this->_starter_content ) && isset( $this->_prefix ) ) {
+				$filterable = apply_filters(
+					$this->_prefix . '_' . __FUNCTION__,
+					$this->_starter_content
+				);
+				add_theme_support( 'starter-content', $filterable );
 			}
 		}
 

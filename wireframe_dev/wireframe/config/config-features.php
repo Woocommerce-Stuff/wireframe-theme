@@ -161,6 +161,12 @@ function wireframe_theme_config_features() {
 			'priority' => 10,
 			'args'     => null,
 		),
+		'starter_content' => array(
+			'tag'      => 'after_setup_theme',
+			'function' => 'starter_content',
+			'priority' => 10,
+			'args'     => null,
+		),
 	);
 
 	/**
@@ -395,6 +401,19 @@ function wireframe_theme_config_features() {
 	$selective_refresh = true;
 
 	/**
+	 * Features: Starter Content.
+	 *
+	 * Note: We do not intend to add Starter Content to boilerplate themes.
+	 * However, we add this feature to make your development time faster.
+	 *
+	 * @since 4.7.0 WordPress
+	 * @since 1.0.0 Wireframe Theme
+	 * @var   array $starter_content Enable Starter Content.
+	 * @see   https://make.wordpress.org/core/?p=20650
+	 */
+	$starter_content = array();
+
+	/**
 	 * Option #1: Return (array) of config data for passing into objects.
 	 *
 	 * Option #2: Cast array as an (object) and use object/property sytnax
@@ -426,6 +445,7 @@ function wireframe_theme_config_features() {
 		'title_tag'            => $title_tag,
 		'custom_logo'          => $custom_logo,
 		'selective_refresh'    => $selective_refresh,
+		'starter_content'      => $starter_content,
 	);
 
 }
