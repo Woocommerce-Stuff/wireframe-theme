@@ -27,6 +27,7 @@
  * @since 5.3.0 PHP
  * @since 1.0.0 Wireframe
  * @since 1.0.0 Wireframe Theme
+ * @since 1.0.0 Wireframe Child
  */
 namespace MixaTheme\Wireframe\Theme;
 
@@ -35,6 +36,8 @@ namespace MixaTheme\Wireframe\Theme;
  *
  * @since 1.0.0 Wireframe
  * @since 1.0.0 Wireframe Theme
+ * @since 1.0.0 Wireframe Child
+ * @since 1.0.0 Wireframe Plugin
  */
 defined( 'ABSPATH' ) or die();
 
@@ -43,6 +46,7 @@ defined( 'ABSPATH' ) or die();
  *
  * @since 1.0.0 Wireframe
  * @since 1.0.0 Wireframe Theme
+ * @since 1.0.0 Wireframe Child
  */
 if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Core_Container_Interface' ) ) :
 	/**
@@ -53,6 +57,8 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Core_Container_Interface' ) ) :
 	 *
 	 * @since 1.0.0 Wireframe
 	 * @since 1.0.0 Wireframe Theme
+	 * @since 1.0.0 Wireframe Child
+	 * @since 1.0.0 Wireframe Plugin
 	 * @see   https://github.com/mixatheme/Wireframe
 	 * @see   http://fabien.potencier.org/do-you-need-a-dependency-injection-container.html
 	 *
@@ -64,6 +70,8 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Core_Container_Interface' ) ) :
 		 *
 		 * @since 1.0.0 Wireframe
 		 * @since 1.0.0 Wireframe Theme
+		 * @since 1.0.0 Wireframe Child
+		 * @since 1.0.0 Wireframe Plugin
 		 * @param string   $service  Service key.
 		 * @param callable $resolver Service instance value.
 		 */
@@ -74,6 +82,8 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Core_Container_Interface' ) ) :
 		 *
 		 * @since  1.0.0 Wireframe
 		 * @since  1.0.0 Wireframe Theme
+		 * @since  1.0.0 Wireframe Child
+		 * @since  1.0.0 Wireframe Plugin
 		 * @param  string $service Service key.
 		 * @return callable Closure as an object instance.
 		 */

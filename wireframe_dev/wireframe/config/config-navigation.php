@@ -1,6 +1,6 @@
 <?php
 /**
- * Theme_Navigation config data file for Wireframe Theme.
+ * Theme_Navigation config for modules built with Wireframe Suite for WordPress.
  *
  * PHP version 5.6.0
  *
@@ -25,7 +25,9 @@
  * Namespaces.
  *
  * @since 5.3.0 PHP
+ * @since 1.0.0 Wireframe
  * @since 1.0.0 Wireframe Theme
+ * @since 1.0.0 Wireframe Child
  */
 namespace MixaTheme\Wireframe\Theme;
 use Walker_Nav_Menu;
@@ -33,7 +35,9 @@ use Walker_Nav_Menu;
 /**
  * No direct access to this file.
  *
+ * @since 1.0.0 Wireframe
  * @since 1.0.0 Wireframe Theme
+ * @since 1.0.0 Wireframe Child
  */
 defined( 'ABSPATH' ) or die();
 
@@ -47,7 +51,9 @@ defined( 'ABSPATH' ) or die();
  *            Another alternative is putting all your object configs into one
  *            single config file to minimize your file count.
  *
- * @since  1.0.0 Wireframe Theme
+ * @since 1.0.0 Wireframe
+ * @since 1.0.0 Wireframe Theme
+ * @since 1.0.0 Wireframe Child
  * @see    object Theme_Navigation
  * @return array  Default configuration values.
  */
@@ -62,7 +68,9 @@ function wireframe_theme_config_navigation() {
 	 * is instantiated. This is optional, because some objects do not need any
 	 * actions or filters.
 	 *
+	 * @since 1.0.0 Wireframe
 	 * @since 1.0.0 Wireframe Theme
+	 * @since 1.0.0 Wireframe Child
 	 * @var   bool $wired Wire hooks via __construct(). Default: true
 	 */
 	$wired = true;
@@ -74,7 +82,9 @@ function wireframe_theme_config_navigation() {
 	 * Generally, you should use a constant defined in wireframe.php. However,
 	 * you can change it here if needed. Default: WIREFRAME_THEME_PREFIX
 	 *
+	 * @since 1.0.0 Wireframe
 	 * @since 1.0.0 Wireframe Theme
+	 * @since 1.0.0 Wireframe Child
 	 * @var   string $prefix Prefix for handles.
 	 */
 	$prefix = WIREFRAME_THEME_PREFIX;
@@ -86,7 +96,9 @@ function wireframe_theme_config_navigation() {
 	 * You can set your actions in a multi-dimensional array and remember
 	 * to set the property $wired = true (above).
 	 *
+	 * @since 1.0.0 Wireframe
 	 * @since 1.0.0 Wireframe Theme
+	 * @since 1.0.0 Wireframe Child
 	 * @var   array $actions Actions to hook.
 	 */
 	$actions = array(
@@ -105,7 +117,9 @@ function wireframe_theme_config_navigation() {
 	 * You can set your filters in a multi-dimensional array and remember
 	 * to set the property $wired = true (above).
 	 *
+	 * @since 1.0.0 Wireframe
 	 * @since 1.0.0 Wireframe Theme
+	 * @since 1.0.0 Wireframe Child
 	 * @var   array $filters Filters to hook.
 	 * @todo  WIP.
 	 */
@@ -114,7 +128,9 @@ function wireframe_theme_config_navigation() {
 	/**
 	 * Walker.
 	 *
+	 * @since 1.0.0 Wireframe
 	 * @since 1.0.0 Wireframe Theme
+	 * @since 1.0.0 Wireframe Child
 	 * @var   object Walker
 	 */
 	$walker = new Walker_Nav_Menu;
@@ -126,7 +142,9 @@ function wireframe_theme_config_navigation() {
 	 * your own walker, or extend the default `Walker` class built into Wireframe Theme.
 	 * Don't forget to declare a namespace alias for your custom walkers.
 	 *
-	 * @since 1.0.0  Wireframe
+	 * @since 1.0.0 Wireframe
+	 * @since 1.0.0 Wireframe Theme
+	 * @since 1.0.0 Wireframe Child
 	 * @see   object Walker
 	 * @var   array  $args Args for the primary menu.
 	 */
@@ -165,7 +183,9 @@ function wireframe_theme_config_navigation() {
 	 * to use `apply_filters` or `wp_json_encode` or `add_setting` or `add_option`
 	 * whenever appropriate. Consider Admin pages for modifying settings & options.
 	 *
+	 * @since  1.0.0 Wireframe
 	 * @since  1.0.0 Wireframe Theme
+	 * @since  1.0.0 Wireframe Child
 	 * @return array|object
 	 */
 	return array(

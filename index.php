@@ -1,6 +1,6 @@
 <?php
 /**
- * Index template file for Wireframe Theme.
+ * Index template file for themes built with Wireframe Suite for WordPress.
  *
  * This is the most generic template file in a WordPress theme
  * and one of the two required files for a theme (the other being style.css).

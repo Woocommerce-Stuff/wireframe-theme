@@ -27,6 +27,7 @@
  * @since 5.3.0 PHP
  * @since 1.0.0 Wireframe
  * @since 1.0.0 Wireframe Theme
+ * @since 1.0.0 Wireframe Child
  */
 namespace MixaTheme\Wireframe\Theme;
 
@@ -35,6 +36,7 @@ namespace MixaTheme\Wireframe\Theme;
  *
  * @since 1.0.0 Wireframe
  * @since 1.0.0 Wireframe Theme
+ * @since 1.0.0 Wireframe Child
  */
 defined( 'ABSPATH' ) or die();
 
@@ -43,6 +45,7 @@ defined( 'ABSPATH' ) or die();
  *
  * @since 1.0.0 Wireframe
  * @since 1.0.0 Wireframe Theme
+ * @since 1.0.0 Wireframe Child
  */
 if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Core_Theme' ) ) :
 	/**
@@ -50,6 +53,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Core_Theme' ) ) :
 	 *
 	 * @since 1.0.0 Wireframe
 	 * @since 1.0.0 Wireframe Theme
+	 * @since 1.0.0 Wireframe Child
 	 * @see   https://github.com/mixatheme/Wireframe
 	 */
 	final class Core_Theme implements Core_Theme_Interface {
@@ -59,6 +63,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Core_Theme' ) ) :
 		 * @access private
 		 * @since  1.0.0 Wireframe
 		 * @since  1.0.0 Wireframe Theme
+		 * @since  1.0.0 Wireframe Child
 		 * @var    object $_language
 		 */
 		private $_language;
@@ -69,6 +74,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Core_Theme' ) ) :
 		 * @access private
 		 * @since  1.0.0 Wireframe
 		 * @since  1.0.0 Wireframe Theme
+		 * @since  1.0.0 Wireframe Child
 		 * @var    object $_notices
 		 */
 		private $_notices;
@@ -79,6 +85,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Core_Theme' ) ) :
 		 * @access private
 		 * @since  1.0.0 Wireframe
 		 * @since  1.0.0 Wireframe Theme
+		 * @since  1.0.0 Wireframe Child
 		 * @var    object $_ui
 		 */
 		private $_ui;
@@ -89,6 +96,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Core_Theme' ) ) :
 		 * @access private
 		 * @since  1.0.0 Wireframe
 		 * @since  1.0.0 Wireframe Theme
+		 * @since  1.0.0 Wireframe Child
 		 * @var    object $_navigation
 		 */
 		private $_navigation;
@@ -99,6 +107,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Core_Theme' ) ) :
 		 * @access private
 		 * @since  1.0.0 Wireframe
 		 * @since  1.0.0 Wireframe Theme
+		 * @since  1.0.0 Wireframe Child
 		 * @var    object $_widgets
 		 */
 		private $_widgets;
@@ -109,6 +118,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Core_Theme' ) ) :
 		 * @access private
 		 * @since  1.0.0 Wireframe
 		 * @since  1.0.0 Wireframe Theme
+		 * @since  1.0.0 Wireframe Child
 		 * @var    object $_features
 		 */
 		private $_features;
@@ -119,6 +129,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Core_Theme' ) ) :
 		 * @access private
 		 * @since  1.0.0 Wireframe
 		 * @since  1.0.0 Wireframe Theme
+		 * @since  1.0.0 Wireframe Child
 		 * @var    object $_customizer
 		 */
 		private $_customizer;
@@ -129,6 +140,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Core_Theme' ) ) :
 		 * @access private
 		 * @since  1.0.0 Wireframe
 		 * @since  1.0.0 Wireframe Theme
+		 * @since  1.0.0 Wireframe Child
 		 * @var    object $_editor
 		 */
 		private $_editor;
@@ -139,6 +151,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Core_Theme' ) ) :
 		 * @access private
 		 * @since  1.0.0 Wireframe
 		 * @since  1.0.0 Wireframe Theme
+		 * @since  1.0.0 Wireframe Child
 		 * @var    object $_admin
 		 */
 		private $_admin;
@@ -148,6 +161,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Core_Theme' ) ) :
 		 *
 		 * @since 1.0.0 Wireframe
 		 * @since 1.0.0 Wireframe Theme
+		 * @since 1.0.0 Wireframe Child
 		 * @param object $language   Core_Language_Interface.
 		 * @param object $notices    Module_Notices_Interface.
 		 * @param object $ui         Module_UI_Interface.
@@ -179,6 +193,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Core_Theme' ) ) :
 		 *
 		 * @since  1.0.0 Wireframe
 		 * @since  1.0.0 Wireframe Theme
+		 * @since  1.0.0 Wireframe Child
 		 * @return object $_language
 		 */
 		public function language() {
@@ -192,6 +207,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Core_Theme' ) ) :
 		 *
 		 * @since  1.0.0 Wireframe
 		 * @since  1.0.0 Wireframe Theme
+		 * @since  1.0.0 Wireframe Child
 		 * @return object $_notices
 		 */
 		public function notices() {
@@ -205,6 +221,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Core_Theme' ) ) :
 		 *
 		 * @since  1.0.0 Wireframe
 		 * @since  1.0.0 Wireframe Theme
+		 * @since  1.0.0 Wireframe Child
 		 * @return object $_ui
 		 */
 		public function ui() {
@@ -218,6 +235,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Core_Theme' ) ) :
 		 *
 		 * @since  1.0.0 Wireframe
 		 * @since  1.0.0 Wireframe Theme
+		 * @since  1.0.0 Wireframe Child
 		 * @return object $_navigation
 		 */
 		public function navigation() {
@@ -231,6 +249,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Core_Theme' ) ) :
 		 *
 		 * @since  1.0.0 Wireframe
 		 * @since  1.0.0 Wireframe Theme
+		 * @since  1.0.0 Wireframe Child
 		 * @return object $_widgets
 		 */
 		public function widgets() {
@@ -244,6 +263,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Core_Theme' ) ) :
 		 *
 		 * @since  1.0.0 Wireframe
 		 * @since  1.0.0 Wireframe Theme
+		 * @since  1.0.0 Wireframe Child
 		 * @return object $_features
 		 */
 		public function features() {
@@ -257,6 +277,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Core_Theme' ) ) :
 		 *
 		 * @since  1.0.0 Wireframe
 		 * @since  1.0.0 Wireframe Theme
+		 * @since  1.0.0 Wireframe Child
 		 * @return object $_customizer
 		 */
 		public function customizer() {
@@ -270,6 +291,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Core_Theme' ) ) :
 		 *
 		 * @since  1.0.0 Wireframe
 		 * @since  1.0.0 Wireframe Theme
+		 * @since  1.0.0 Wireframe Child
 		 * @return object $_editor
 		 */
 		public function editor() {
@@ -283,6 +305,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Core_Theme' ) ) :
 		 *
 		 * @since  1.0.0 Wireframe
 		 * @since  1.0.0 Wireframe Theme
+		 * @since  1.0.0 Wireframe Child
 		 * @return object $_admin
 		 */
 		public function admin() {

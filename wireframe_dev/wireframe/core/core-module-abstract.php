@@ -27,6 +27,7 @@
  * @since 5.3.0 PHP
  * @since 1.0.0 Wireframe
  * @since 1.0.0 Wireframe Theme
+ * @since 1.0.0 Wireframe Child
  */
 namespace MixaTheme\Wireframe\Theme;
 
@@ -35,6 +36,8 @@ namespace MixaTheme\Wireframe\Theme;
  *
  * @since 1.0.0 Wireframe
  * @since 1.0.0 Wireframe Theme
+ * @since 1.0.0 Wireframe Child
+ * @since 1.0.0 Wireframe Plugin
  */
 defined( 'ABSPATH' ) or die();
 
@@ -43,6 +46,7 @@ defined( 'ABSPATH' ) or die();
  *
  * @since 1.0.0 Wireframe
  * @since 1.0.0 Wireframe Theme
+ * @since 1.0.0 Wireframe Child
  */
 if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Core_Module_Abstract' ) ) :
 	/**
@@ -50,6 +54,8 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Core_Module_Abstract' ) ) :
 	 *
 	 * @since 1.0.0 Wireframe
 	 * @since 1.0.0 Wireframe Theme
+	 * @since 1.0.0 Wireframe Child
+	 * @since 1.0.0 Wireframe Plugin
 	 * @see   https://github.com/mixatheme/Wireframe
 	 */
 	abstract class Core_Module_Abstract {
@@ -59,6 +65,8 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Core_Module_Abstract' ) ) :
 		 * @access protected
 		 * @since  1.0.0 Wireframe
 		 * @since  1.0.0 Wireframe Theme
+		 * @since  1.0.0 Wireframe Child
+		 * @since  1.0.0 Wireframe Plugin
 		 * @var    array $_prefix
 		 */
 		protected $_prefix = WIREFRAME_THEME_PREFIX;
@@ -69,6 +77,8 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Core_Module_Abstract' ) ) :
 		 * @access protected
 		 * @since  1.0.0 Wireframe
 		 * @since  1.0.0 Wireframe Theme
+		 * @since  1.0.0 Wireframe Child
+		 * @since  1.0.0 Wireframe Plugin
 		 * @var    array $_wired
 		 */
 		protected $_wired = false;
@@ -79,6 +89,8 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Core_Module_Abstract' ) ) :
 		 * @access protected
 		 * @since  1.0.0 Wireframe
 		 * @since  1.0.0 Wireframe Theme
+		 * @since  1.0.0 Wireframe Child
+		 * @since  1.0.0 Wireframe Plugin
 		 * @var    array $_actions
 		 */
 		protected $_actions = array();
@@ -89,6 +101,8 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Core_Module_Abstract' ) ) :
 		 * @access protected
 		 * @since  1.0.0 Wireframe
 		 * @since  1.0.0 Wireframe Theme
+		 * @since  1.0.0 Wireframe Child
+		 * @since  1.0.0 Wireframe Plugin
 		 * @var    array $_filters
 		 */
 		protected $_filters = array();
@@ -98,6 +112,8 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Core_Module_Abstract' ) ) :
 		 *
 		 * @since 1.0.0 Wireframe
 		 * @since 1.0.0 Wireframe Theme
+		 * @since 1.0.0 Wireframe Child
+		 * @since 1.0.0 Wireframe Plugin
 		 * @param array $config Data via config file.
 		 */
 		public function __construct( $config ) {
@@ -127,6 +143,8 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Core_Module_Abstract' ) ) :
 		 *
 		 * @since  1.0.0 Wireframe
 		 * @since  1.0.0 Wireframe Theme
+		 * @since  1.0.0 Wireframe Child
+		 * @since  1.0.0 Wireframe Plugin
 		 * @param  string $var Property to get.
 		 */
 		public function get( $var ) {
@@ -141,6 +159,8 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Core_Module_Abstract' ) ) :
 		 * @access protected
 		 * @since  1.0.0 Wireframe
 		 * @since  1.0.0 Wireframe Theme
+		 * @since  1.0.0 Wireframe Child
+		 * @since  1.0.0 Wireframe Plugin
 		 * @param  array $actions Actions to hook.
 		 */
 		protected function wire_actions( $actions ) {
@@ -157,6 +177,8 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Core_Module_Abstract' ) ) :
 		 * @access protected
 		 * @since  1.0.0 Wireframe
 		 * @since  1.0.0 Wireframe Theme
+		 * @since  1.0.0 Wireframe Child
+		 * @since  1.0.0 Wireframe Plugin
 		 * @param  array $filters Filters to hook.
 		 */
 		protected function wire_filters( $filters ) {

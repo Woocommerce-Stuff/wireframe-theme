@@ -1,6 +1,6 @@
 <?php
 /**
- * Theme_Features config data file for Wireframe Theme.
+ * Theme_Features config for modules built with Wireframe Suite for WordPress.
  *
  * PHP version 5.6.0
  *
@@ -25,14 +25,18 @@
  * Namespaces.
  *
  * @since 5.3.0 PHP
+ * @since 1.0.0 Wireframe
  * @since 1.0.0 Wireframe Theme
+ * @since 1.0.0 Wireframe Child
  */
 namespace MixaTheme\Wireframe\Theme;
 
 /**
  * No direct access to this file.
  *
+ * @since 1.0.0 Wireframe
  * @since 1.0.0 Wireframe Theme
+ * @since 1.0.0 Wireframe Child
  */
 defined( 'ABSPATH' ) or die();
 
@@ -46,7 +50,9 @@ defined( 'ABSPATH' ) or die();
  *            Another alternative is putting all your object configs into one
  *            single config file to minimize your file count.
  *
+ * @since  1.0.0 Wireframe
  * @since  1.0.0 Wireframe Theme
+ * @since  1.0.0 Wireframe Child
  * @see    object Theme_Features
  * @return array  Default configuration values.
  */
@@ -61,7 +67,9 @@ function wireframe_theme_config_features() {
 	 * is instantiated. This is optional, because some objects do not need any
 	 * actions or filters.
 	 *
+	 * @since 1.0.0 Wireframe
 	 * @since 1.0.0 Wireframe Theme
+	 * @since 1.0.0 Wireframe Child
 	 * @var   bool $wired Wire hooks via __construct(). Default: true
 	 */
 	$wired = true;
@@ -73,7 +81,9 @@ function wireframe_theme_config_features() {
 	 * Generally, you should use a constant defined in wireframe.php. However,
 	 * you can change it here if needed. Default: WIREFRAME_THEME_PREFIX
 	 *
+	 * @since 1.0.0 Wireframe
 	 * @since 1.0.0 Wireframe Theme
+	 * @since 1.0.0 Wireframe Child
 	 * @var   string $prefix Prefix for handles.
 	 */
 	$prefix = WIREFRAME_THEME_PREFIX;
@@ -85,7 +95,9 @@ function wireframe_theme_config_features() {
 	 * You can set your actions in a multi-dimensional array and remember
 	 * to set the property $wired = true (above).
 	 *
+	 * @since 1.0.0 Wireframe
 	 * @since 1.0.0 Wireframe Theme
+	 * @since 1.0.0 Wireframe Child
 	 * @var   array $actions Actions to hook.
 	 */
 	$actions = array(
@@ -176,7 +188,9 @@ function wireframe_theme_config_features() {
 	 * You can set your filters in a multi-dimensional array and remember
 	 * to set the property $wired = true (above).
 	 *
+	 * @since 1.0.0 Wireframe
 	 * @since 1.0.0 Wireframe Theme
+	 * @since 1.0.0 Wireframe Child
 	 * @var   array $filters Filters to hook.
 	 * @todo  WIP.
 	 */
@@ -188,8 +202,9 @@ function wireframe_theme_config_features() {
 	 * Custom header is an image that is chosen as the representative image
 	 * in the theme top header section.
 	 *
-	 * @since 2.1.0 WordPress
+	 * @since 1.0.0 Wireframe
 	 * @since 1.0.0 Wireframe Theme
+	 * @since 1.0.0 Wireframe Child
 	 * @var   array $custom_header Default args for custom headers.
 	 * @see   wireframe_theme_custom_header_css() @see helpers-custom-header.php
 	 * @see   https://codex.wordpress.org/Custom_Headers
@@ -216,8 +231,9 @@ function wireframe_theme_config_features() {
 	 * like oEmbeds and images added to posts. The hook priority is 0
 	 * to make it available to lower priority callbacks.
 	 *
-	 * @since 2.6.0 WordPress
+	 * @since 1.0.0 Wireframe
 	 * @since 1.0.0 Wireframe Theme
+	 * @since 1.0.0 Wireframe Child
 	 * @var   int $content_width Pixel size for width. Default: 820
 	 * @see   https://codex.wordpress.org/Content_Width
 	 */
@@ -238,8 +254,9 @@ function wireframe_theme_config_features() {
 	 * Note: This function will not resize your existing featured images.
 	 * To regenerate existing images, use the `Regenerate Thumbnails` plugin.
 	 *
-	 * @since 2.9.0 WordPress
+	 * @since 1.0.0 Wireframe
 	 * @since 1.0.0 Wireframe Theme
+	 * @since 1.0.0 Wireframe Child
 	 * @var   array $post_thumbnails Allowed post types. Default: post
 	 * @see   https://developer.wordpress.org/themes/functionality/?p=11362
 	 */
@@ -250,8 +267,9 @@ function wireframe_theme_config_features() {
 	/**
 	 * Features: Post Thumbnails Size.
 	 *
-	 * @since 2.9.0 WordPress
+	 * @since 1.0.0 Wireframe
 	 * @since 1.0.0 Wireframe Theme
+	 * @since 1.0.0 Wireframe Child
 	 * @var   int $post_thumbnails_size Default args for Post Thumb Sizes.
 	 * @see   https://codex.wordpress.org/Function_Reference/set_post_thumbnail_size
 	 */
@@ -267,8 +285,9 @@ function wireframe_theme_config_features() {
 	 * This feature enables Automatic Feed Links for post and comment in the
 	 * head. This should replace the deprecated `automatic_feed_links()` function.
 	 *
-	 * @since 3.0.0 WordPress
+	 * @since 1.0.0 Wireframe
 	 * @since 1.0.0 Wireframe Theme
+	 * @since 1.0.0 Wireframe Child
 	 * @var   array $feed_links Enable feed links. Default: true
 	 * @see   https://codex.wordpress.org/Automatic_Feed_Links
 	 */
@@ -279,8 +298,9 @@ function wireframe_theme_config_features() {
 	 *
 	 * Registers navigation menu locations for your theme.
 	 *
-	 * @since 3.0.0 WordPress
+	 * @since 1.0.0 Wireframe
 	 * @since 1.0.0 Wireframe Theme
+	 * @since 1.0.0 Wireframe Child
 	 * @var   array $nav_menus Menu locations for our theme.
 	 * @see   https://developer.wordpress.org/reference/functions/register_nav_menus/
 	 */
@@ -297,8 +317,9 @@ function wireframe_theme_config_features() {
 	 * Child Themes, be aware that add_theme_support( 'post-formats' ) will
 	 * override the formats as defined by the parent theme, not add to it.
 	 *
-	 * @since 3.1.0 WordPress
+	 * @since 1.0.0 Wireframe
 	 * @since 1.0.0 Wireframe Theme
+	 * @since 1.0.0 Wireframe Child
 	 * @var   array $post_formats The supported Post Formats.
 	 * @see   https://codex.wordpress.org/Post_Formats
 	 */
@@ -320,8 +341,9 @@ function wireframe_theme_config_features() {
 	 * Custom Backgrounds is a theme feature that provides for customization
 	 * of the background color and image.
 	 *
-	 * @since 3.4.0 WordPress
+	 * @since 1.0.0 Wireframe
 	 * @since 1.0.0 Wireframe Theme
+	 * @since 1.0.0 Wireframe Child
 	 * @see   callable _custom_background_cb() @since WordPress 3.0.0
 	 * @var   array $custom_background Default args for Custom Backgrounds.
 	 * @see   https://codex.wordpress.org/Custom_Backgrounds
@@ -341,8 +363,9 @@ function wireframe_theme_config_features() {
 	 * This feature allows the use of HTML5 markup for the search forms,
 	 * comment forms, comment lists, gallery, and caption.
 	 *
-	 * @since 3.6.0 WordPress
+	 * @since 1.0.0 Wireframe
 	 * @since 1.0.0 Wireframe Theme
+	 * @since 1.0.0 Wireframe Child
 	 * @var   array $html5 Support for HTML5 with various components.
 	 * @see   https://codex.wordpress.org/Theme_Markup
 	 */
@@ -360,8 +383,9 @@ function wireframe_theme_config_features() {
 	 * This feature enables plugins and themes to manage the document
 	 * title tag. This should be used in place of wp_title() function.
 	 *
-	 * @since 4.1.0 WordPress
+	 * @since 1.0.0 Wireframe
 	 * @since 1.0.0 Wireframe Theme
+	 * @since 1.0.0 Wireframe Child
 	 * @var   bool $title_tag Enable title tag. Default: true
 	 * @see   https://codex.wordpress.org/Title_Tag
 	 */
@@ -372,8 +396,9 @@ function wireframe_theme_config_features() {
 	 *
 	 * This feature allows themes to add custom logos.
 	 *
-	 * @since 4.5.0 WordPress
+	 * @since 1.0.0 Wireframe
 	 * @since 1.0.0 Wireframe Theme
+	 * @since 1.0.0 Wireframe Child
 	 * @var   array $custom_logo Default args for the custom logo.
 	 * @see   https://codex.wordpress.org/Theme_Logo
 	 */
@@ -393,8 +418,9 @@ function wireframe_theme_config_features() {
 	 *
 	 * Indicate widget sidebars can use selective refresh in the Customizer.
 	 *
-	 * @since 4.5.0 WordPress
+	 * @since 1.0.0 Wireframe
 	 * @since 1.0.0 Wireframe Theme
+	 * @since 1.0.0 Wireframe Child
 	 * @var   bool $selective_refresh Enable Selective Refresh. Default: true
 	 * @see   https://make.wordpress.org/core/?p=17066
 	 */
@@ -406,8 +432,9 @@ function wireframe_theme_config_features() {
 	 * Note: We do not intend to add Starter Content to boilerplate themes.
 	 * However, we add this feature to make your development time faster.
 	 *
-	 * @since 4.7.0 WordPress
+	 * @since 1.0.0 Wireframe
 	 * @since 1.0.0 Wireframe Theme
+	 * @since 1.0.0 Wireframe Child
 	 * @var   array $starter_content Enable Starter Content.
 	 * @see   https://make.wordpress.org/core/?p=20650
 	 */
@@ -425,7 +452,9 @@ function wireframe_theme_config_features() {
 	 * to use `apply_filters` or `wp_json_encode` or `add_setting` or `add_option`
 	 * whenever appropriate. Consider Admin pages for modifying settings & options.
 	 *
+	 * @since  1.0.0 Wireframe
 	 * @since  1.0.0 Wireframe Theme
+	 * @since  1.0.0 Wireframe Child
 	 * @return array|object
 	 */
 	return array(
@@ -448,4 +477,4 @@ function wireframe_theme_config_features() {
 		'starter_content'      => $starter_content,
 	);
 
-}
+} // Thanks for using MixaTheme products!

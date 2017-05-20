@@ -1,6 +1,6 @@
 <?php
 /**
- * Single template file for Wireframe Theme.
+ * Single template file for themes built with Wireframe Suite for WordPress.
  *
  * The template for displaying all single posts.
  *

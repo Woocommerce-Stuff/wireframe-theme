@@ -1,6 +1,6 @@
 <?php
 /**
- * Theme_Customizer config data file for Wireframe Theme.
+ * Theme_Customizer config for modules built with Wireframe Suite for WordPress.
  *
  * PHP version 5.6.0
  *
@@ -25,14 +25,18 @@
  * Namespaces.
  *
  * @since 5.3.0 PHP
+ * @since 1.0.0 Wireframe
  * @since 1.0.0 Wireframe Theme
+ * @since 1.0.0 Wireframe Child
  */
 namespace MixaTheme\Wireframe\Theme;
 
 /**
  * No direct access to this file.
  *
+ * @since 1.0.0 Wireframe
  * @since 1.0.0 Wireframe Theme
+ * @since 1.0.0 Wireframe Child
  */
 defined( 'ABSPATH' ) or die();
 
@@ -46,7 +50,9 @@ defined( 'ABSPATH' ) or die();
  *            Another alternative is putting all your object configs into one
  *            single config file to minimize your file count.
  *
+ * @since  1.0.0 Wireframe
  * @since  1.0.0 Wireframe Theme
+ * @since  1.0.0 Wireframe Child
  * @see    object Theme_Customizer
  * @return array  Default configuration values.
  */
@@ -61,7 +67,9 @@ function wireframe_theme_config_customizer() {
 	 * is instantiated. This is optional, because some objects do not need any
 	 * actions or filters.
 	 *
+	 * @since 1.0.0 Wireframe
 	 * @since 1.0.0 Wireframe Theme
+	 * @since 1.0.0 Wireframe Child
 	 * @var   bool $wired Wire hooks via __construct(). Default: true
 	 */
 	$wired = true;
@@ -73,7 +81,9 @@ function wireframe_theme_config_customizer() {
 	 * Generally, you should use a constant defined in wireframe.php. However,
 	 * you can change it here if needed. Default: WIREFRAME_THEME_PREFIX
 	 *
+	 * @since 1.0.0 Wireframe
 	 * @since 1.0.0 Wireframe Theme
+	 * @since 1.0.0 Wireframe Child
 	 * @var   string $prefix Prefix for handles.
 	 */
 	$prefix = WIREFRAME_THEME_PREFIX;
@@ -85,7 +95,9 @@ function wireframe_theme_config_customizer() {
 	 * You can set your actions in a multi-dimensional array and remember
 	 * to set the property $wired = true (above).
 	 *
+	 * @since 1.0.0 Wireframe
 	 * @since 1.0.0 Wireframe Theme
+	 * @since 1.0.0 Wireframe Child
 	 * @var   array $actions Actions to hook.
 	 */
 	$actions = array(
@@ -116,7 +128,9 @@ function wireframe_theme_config_customizer() {
 	 * You can set your filters in a multi-dimensional array and remember
 	 * to set the property $wired = true (above).
 	 *
+	 * @since 1.0.0 Wireframe
 	 * @since 1.0.0 Wireframe Theme
+	 * @since 1.0.0 Wireframe Child
 	 * @var   array $filters Filters to hook.
 	 * @todo  WIP.
 	 */
@@ -125,7 +139,9 @@ function wireframe_theme_config_customizer() {
 	/**
 	 * Stylesheets to load.
 	 *
+	 * @since 1.0.0 Wireframe
 	 * @since 1.0.0 Wireframe Theme
+	 * @since 1.0.0 Wireframe Child
 	 * @var   array $styles Array of stylesheets to enqueue.
 	 */
 	$styles = array();
@@ -133,7 +149,9 @@ function wireframe_theme_config_customizer() {
 	/**
 	 * Scripts to load.
 	 *
+	 * @since 1.0.0 Wireframe
 	 * @since 1.0.0 Wireframe Theme
+	 * @since 1.0.0 Wireframe Child
 	 * @var   array $scripts Array of scripts to enqueue.
 	 *
 	 * @internal Required Customizer deps: `jquery` + `customize-preview`.
@@ -165,7 +183,9 @@ function wireframe_theme_config_customizer() {
 	 * probably because we use an array for add_setting(). As you can see
 	 * below, our settings assign a callback to arrays. @see Customizer
 	 *
+	 * @since 1.0.0 Wireframe
 	 * @since 1.0.0 Wireframe Theme
+	 * @since 1.0.0 Wireframe Child
 	 * @var   array $settings Store an array of settings.
 	 * @see   https://codex.wordpress.org/Class_Reference/WP_Customize_Manager/add_setting
 	 */
@@ -199,7 +219,9 @@ function wireframe_theme_config_customizer() {
 	/**
 	 * Partials.
 	 *
+	 * @since 1.0.0 Wireframe
 	 * @since 1.0.0 Wireframe Theme
+	 * @since 1.0.0 Wireframe Child
 	 * @var   array $partials Array of partials for use with settings.
 	 * @see   https://make.wordpress.org/core/?p=16546
 	 */
@@ -245,7 +267,9 @@ function wireframe_theme_config_customizer() {
 	 *    3. wireframe_theme_is_page
 	 *    4. Or use a closure after PHP 5.2: function() { return is_page(); }
 	 *
+	 * @since 1.0.0 Wireframe
 	 * @since 1.0.0 Wireframe Theme
+	 * @since 1.0.0 Wireframe Child
 	 * @var   array $controls Store an array of controls.
 	 * @see   helpers-extras.php For active callbacks.
 	 * @see   https://codex.wordpress.org/Class_Reference/WP_Customize_Manager/add_control
@@ -294,7 +318,9 @@ function wireframe_theme_config_customizer() {
 	/**
 	 * Callbacks.
 	 *
+	 * @since 1.0.0 Wireframe
 	 * @since 1.0.0 Wireframe Theme
+	 * @since 1.0.0 Wireframe Child
 	 * @var   array $callbacks Store an array of active callbacks.
 	 * @todo  Should we bake active callbacks here?
 	 */
@@ -305,7 +331,9 @@ function wireframe_theme_config_customizer() {
 	 *
 	 * TIP: All sections require a panel before it appears.
 	 *
+	 * @since 1.0.0 Wireframe
 	 * @since 1.0.0 Wireframe Theme
+	 * @since 1.0.0 Wireframe Child
 	 * @var   array $panels Store an array of panels.
 	 * @see   $sections(array('example_section'))
 	 */
@@ -325,7 +353,9 @@ function wireframe_theme_config_customizer() {
 	 *
 	 * TIP: All sections require a panel before it appears.
 	 *
+	 * @since 1.0.0 Wireframe
 	 * @since 1.0.0 Wireframe Theme
+	 * @since 1.0.0 Wireframe Child
 	 * @var   array $sections Store an array of sections.
 	 * @see   $panels(array('example_panel'))
 	 */
@@ -345,7 +375,9 @@ function wireframe_theme_config_customizer() {
 	 * This object depends on the Core_Enqueue object, so we need to intantiate the
 	 * Core_Enqueue object and pass-in parameters.
 	 *
+	 * @since 1.0.0 Wireframe
 	 * @since 1.0.0 Wireframe Theme
+	 * @since 1.0.0 Wireframe Child
 	 * @var   object Core_Enqueue(
 	 *        @param string     $prefix     Required prefix for handles.
 	 *        @param array|null $styles     Optional styles.
@@ -360,7 +392,9 @@ function wireframe_theme_config_customizer() {
 	/**
 	 * Inline styles to <head>.
 	 *
+	 * @since 1.0.0 Wireframe
 	 * @since 1.0.0 Wireframe Theme
+	 * @since 1.0.0 Wireframe Child
 	 * @var   array $inline Inline CSS.
 	 * @see   Theme_Customizer::css()
 	 */
@@ -451,7 +485,9 @@ function wireframe_theme_config_customizer() {
 	 * to use `apply_filters` or `wp_json_encode` or `add_setting` or `add_option`
 	 * whenever appropriate. Consider Admin pages for modifying settings & options.
 	 *
+	 * @since  1.0.0 Wireframe
 	 * @since  1.0.0 Wireframe Theme
+	 * @since  1.0.0 Wireframe Child
 	 * @return array|object
 	 */
 	return array(

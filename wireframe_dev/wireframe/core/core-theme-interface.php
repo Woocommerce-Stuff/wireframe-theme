@@ -27,6 +27,7 @@
  * @since 5.3.0 PHP
  * @since 1.0.0 Wireframe
  * @since 1.0.0 Wireframe Theme
+ * @since 1.0.0 Wireframe Child
  */
 namespace MixaTheme\Wireframe\Theme;
 
@@ -35,6 +36,8 @@ namespace MixaTheme\Wireframe\Theme;
  *
  * @since 1.0.0 Wireframe
  * @since 1.0.0 Wireframe Theme
+ * @since 1.0.0 Wireframe Child
+ * @since 1.0.0 Wireframe Plugin
  */
 defined( 'ABSPATH' ) or die();
 
@@ -43,6 +46,7 @@ defined( 'ABSPATH' ) or die();
  *
  * @since 1.0.0 Wireframe
  * @since 1.0.0 Wireframe Theme
+ * @since 1.0.0 Wireframe Child
  */
 if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Core_Theme_Interface' ) ) :
 	/**
@@ -50,6 +54,8 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Core_Theme_Interface' ) ) :
 	 *
 	 * @since 1.0.0 Wireframe
 	 * @since 1.0.0 Wireframe Theme
+	 * @since 1.0.0 Wireframe Child
+	 * @since 1.0.0 Wireframe Plugin
 	 * @see   https://github.com/mixatheme/Wireframe
 	 */
 	interface Core_Theme_Interface {
@@ -58,6 +64,8 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Core_Theme_Interface' ) ) :
 		 *
 		 * @since 1.0.0 Wireframe
 		 * @since 1.0.0 Wireframe Theme
+		 * @since 1.0.0 Wireframe Child
+		 * @since 1.0.0 Wireframe Plugin
 		 */
 		public function language();
 
@@ -66,6 +74,8 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Core_Theme_Interface' ) ) :
 		 *
 		 * @since 1.0.0 Wireframe
 		 * @since 1.0.0 Wireframe Theme
+		 * @since 1.0.0 Wireframe Child
+		 * @since 1.0.0 Wireframe Plugin
 		 */
 		public function ui();
 
@@ -74,6 +84,8 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Core_Theme_Interface' ) ) :
 		 *
 		 * @since 1.0.0 Wireframe
 		 * @since 1.0.0 Wireframe Theme
+		 * @since 1.0.0 Wireframe Child
+		 * @since 1.0.0 Wireframe Plugin
 		 */
 		public function navigation();
 
@@ -82,6 +94,8 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Core_Theme_Interface' ) ) :
 		 *
 		 * @since 1.0.0 Wireframe
 		 * @since 1.0.0 Wireframe Theme
+		 * @since 1.0.0 Wireframe Child
+		 * @since 1.0.0 Wireframe Plugin
 		 */
 		public function widgets();
 
@@ -90,6 +104,8 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Core_Theme_Interface' ) ) :
 		 *
 		 * @since 1.0.0 Wireframe
 		 * @since 1.0.0 Wireframe Theme
+		 * @since 1.0.0 Wireframe Child
+		 * @since 1.0.0 Wireframe Plugin
 		 */
 		public function features();
 
@@ -98,6 +114,8 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Core_Theme_Interface' ) ) :
 		 *
 		 * @since 1.0.0 Wireframe
 		 * @since 1.0.0 Wireframe Theme
+		 * @since 1.0.0 Wireframe Child
+		 * @since 1.0.0 Wireframe Plugin
 		 */
 		public function customizer();
 
@@ -106,6 +124,8 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Core_Theme_Interface' ) ) :
 		 *
 		 * @since 1.0.0 Wireframe
 		 * @since 1.0.0 Wireframe Theme
+		 * @since 1.0.0 Wireframe Child
+		 * @since 1.0.0 Wireframe Plugin
 		 */
 		public function editor();
 

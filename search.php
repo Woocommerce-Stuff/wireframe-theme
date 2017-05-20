@@ -1,6 +1,6 @@
 <?php
 /**
- * Search template file for Wireframe Theme.
+ * Search template file for themes built with Wireframe Suite for WordPress.
  *
  * The template for displaying search results pages.
  *

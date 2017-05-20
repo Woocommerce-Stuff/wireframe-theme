@@ -1,6 +1,6 @@
 <?php
 /**
- * Footer template file for Wireframe Theme.
+ * Footer template file for themes built with Wireframe Suite for WordPress.
  *
  * The template partial for displaying the footer. Contains the closing
  * of the `#content` div and all content after.

@@ -1,6 +1,6 @@
 <?php
 /**
- * Core_Language config data file for Wireframe Theme.
+ * Core_Language config for modules built with Wireframe Suite for WordPress.
  *
  * PHP version 5.6.0
  *
@@ -25,7 +25,9 @@
  * Namespaces.
  *
  * @since 5.3.0 PHP
+ * @since 1.0.0 Wireframe
  * @since 1.0.0 Wireframe Theme
+ * @since 1.0.0 Wireframe Child
  */
 namespace MixaTheme\Wireframe\Theme;
 
@@ -34,7 +36,7 @@ namespace MixaTheme\Wireframe\Theme;
  *
  * @since 1.0.0 Wireframe
  * @since 1.0.0 Wireframe Theme
- * @since 1.0.0 Wireframe_Plugin
+ * @since 1.0.0 Wireframe Child
  */
 defined( 'ABSPATH' ) or die();
 
@@ -50,6 +52,7 @@ defined( 'ABSPATH' ) or die();
  *
  * @since  1.0.0 Wireframe
  * @since  1.0.0 Wireframe Theme
+ * @since  1.0.0 Wireframe Child
  * @see    object Core_Language
  * @return array  Default configuration values.
  */
@@ -61,7 +64,7 @@ function wireframe_theme_config_language() {
 	 *
 	 * @since 1.0.0 Wireframe
 	 * @since 1.0.0 Wireframe Theme
-	 * @since 1.0.0 Wireframe_Plugin
+	 * @since 1.0.0 Wireframe Child
 	 * @var   string $module The module type. Default: plugin
 	 */
 	$module = 'theme';
@@ -78,7 +81,7 @@ function wireframe_theme_config_language() {
 	 *
 	 * @since 1.0.0 Wireframe
 	 * @since 1.0.0 Wireframe Theme
-	 * @since 1.0.0 Wireframe_Plugin
+	 * @since 1.0.0 Wireframe Child
 	 * @var   bool $wired Wire hooks via __construct(). Default: true
 	 */
 	$wired = true;
@@ -92,7 +95,7 @@ function wireframe_theme_config_language() {
 	 *
 	 * @since 1.0.0 Wireframe
 	 * @since 1.0.0 Wireframe Theme
-	 * @since 1.0.0 Wireframe_Plugin
+	 * @since 1.0.0 Wireframe Child
 	 * @var   string $prefix Prefix for handles.
 	 */
 	$prefix = WIREFRAME_THEME_TEXTDOMAIN;
@@ -106,6 +109,7 @@ function wireframe_theme_config_language() {
 	 *
 	 * @since 1.0.0 Wireframe
 	 * @since 1.0.0 Wireframe Theme
+	 * @since 1.0.0 Wireframe Child
 	 * @var   array $actions Actions to hook.
 	 */
 	$actions = array(
@@ -126,7 +130,7 @@ function wireframe_theme_config_language() {
 	 *
 	 * @since 1.0.0 Wireframe
 	 * @since 1.0.0 Wireframe Theme
-	 * @since 1.0.0 Wireframe_Plugin
+	 * @since 1.0.0 Wireframe Child
 	 * @var   array $filters Filters to hook.
 	 * @todo  WIP.
 	 */
@@ -137,7 +141,7 @@ function wireframe_theme_config_language() {
 	 *
 	 * @since 1.0.0 Wireframe
 	 * @since 1.0.0 Wireframe Theme
-	 * @since 1.0.0 Wireframe_Plugin
+	 * @since 1.0.0 Wireframe Child
 	 * @var   bool $deprecated Language path. Default: false
 	 * @see   https://developer.wordpress.org/reference/functions/load_plugin_textdomain/
 	 */
@@ -148,6 +152,7 @@ function wireframe_theme_config_language() {
 	 *
 	 * @since 1.0.0 Wireframe
 	 * @since 1.0.0 Wireframe Theme
+	 * @since 1.0.0 Wireframe Child
 	 * @var   string $path Language path. Default: WIREFRAME_THEME_LANG
 	 */
 	$path = WIREFRAME_THEME_LANG;
@@ -166,6 +171,7 @@ function wireframe_theme_config_language() {
 	 *
 	 * @since  1.0.0 Wireframe
 	 * @since  1.0.0 Wireframe Theme
+	 * @since  1.0.0 Wireframe Child
 	 * @return array|object
 	 */
 	return array(

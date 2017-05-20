@@ -1,6 +1,6 @@
 <?php
 /**
- * Functions file for Wireframe Theme.
+ * Functions file for themes built with Wireframe Suite for WordPress.
  *
  * PHP version 5.6.0
  *

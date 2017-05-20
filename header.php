@@ -1,6 +1,6 @@
 <?php
 /**
- * Header template file for Wireframe Theme.
+ * Header template file for themes built with Wireframe Suite for WordPress.
  *
  * This is the template partial that displays all of the `head` section
  * and everything up until `div id="content"`

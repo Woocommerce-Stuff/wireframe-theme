@@ -1,6 +1,6 @@
 <?php
 /**
- * Archive template file for Wireframe Theme.
+ * Archive template file for themes built with Wireframe Suite for WordPress.
  *
  * The archive template is used when visitors request posts by category,
  * author, or date. Note: this template will be overridden if more specific

@@ -27,6 +27,7 @@
  * @since 5.3.0 PHP
  * @since 1.0.0 Wireframe
  * @since 1.0.0 Wireframe Theme
+ * @since 1.0.0 Wireframe Child
  */
 namespace MixaTheme\Wireframe\Theme;
 
@@ -35,6 +36,8 @@ namespace MixaTheme\Wireframe\Theme;
  *
  * @since 1.0.0 Wireframe
  * @since 1.0.0 Wireframe Theme
+ * @since 1.0.0 Wireframe Child
+ * @since 1.0.0 Wireframe Plugin
  */
 defined( 'ABSPATH' ) or die();
 
@@ -43,6 +46,7 @@ defined( 'ABSPATH' ) or die();
  *
  * @since 1.0.0 Wireframe
  * @since 1.0.0 Wireframe Theme
+ * @since 1.0.0 Wireframe Child
  */
 if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Core_Enqueue_Interface' ) ) :
 	/**
@@ -50,6 +54,8 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Core_Enqueue_Interface' ) ) :
 	 *
 	 * @since 1.0.0 Wireframe
 	 * @since 1.0.0 Wireframe Theme
+	 * @since 1.0.0 Wireframe Child
+	 * @since 1.0.0 Wireframe Plugin
 	 * @see   https://github.com/mixatheme/Wireframe
 	 */
 	interface Core_Enqueue_Interface {
@@ -58,6 +64,8 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Core_Enqueue_Interface' ) ) :
 		 *
 		 * @since 1.0.0 Wireframe
 		 * @since 1.0.0 Wireframe Theme
+		 * @since 1.0.0 Wireframe Child
+		 * @since 1.0.0 Wireframe Plugin
 		 * @see   wireframe_theme_version() Optional WP_DEBUG helper.
 		 */
 		public function styles();
@@ -67,6 +75,8 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Core_Enqueue_Interface' ) ) :
 		 *
 		 * @since 1.0.0 Wireframe
 		 * @since 1.0.0 Wireframe Theme
+		 * @since 1.0.0 Wireframe Child
+		 * @since 1.0.0 Wireframe Plugin
 		 * @see   wireframe_theme_version() Optional WP_DEBUG helper.
 		 * @see   https://codex.wordpress.org/Function_Reference/wp_localize_script
 		 */
@@ -77,6 +87,8 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Core_Enqueue_Interface' ) ) :
 		 *
 		 * @since 1.0.0 Wireframe
 		 * @since 1.0.0 Wireframe Theme
+		 * @since 1.0.0 Wireframe Child
+		 * @since 1.0.0 Wireframe Plugin
 		 * @todo  Should this be enqueued contextually somehow?
 		 */
 		public function mediamodal();
@@ -86,6 +98,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Core_Enqueue_Interface' ) ) :
 		 *
 		 * @since 1.0.0 Wireframe
 		 * @since 1.0.0 Wireframe Theme
+		 * @since 1.0.0 Wireframe Child
 		 */
 		public function stylecss();
 
@@ -94,6 +107,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Core_Enqueue_Interface' ) ) :
 		 *
 		 * @since 1.0.0 Wireframe
 		 * @since 1.0.0 Wireframe Theme
+		 * @since 1.0.0 Wireframe Child
 		 */
 		public function commentjs();
 

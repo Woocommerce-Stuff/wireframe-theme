@@ -27,6 +27,7 @@
  * @since 5.3.0 PHP
  * @since 1.0.0 Wireframe
  * @since 1.0.0 Wireframe Theme
+ * @since 1.0.0 Wireframe Child
  */
 namespace MixaTheme\Wireframe\Theme;
 use WP_Error;
@@ -36,6 +37,8 @@ use WP_Error;
  *
  * @since 1.0.0 Wireframe
  * @since 1.0.0 Wireframe Theme
+ * @since 1.0.0 Wireframe Child
+ * @since 1.0.0 Wireframe Plugin
  */
 defined( 'ABSPATH' ) or die();
 
@@ -44,6 +47,7 @@ defined( 'ABSPATH' ) or die();
  *
  * @since 1.0.0 Wireframe
  * @since 1.0.0 Wireframe Theme
+ * @since 1.0.0 Wireframe Child
  */
 if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Core_Language' ) ) :
 	/**
@@ -51,7 +55,8 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Core_Language' ) ) :
 	 *
 	 * @since 1.0.0 Wireframe
 	 * @since 1.0.0 Wireframe Theme
-	 * @since 1.0.0 Wireframe_Plugin
+	 * @since 1.0.0 Wireframe Child
+	 * @since 1.0.0 Wireframe Plugin
 	 * @see   https://github.com/mixatheme/Wireframe
 	 */
 	final class Core_Language extends Core_Module_Abstract implements Core_Language_Interface {
@@ -63,7 +68,8 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Core_Language' ) ) :
 		 * @access private
 		 * @since  1.0.0 Wireframe
 		 * @since  1.0.0 Wireframe Theme
-		 * @since  1.0.0 Wireframe_Plugin
+		 * @since  1.0.0 Wireframe Child
+		 * @since  1.0.0 Wireframe Plugin
 		 * @var    string $_module The module type. Default: theme
 		 */
 		private $_module = 'theme';
@@ -74,7 +80,8 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Core_Language' ) ) :
 		 * @access private
 		 * @since  1.0.0 Wireframe
 		 * @since  1.0.0 Wireframe Theme
-		 * @since  1.0.0 Wireframe_Plugin
+		 * @since  1.0.0 Wireframe Child
+		 * @since  1.0.0 Wireframe Plugin
 		 * @var    array $_path Path to language file.
 		 */
 		private $_path;
@@ -85,7 +92,8 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Core_Language' ) ) :
 		 * @access private
 		 * @since  1.0.0 Wireframe
 		 * @since  1.0.0 Wireframe Theme
-		 * @since  1.0.0 Wireframe_Plugin
+		 * @since  1.0.0 Wireframe Child
+		 * @since  1.0.0 Wireframe Plugin
 		 * @var    bool $_deprecated
 		 */
 		private $_deprecated = false;
@@ -95,7 +103,8 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Core_Language' ) ) :
 		 *
 		 * @since 1.0.0 Wireframe
 		 * @since 1.0.0 Wireframe Theme
-		 * @since 1.0.0 Wireframe_Plugin
+		 * @since 1.0.0 Wireframe Child
+		 * @since 1.0.0 Wireframe Plugin
 		 * @param array $config Data via config file.
 		 */
 		public function __construct( $config ) {
@@ -115,7 +124,8 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Core_Language' ) ) :
 		 * @since 3.1.0 WordPress
 		 * @since 1.0.0 Wireframe
 		 * @since 1.0.0 Wireframe Theme
-		 * @since 1.0.0 Wireframe_Plugin
+		 * @since 1.0.0 Wireframe Child
+		 * @since 1.0.0 Wireframe Plugin
 		 */
 		public function textdomain() {
 

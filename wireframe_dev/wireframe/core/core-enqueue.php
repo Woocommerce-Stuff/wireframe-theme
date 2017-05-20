@@ -27,6 +27,7 @@
  * @since 5.3.0 PHP
  * @since 1.0.0 Wireframe
  * @since 1.0.0 Wireframe Theme
+ * @since 1.0.0 Wireframe Child
  */
 namespace MixaTheme\Wireframe\Theme;
 
@@ -35,6 +36,8 @@ namespace MixaTheme\Wireframe\Theme;
  *
  * @since 1.0.0 Wireframe
  * @since 1.0.0 Wireframe Theme
+ * @since 1.0.0 Wireframe Child
+ * @since 1.0.0 Wireframe Plugin
  */
 defined( 'ABSPATH' ) or die();
 
@@ -43,6 +46,7 @@ defined( 'ABSPATH' ) or die();
  *
  * @since 1.0.0 Wireframe
  * @since 1.0.0 Wireframe Theme
+ * @since 1.0.0 Wireframe Child
  */
 if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Core_Enqueue' ) ) :
 	/**
@@ -50,6 +54,8 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Core_Enqueue' ) ) :
 	 *
 	 * @since 1.0.0 Wireframe
 	 * @since 1.0.0 Wireframe Theme
+	 * @since 1.0.0 Wireframe Child
+	 * @since 1.0.0 Wireframe Plugin
 	 * @see   https://github.com/mixatheme/Wireframe
 	 */
 	final class Core_Enqueue implements Core_Enqueue_Interface {
@@ -59,6 +65,8 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Core_Enqueue' ) ) :
 		 * @access private
 		 * @since  1.0.0 Wireframe
 		 * @since  1.0.0 Wireframe Theme
+		 * @since  1.0.0 Wireframe Child
+		 * @since  1.0.0 Wireframe Plugin
 		 * @var    string $_prefix
 		 */
 		private $_prefix;
@@ -69,6 +77,8 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Core_Enqueue' ) ) :
 		 * @access private
 		 * @since  1.0.0 Wireframe
 		 * @since  1.0.0 Wireframe Theme
+		 * @since  1.0.0 Wireframe Child
+		 * @since  1.0.0 Wireframe Plugin
 		 * @var    array $_styles
 		 */
 		private $_styles = array();
@@ -79,6 +89,8 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Core_Enqueue' ) ) :
 		 * @access private
 		 * @since  1.0.0 Wireframe
 		 * @since  1.0.0 Wireframe Theme
+		 * @since  1.0.0 Wireframe Child
+		 * @since  1.0.0 Wireframe Plugin
 		 * @var    array $_scripts
 		 */
 		private $_scripts = array();
@@ -89,6 +101,8 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Core_Enqueue' ) ) :
 		 * @access private
 		 * @since  1.0.0 Wireframe
 		 * @since  1.0.0 Wireframe Theme
+		 * @since  1.0.0 Wireframe Child
+		 * @since  1.0.0 Wireframe Plugin
 		 * @var    bool $_mediamodal
 		 */
 		private $_mediamodal = false;
@@ -99,6 +113,8 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Core_Enqueue' ) ) :
 		 * @access private
 		 * @since  1.0.0 Wireframe
 		 * @since  1.0.0 Wireframe Theme
+		 * @since  1.0.0 Wireframe Child
+		 * @since  1.0.0 Wireframe Plugin
 		 * @var    bool $_stylecss
 		 */
 		private $_stylecss = false;
@@ -109,6 +125,8 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Core_Enqueue' ) ) :
 		 * @access private
 		 * @since  1.0.0 Wireframe
 		 * @since  1.0.0 Wireframe Theme
+		 * @since  1.0.0 Wireframe Child
+		 * @since  1.0.0 Wireframe Plugin
 		 * @var    bool $_commentjs
 		 */
 		private $_commentjs = false;
@@ -118,6 +136,8 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Core_Enqueue' ) ) :
 		 *
 		 * @since 1.0.0 Wireframe
 		 * @since 1.0.0 Wireframe Theme
+		 * @since 1.0.0 Wireframe Child
+		 * @since 1.0.0 Wireframe Plugin
 		 * @param string $prefix     Prefix for handles.
 		 * @param array  $styles     Styles to hook.
 		 * @param array  $scripts    Scripts to hook.
@@ -141,6 +161,8 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Core_Enqueue' ) ) :
 		 *
 		 * @since 1.0.0 Wireframe
 		 * @since 1.0.0 Wireframe Theme
+		 * @since 1.0.0 Wireframe Child
+		 * @since 1.0.0 Wireframe Plugin
 		 */
 		public function styles() {
 
@@ -195,6 +217,8 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Core_Enqueue' ) ) :
 		 *
 		 * @since 1.0.0 Wireframe
 		 * @since 1.0.0 Wireframe Theme
+		 * @since 1.0.0 Wireframe Child
+		 * @since 1.0.0 Wireframe Plugin
 		 * @see   https://codex.wordpress.org/Function_Reference/wp_localize_script
 		 */
 		public function scripts() {
@@ -263,6 +287,8 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Core_Enqueue' ) ) :
 		 *
 		 * @since 1.0.0 Wireframe
 		 * @since 1.0.0 Wireframe Theme
+		 * @since 1.0.0 Wireframe Child
+		 * @since 1.0.0 Wireframe Plugin
 		 * @todo  Should this be enqueued contextually somehow?
 		 */
 		public function mediamodal() {
@@ -276,6 +302,8 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Core_Enqueue' ) ) :
 		 *
 		 * @since 1.0.0 Wireframe
 		 * @since 1.0.0 Wireframe Theme
+		 * @since 1.0.0 Wireframe Child
+		 * @since 1.0.0 Wireframe Plugin
 		 */
 		public function stylecss() {
 			if ( isset( $this->_prefix ) && true === $this->_stylecss ) {
@@ -292,6 +320,8 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Core_Enqueue' ) ) :
 		 *
 		 * @since 1.0.0 Wireframe
 		 * @since 1.0.0 Wireframe Theme
+		 * @since 1.0.0 Wireframe Child
+		 * @since 1.0.0 Wireframe Plugin
 		 */
 		public function commentjs() {
 			if ( isset( $this->_commentjs ) && is_singular() && comments_open() && get_option( 'thread_comments' ) ) {

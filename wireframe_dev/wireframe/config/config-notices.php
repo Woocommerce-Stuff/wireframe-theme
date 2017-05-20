@@ -1,6 +1,6 @@
 <?php
 /**
- * Theme_Notices config data file for Wireframe Theme.
+ * Theme_Notices config for modules built with Wireframe Suite for WordPress.
  *
  * PHP version 5.6.0
  *
@@ -25,14 +25,18 @@
  * Namespaces.
  *
  * @since 5.3.0 PHP
+ * @since 1.0.0 Wireframe
  * @since 1.0.0 Wireframe Theme
+ * @since 1.0.0 Wireframe Child
  */
 namespace MixaTheme\Wireframe\Theme;
 
 /**
  * No direct access to this file.
  *
+ * @since 1.0.0 Wireframe
  * @since 1.0.0 Wireframe Theme
+ * @since 1.0.0 Wireframe Child
  */
 defined( 'ABSPATH' ) or die();
 
@@ -46,7 +50,9 @@ defined( 'ABSPATH' ) or die();
  *            Another alternative is putting all your object configs into one
  *            single config file to minimize your file count.
  *
+ * @since  1.0.0 Wireframe
  * @since  1.0.0 Wireframe Theme
+ * @since  1.0.0 Wireframe Child
  * @see    object Theme_Notices
  * @return array  Default configuration values.
  */
@@ -64,7 +70,8 @@ function wireframe_theme_config_notices() {
 	 * 		3. When you need a notice, hook any public method in Module_Notices.
 	 *
 	 * @since 1.0.0 Wireframe
-	 * @since 1.0.0 Wireframe_Plugin
+	 * @since 1.0.0 Wireframe Theme
+	 * @since 1.0.0 Wireframe Child
 	 * @see   object Module_Notices
 	 * @see   module-notices.php
 	 * @var   bool $wired Wire hooks via __construct(). Default: true
@@ -78,7 +85,9 @@ function wireframe_theme_config_notices() {
 	 * Generally, you should use a constant defined in wireframe.php. However,
 	 * you can change it here if needed. Default: WIREFRAME_THEME_PREFIX
 	 *
+	 * @since 1.0.0 Wireframe
 	 * @since 1.0.0 Wireframe Theme
+	 * @since 1.0.0 Wireframe Child
 	 * @var   string $prefix Prefix for handles.
 	 */
 	$prefix = WIREFRAME_THEME_PREFIX;
@@ -86,7 +95,9 @@ function wireframe_theme_config_notices() {
 	/**
 	 * Actions.
 	 *
+	 * @since 1.0.0 Wireframe
 	 * @since 1.0.0 Wireframe Theme
+	 * @since 1.0.0 Wireframe Child
 	 * @var   array $actions Actions to hook.
 	 */
 	$actions = array();
@@ -94,7 +105,9 @@ function wireframe_theme_config_notices() {
 	/**
 	 * Filters.
 	 *
+	 * @since 1.0.0 Wireframe
 	 * @since 1.0.0 Wireframe Theme
+	 * @since 1.0.0 Wireframe Child
 	 * @var   array $filters Filters to hook.
 	 */
 	$filters = array();
@@ -107,7 +120,9 @@ function wireframe_theme_config_notices() {
 	 * Note: Your notices will echo data passed through wp_kses_post(). We do it
 	 * this way to allow HTML. You may wish to modify Module_Notices->build_notice().
 	 *
+	 * @since 1.0.0 Wireframe
 	 * @since 1.0.0 Wireframe Theme
+	 * @since 1.0.0 Wireframe Child
 	 * @see   object Module_Notices
 	 * @see   module-notices.php
 	 * @var   array $notices Array of notices available to hook.
@@ -137,7 +152,9 @@ function wireframe_theme_config_notices() {
 	 * to use `apply_filters` or `wp_json_encode` or `add_setting` or `add_option`
 	 * whenever appropriate. Consider Admin pages for modifying settings & options.
 	 *
+	 * @since  1.0.0 Wireframe
 	 * @since  1.0.0 Wireframe Theme
+	 * @since  1.0.0 Wireframe Child
 	 * @return array|object
 	 */
 	return array(

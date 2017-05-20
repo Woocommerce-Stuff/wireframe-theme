@@ -1,6 +1,6 @@
 <?php
 /**
- * Theme_Admin config data file for Wireframe Theme.
+ * Theme_Admin config for modules built with Wireframe Suite for WordPress.
  *
  * PHP version 5.6.0
  *
@@ -25,14 +25,18 @@
  * Namespaces.
  *
  * @since 5.3.0 PHP
+ * @since 1.0.0 Wireframe
  * @since 1.0.0 Wireframe Theme
+ * @since 1.0.0 Wireframe Child
  */
 namespace MixaTheme\Wireframe\Theme;
 
 /**
  * No direct access to this file.
  *
+ * @since 1.0.0 Wireframe
  * @since 1.0.0 Wireframe Theme
+ * @since 1.0.0 Wireframe Child
  */
 defined( 'ABSPATH' ) or die();
 
@@ -46,7 +50,9 @@ defined( 'ABSPATH' ) or die();
  *            Another alternative is putting all your object configs into one
  *            single config file to minimize your file count.
  *
+ * @since  1.0.0 Wireframe
  * @since  1.0.0 Wireframe Theme
+ * @since  1.0.0 Wireframe Child
  * @see    object Theme_Admin
  * @return array  Default configuration values.
  */
@@ -66,6 +72,7 @@ function wireframe_theme_config_admin() {
 	 *
 	 * @since 1.0.0 Wireframe
 	 * @since 1.0.0 Wireframe Theme
+	 * @since 1.0.0 Wireframe Child
 	 * @var   bool $wired Wire hooks via __construct(). Default: true
 	 */
 	$wired = true;
@@ -77,7 +84,9 @@ function wireframe_theme_config_admin() {
 	 * Generally, you should use a constant defined in wireframe.php. However,
 	 * you can change it here if needed. Default: WIREFRAME_THEME_PREFIX
 	 *
+	 * @since 1.0.0 Wireframe
 	 * @since 1.0.0 Wireframe Theme
+	 * @since 1.0.0 Wireframe Child
 	 * @var   string $prefix Prefix for handles.
 	 */
 	$prefix = WIREFRAME_THEME_PREFIX;
@@ -113,7 +122,9 @@ function wireframe_theme_config_admin() {
 	 * 			'args'     => 1,
 	 * 		),
 	 *
+	 * @since 1.0.0 Wireframe
 	 * @since 1.0.0 Wireframe Theme
+	 * @since 1.0.0 Wireframe Child
 	 * @var   array $actions Actions to hook.
 	 */
 	$actions = array(
@@ -150,7 +161,9 @@ function wireframe_theme_config_admin() {
 	 * You can set your filters in a multi-dimensional array and remember
 	 * to set the property $wired = true (above).
 	 *
+	 * @since 1.0.0 Wireframe
 	 * @since 1.0.0 Wireframe Theme
+	 * @since 1.0.0 Wireframe Child
 	 * @var   array $filters Filters to hook.
 	 * @todo  WIP.
 	 */
@@ -161,6 +174,7 @@ function wireframe_theme_config_admin() {
 	 *
 	 * @since 1.0.0 Wireframe
 	 * @since 1.0.0 Wireframe Theme
+	 * @since 1.0.0 Wireframe Child
 	 * @var   array $styles Array of stylesheets to enqueue.
 	 */
 	$styles = array(
@@ -179,6 +193,7 @@ function wireframe_theme_config_admin() {
 	 *
 	 * @since 1.0.0 Wireframe
 	 * @since 1.0.0 Wireframe Theme
+	 * @since 1.0.0 Wireframe Child
 	 * @var   array $scripts Array of scripts to enqueue.
 	 */
 	$scripts = array(
@@ -198,6 +213,7 @@ function wireframe_theme_config_admin() {
 	 *
 	 * @since 1.0.0 Wireframe
 	 * @since 1.0.0 Wireframe Theme
+	 * @since 1.0.0 Wireframe Child
 	 * @var   bool $media True loads wp_enqueue_media(). Default: false.
 	 * @todo  WIP. Should we contextually enqueue media modal?
 	 */
@@ -209,6 +225,7 @@ function wireframe_theme_config_admin() {
 	 *
 	 * @since 1.0.0 Wireframe
 	 * @since 1.0.0 Wireframe Theme
+	 * @since 1.0.0 Wireframe Child
 	 * @var   object Core_Enqueue(
 	 *        @param string     $prefix     Required prefix for handles.
 	 *        @param array|null $styles     Optional styles.
@@ -235,6 +252,7 @@ function wireframe_theme_config_admin() {
 	 *
 	 * @since 1.0.0 Wireframe
 	 * @since 1.0.0 Wireframe Theme
+	 * @since 1.0.0 Wireframe Child
 	 * @var   array $menu_pages
 	 */
 	$theme_page = array();
@@ -248,6 +266,7 @@ function wireframe_theme_config_admin() {
 	 *
 	 * @since 1.0.0 Wireframe
 	 * @since 1.0.0 Wireframe Theme
+	 * @since 1.0.0 Wireframe Child
 	 * @var   array $menu_pages
 	 */
 	$menu_pages = array(
@@ -267,6 +286,7 @@ function wireframe_theme_config_admin() {
 	 *
 	 * @since 1.0.0 Wireframe
 	 * @since 1.0.0 Wireframe Theme
+	 * @since 1.0.0 Wireframe Child
 	 * @var   array $submenu_pages
 	 * @see   https://wordpress.stackexchange.com/questions/66498
 	 */
@@ -309,7 +329,9 @@ function wireframe_theme_config_admin() {
 	 * to use `apply_filters` or `wp_json_encode` or `add_setting` or `add_option`
 	 * whenever appropriate. Consider Admin pages for modifying settings & options.
 	 *
+	 * @since  1.0.0 Wireframe
 	 * @since  1.0.0 Wireframe Theme
+	 * @since  1.0.0 Wireframe Child
 	 * @return array|object
 	 */
 	return array(
@@ -322,4 +344,5 @@ function wireframe_theme_config_admin() {
 		'menu_pages'    => $menu_pages,
 		'submenu_pages' => $submenu_pages,
 	);
-}
+
+} // Thanks for using MixaTheme products!

@@ -1,6 +1,6 @@
 <?php
 /**
- * Comments template file for Wireframe Theme.
+ * Comments template file for themes built with Wireframe Suite for WordPress.
  *
  * The template for displaying the comments area of the page that contains
  * both the current comments and the comment form.

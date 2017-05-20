@@ -1,6 +1,6 @@
 <?php
 /**
- * Page template file for Wireframe Theme.
+ * Page template file for themes built with Wireframe Suite for WordPress.
  *
  * The template for displaying all pages.
  *

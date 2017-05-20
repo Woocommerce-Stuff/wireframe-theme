@@ -1,6 +1,6 @@
 <?php
 /**
- * Sidebar template file for Wireframe Theme.
+ * Sidebar template file for themes built with Wireframe Suite for WordPress.
  *
  * The template partial for containing `sidebar-1` widgets.
  *
