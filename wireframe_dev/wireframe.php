@@ -570,6 +570,8 @@ if ( class_exists( 'MixaTheme\Wireframe\Theme\Core_Theme' ) ) :
 	 * 		$wireframe_theme->editor()
 	 * 		$wireframe_theme->admin()
 	 *
+	 * Note: Objects not available in `header.php` or `footer.php` template files.
+	 *
 	 * @since 1.0.0 Wireframe
 	 * @since 1.0.0 Wireframe Theme
 	 */
