@@ -70,7 +70,7 @@ function wireframe_theme_update_wordpress( $product, $compat ) {
 	$notice = sprintf( __( '%1$s requires at least WordPress %2$s. You are running WordPress %3$s. Please upgrade WordPress and re-activate %1$s.', 'wireframe-theme' ), $product, $compat, $GLOBALS['wp_version'] );
 
 	// Display notice to Admins.
-	if ( is_admin() ) {
+	if ( current_user_can( 'switch_themes' ) && is_admin() ) {
 		printf( __( '<div class="error"><p>%s</p></div>', 'wireframe-theme' ), $notice ); // XSS ok.
 	}
 
