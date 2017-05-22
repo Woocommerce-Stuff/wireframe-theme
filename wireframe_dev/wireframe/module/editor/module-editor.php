@@ -53,7 +53,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Editor' ) ) :
 	 * @since 1.0.0 Wireframe Theme
 	 * @see   https://github.com/mixatheme/Wireframe
 	 */
-	final class Module_Editor extends Core_Module_Abstract implements Module_Editor_Interface {
+	class Module_Editor extends Core_Module_Abstract implements Module_Editor_Interface {
 		/**
 		 * Editor Style.
 		 *

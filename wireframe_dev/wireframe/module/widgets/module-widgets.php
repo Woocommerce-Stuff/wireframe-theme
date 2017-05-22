@@ -58,7 +58,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Widgets' ) ) :
 	 * @since 1.0.0 Wireframe Theme
 	 * @see   https://github.com/mixatheme/Wireframe
 	 */
-	final class Module_Widgets extends Core_Module_Abstract implements Module_Widgets_Interface {
+	class Module_Widgets extends Core_Module_Abstract implements Module_Widgets_Interface {
 		/**
 		 * Registered.
 		 *

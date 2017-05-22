@@ -52,7 +52,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_UI' ) ) :
 	 * @since 1.0.0 Wireframe Theme
 	 * @see   https://github.com/mixatheme/Wireframe
 	 */
-	final class Module_UI extends Core_Module_Abstract implements Module_UI_Interface {
+	class Module_UI extends Core_Module_Abstract implements Module_UI_Interface {
 		/**
 		 * Enqueue.
 		 *

@@ -53,7 +53,7 @@ if ( ! class_exists( 'MixaTheme\Wireframe\Theme\Module_Admin' ) ) :
 	 * @see   https://codex.wordpress.org/Administration_Menus
 	 * @see   https://github.com/mixatheme/Wireframe
 	 */
-	final class Module_Admin extends Core_Module_Abstract implements Module_Admin_Interface {
+	class Module_Admin extends Core_Module_Abstract implements Module_Admin_Interface {
 		/**
 		 * Enqueue.
 		 *
