@@ -30,7 +30,7 @@
  * @since 1.0.0 Wireframe Theme
  */
 function wireframe_theme_admin_check() {
-	if ( current_user_can( 'manage_options' ) ) {
+	if ( ! current_user_can( 'manage_options' ) ) {
 		wp_die( 'You are not authorized to access this page.' );
 	}
 }
