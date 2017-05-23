@@ -23,36 +23,33 @@
  */
 
 /**
- * Load constants.
+ * Initialize Wireframe Theme.
  *
  * @since 1.0.0 Wireframe
  * @since 1.0.0 Wireframe Theme
  */
-require_once get_template_directory() . '/wireframe_dev/wireframe/config/config-constants.php';
+function wireframe_theme_init() {
 
-/**
- * Backwards compatibility.
- *
- * If WordPress version is incompatible, load backwards compatibility helpers;
- * else continue bootstrapping Wireframe.
- *
- * Note: Whenever WordPress releases a new update, we will always sync this
- * file on GitHub to reflect the latest WordPress version ;-)
- *
- * @since 1.0.0 Wireframe
- * @since 1.0.0 Wireframe Theme
- */
-if ( version_compare( $GLOBALS['wp_version'], WIREFRAME_THEME_WP, '<' ) ) {
+	// Load constants.
+	require_once get_template_directory() . '/wireframe_dev/wireframe/config/config-constants.php';
 
-	// Incompatible WP: Load backwards compatibility handlers.
-	require_once WIREFRAME_THEME_API . 'functions/functions-compat.php';
+	// Check WordPress compatibility.
+	if ( version_compare( $GLOBALS['wp_version'], WIREFRAME_THEME_WP, '<' ) ) {
 
-} else {
+		// Load compatibility helpers.
+		require_once WIREFRAME_THEME_API . 'functions/functions-compat.php';
 
-	// Compatible WP: Continue bootstrapping Wireframe.
-	require_once WIREFRAME_THEME_DEV . 'wireframe.php';
+		return;
+
+	} else {
+
+		// Continue bootstrapping Wireframe Theme.
+		require_once WIREFRAME_THEME_DEV . 'wireframe.php';
+
+	}
 
 }
+add_action( 'init', 'wireframe_theme_init', 10, 0 );
 
 /** ADD YOUR CUSTOM FUNCTIONS BELOW THIS LINE... */
 /** ------------------------------------------------------------------------- */
