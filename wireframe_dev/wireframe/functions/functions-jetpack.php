@@ -62,7 +62,7 @@ if ( ! function_exists( 'wireframe_theme_jetpack_infinite_scroll_render' ) ) :
 	 *
 	 * @internal Thanks: _s
 	 */
-	function wireframe_theme_infinite_scroll_render() {
+	function wireframe_theme_jetpack_infinite_scroll_render() {
 		while ( have_posts() ) {
 			the_post();
 			if ( is_search() ) {
