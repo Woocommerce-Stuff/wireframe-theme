@@ -23,33 +23,25 @@
  */
 
 /**
- * Initialize Wireframe Theme.
+ * Load constants.
  *
  * @since 1.0.0 Wireframe
  * @since 1.0.0 Wireframe Theme
  */
-function wireframe_theme_init() {
+require_once get_template_directory() . '/wireframe_dev/wireframe/config/config-constants.php';
 
-	// Load constants.
-	require_once get_template_directory() . '/wireframe_dev/wireframe/config/config-constants.php';
-
-	// Check WordPress compatibility.
-	if ( version_compare( $GLOBALS['wp_version'], WIREFRAME_THEME_WP, '<' ) ) {
-
-		// Load compatibility helpers.
-		require_once WIREFRAME_THEME_API . 'functions/functions-compat.php';
-
-		return;
-
-	} else {
-
-		// Continue bootstrapping Wireframe Theme.
-		require_once WIREFRAME_THEME_DEV . 'wireframe.php';
-
-	}
-
+/**
+ * Check WordPress compatibility.
+ *
+ * @since 1.0.0 Wireframe
+ * @since 1.0.0 Wireframe Theme
+ */
+if ( version_compare( $GLOBALS['wp_version'], WIREFRAME_THEME_WP, '<' ) ) {
+	require_once WIREFRAME_THEME_API . 'functions/functions-compat.php';
+	return;
+} else {
+	require_once WIREFRAME_THEME_DEV . 'wireframe.php';
 }
-add_action( 'init', 'wireframe_theme_init', 10, 0 );
 
 /** ADD YOUR CUSTOM FUNCTIONS BELOW THIS LINE... */
 /** ------------------------------------------------------------------------- */
