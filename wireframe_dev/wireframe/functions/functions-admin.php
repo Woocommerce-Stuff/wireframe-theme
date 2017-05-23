@@ -1,6 +1,6 @@
 <?php
 /**
- * Views callback functions for Wireframe Theme.
+ * Admin screens callback functions for Wireframe Theme.
  *
  * PHP version 5.6.0
  *

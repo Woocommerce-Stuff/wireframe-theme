@@ -85,7 +85,7 @@ require_once get_template_directory() . '/wireframe_dev/wireframe/config/config-
  */
 locate_template( WIREFRAME_THEME_API . 'functions/functions-helpers.php', true, true );
 locate_template( WIREFRAME_THEME_API . 'functions/functions-template-tags.php', true, true );
-locate_template( WIREFRAME_THEME_API . 'functions/functions-views.php', true, true );
+locate_template( WIREFRAME_THEME_API . 'functions/functions-admin.php', true, true );
 locate_template( WIREFRAME_THEME_API . 'functions/functions-custom-header.php', true, true );
 locate_template( WIREFRAME_THEME_API . 'functions/functions-jetpack.php', true, true );
 locate_template( WIREFRAME_THEME_API . 'functions/functions-extras.php', true, true );
