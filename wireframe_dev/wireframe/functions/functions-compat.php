@@ -24,53 +24,55 @@
  */
 
 /**
- * Wireframe Theme: Textdomain Loader.
+ * Prevent switching to Wireframe Theme on old versions of WordPress.
  *
- * @since 1.0.0 Wireframe Theme
- * @param string $path Path to the language directory.
+ * Switches to the default theme.
+ *
+ * @since  1.0.0 Wireframe Theme
+ * @author MixaTheme
+ *
+ * @internal Thanks: twentyseventeen
  */
-function wireframe_theme_language_loader( $path ) {
+function wireframe_theme_switch_theme() {
 
-	// Check for child theme.
-	if ( is_child_theme() ) {
+	// Load theme textdomain.
+	load_theme_textdomain( 'wireframe-theme', get_template_directory() . '/wireframe_client/lang' );
 
-		// Load child theme language.
-		load_theme_textdomain( get_option( 'stylesheet' ), get_stylesheet_directory() . $path );
+	// Hook the update WordPress notice.
+	do_action( 'wireframe_theme_hook_update_wordpress', WIREFRAME_THEME_PRODUCT, WIREFRAME_THEME_WP );
 
-	} else {
+	// Switch to the default WordPress theme defined in wp-config.php.
+	switch_theme( WP_DEFAULT_THEME );
 
-		// Load parent themem language.
-		load_theme_textdomain( get_option( 'template' ), get_template_directory() . $path );
+	// Check the active theme.
+	if ( isset( $_GET['activated'] ) ) { // Input var ok.
+
+		// Unset the active theme.
+		unset( $_GET['activated'] ); // Input var ok.
+
 	}
-
 }
-add_action( 'wireframe_theme_hook_language_loader', 'wireframe_theme_language_loader', 10, 1 );
+add_action( 'after_switch_theme', 'wireframe_theme_switch_theme' );
 
 /**
- * Wireframe Theme Compatibility: WordPress.
+ * Adds a message for unsuccessful theme switch.
  *
- * This function is hooked via `functions.php` file if the version of
- * WordPress is not compatible with this theme. You need to use a helper function
- * because the Module_Notices class is not available yet.
+ * Prints an update nag after an unsuccessful switch to Wireframe Theme
+ * on incompatible WordPress versions.
  *
- * Note: This Admin notice does not use `is-dismissible` because the User
- * should deactivate the theme, then update WordPress.
- *
- * Note: This should be hooked via `admin_notices` function.
- *
- * @since 1.0.0 Wireframe
- * @since 1.0.0 Wireframe Theme
- * @see   functions.php
- * @param string $product The name of this product.
- * @param string $compat  The WordPress version compatible with this product.
+ * @since  1.0.0 Wireframe
+ * @since  1.0.0 Wireframe Theme
+ * @param  string $product               The name of this product.
+ * @param  string $compat                The WordPress version compatible with this product.
+ * @global string $GLOBALS['wp_version'] WordPress version.
  */
 function wireframe_theme_update_wordpress( $product, $compat ) {
 
 	// Notice text.
 	$notice = sprintf( __( '%1$s requires at least WordPress %2$s. You are running WordPress %3$s. Please upgrade WordPress and re-activate %1$s.', 'wireframe-theme' ), $product, $compat, $GLOBALS['wp_version'] );
 
-	// Display notice to Admins.
-	if ( current_user_can( 'switch_themes' ) && is_admin() ) {
+	// Display notice on Admin screens.
+	if ( is_admin() ) {
 		printf( __( '<div class="error"><p>%s</p></div>', 'wireframe-theme' ), $notice ); // XSS ok.
 	}
 
@@ -95,45 +97,7 @@ function wireframe_theme_exclude_page_templates( $post_templates ) {
 	}
 	return $post_templates;
 }
-// add_filter( 'theme_page_templates', 'wireframe_theme_exclude_page_templates' );
-
-/**
- * Prevent switching to Wireframe Theme on old versions of WordPress.
- *
- * Switches to the default theme.
- *
- * @since  1.0.0 Wireframe Theme
- * @author Automattic
- * @author MixaTheme
- *
- * @internal Thanks: twentyseventeen
- */
-function wireframe_theme_switch_theme() {
-	switch_theme( WP_DEFAULT_THEME );
-	if ( isset( $_GET['activated'] ) ) { // Input var ok.
-		unset( $_GET['activated'] ); // Input var ok.
-		add_action( 'admin_notices', 'wireframe_theme_upgrade_notice' );
-	}
-}
-add_action( 'after_switch_theme', 'wireframe_theme_switch_theme' );
-
-/**
- * Adds a message for unsuccessful theme switch.
- *
- * Prints an update nag after an unsuccessful attempt to switch to
- * Wireframe Theme on WordPress versions prior to 4.7.
- *
- * @since  1.0.0 Wireframe Theme
- * @author Automattic
- * @author MixaTheme
- * @global string $GLOBALS['wp_version'] WordPress version.
- *
- * @internal Thanks: twentyseventeen
- */
-function wireframe_theme_upgrade_notice() {
-	$message = sprintf( __( '%1$s requires at least WordPress %2$s. You are running WordPress %3$s. Please upgrade WordPress and try again.', 'wireframe-theme' ), WIREFRAME_THEME_PRODUCT, WIREFRAME_THEME_WP, $GLOBALS['wp_version'] );
-	printf( __( '<div class="error"><p>%s</p></div>', 'wireframe-theme' ), $message ); // XSS ok.
-}
+add_filter( 'theme_page_templates', 'wireframe_theme_exclude_page_templates' );
 
 /**
  * Prevents the Customizer from being loaded on WordPress versions prior to 4.7.

@@ -23,8 +23,15 @@
  */
 
 /**
- * Compatibility: Checker.
- * =============================================================================
+ * Load constants.
+ *
+ * @since 1.0.0 Wireframe
+ * @since 1.0.0 Wireframe Theme
+ */
+require_once get_template_directory() . '/wireframe_dev/wireframe/config/config-constants.php';
+
+/**
+ * Backwards compatibility.
  *
  * If WordPress version is incompatible, load backwards compatibility helpers;
  * else continue bootstrapping Wireframe.
@@ -35,21 +42,15 @@
  * @since 1.0.0 Wireframe
  * @since 1.0.0 Wireframe Theme
  */
-if ( version_compare( $GLOBALS['wp_version'], '4.7.5', '<' ) ) {
+if ( version_compare( $GLOBALS['wp_version'], WIREFRAME_THEME_WP, '<' ) ) {
 
 	// Incompatible WP: Load backwards compatibility handlers.
-	require_once get_template_directory() . '/wireframe_dev/wireframe/functions/functions-compat.php';
-
-	// Incompatible WP: Get language translation file.
-	do_action( 'wireframe_theme_hook_language_loader', '/wireframe_client/lang' );
-
-	// Incompatible WP: Display update notice to Admins.
-	do_action( 'wireframe_theme_hook_update_wordpress', 'Wireframe Theme', '4.7.5' );
+	require_once WIREFRAME_THEME_API . 'functions/functions-compat.php';
 
 } else {
 
 	// Compatible WP: Continue bootstrapping Wireframe.
-	require_once get_template_directory() . '/wireframe_dev/wireframe.php';
+	require_once WIREFRAME_THEME_DEV . 'wireframe.php';
 
 }
 
