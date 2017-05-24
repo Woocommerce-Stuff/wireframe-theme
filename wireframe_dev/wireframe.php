@@ -170,8 +170,8 @@ if ( class_exists( 'MixaTheme\Wireframe\Theme\Core_Theme' ) ) :
 	 *
 	 * Option #1: Load config data for passing array args into theme objects.
 	 *
-	 * Option #2: You can set args/properties for objects inside an object closure
-	 *            (see `Closure` section below). If you wish to set your config
+	 * Option #2: You can set args/property data for objects inside a Services closure
+	 *            (see `Services` section below). If you wish to set your config
 	 *            data inside closures, then you don't need to require files.
 	 *            We also use locate_template() so child themes can overload.
 	 *
@@ -194,7 +194,7 @@ if ( class_exists( 'MixaTheme\Wireframe\Theme\Core_Theme' ) ) :
 	 * § 08. Services: Language.
 	 * =========================================================================
 	 *
-	 * This closure registers a service with the Core_Container::$storage array,
+	 * This closure registers a service with the Core_Container $_storage array,
 	 * and instantiates a new Core_Language object with config data passed-in.
 	 *
 	 * @since  1.0.0 Wireframe
@@ -210,7 +210,7 @@ if ( class_exists( 'MixaTheme\Wireframe\Theme\Core_Theme' ) ) :
 	 * § 08. Services: Notices.
 	 * =========================================================================
 	 *
-	 * This closure registers a service with the Core_Container::$storage array,
+	 * This closure registers a service with the Core_Container $_storage array,
 	 * and instantiates a new Module_Notices object with config data passed-in.
 	 *
 	 * @since  1.0.0 Wireframe
@@ -225,7 +225,7 @@ if ( class_exists( 'MixaTheme\Wireframe\Theme\Core_Theme' ) ) :
 	/**
 	 * § 08. Services: UI.
 	 *
-	 * This closure registers a service with the Core_Container::$storage array,
+	 * This closure registers a service with the Core_Container $_storage array,
 	 * and instantiates a new Module_UI object with config data passed-in.
 	 *
 	 * @since  1.0.0 Wireframe
@@ -240,7 +240,7 @@ if ( class_exists( 'MixaTheme\Wireframe\Theme\Core_Theme' ) ) :
 	/**
 	 * § 08. Services: Navigation.
 	 *
-	 * This closure registers a service with the Core_Container::$storage array,
+	 * This closure registers a service with the Core_Container $_storage array,
 	 * and instantiates a new Module_Navigation object with config data passed-in.
 	 *
 	 * @since  1.0.0 Wireframe
@@ -255,7 +255,7 @@ if ( class_exists( 'MixaTheme\Wireframe\Theme\Core_Theme' ) ) :
 	/**
 	 * § 08. Services: Widgets.
 	 *
-	 * This closure registers a service with the Core_Container::$storage array,
+	 * This closure registers a service with the Core_Container $_storage array,
 	 * and instantiates a new Module_Widgets object with config data passed-in.
 	 *
 	 * @since  1.0.0 Wireframe
@@ -270,7 +270,7 @@ if ( class_exists( 'MixaTheme\Wireframe\Theme\Core_Theme' ) ) :
 	/**
 	 * § 08. Services: Features.
 	 *
-	 * This closure registers a service with the Core_Container::$storage array,
+	 * This closure registers a service with the Core_Container $_storage array,
 	 * and instantiates a new Module_Features object with config data passed-in.
 	 *
 	 * @since  1.0.0 Wireframe
@@ -285,7 +285,7 @@ if ( class_exists( 'MixaTheme\Wireframe\Theme\Core_Theme' ) ) :
 	/**
 	 * § 08. Services: Customizer.
 	 *
-	 * This closure registers a service with the Core_Container::$storage array,
+	 * This closure registers a service with the Core_Container $_storage array,
 	 * and instantiates a new Module_Customizer object with config data passed-in.
 	 *
 	 * @since  1.0.0 Wireframe
@@ -300,7 +300,7 @@ if ( class_exists( 'MixaTheme\Wireframe\Theme\Core_Theme' ) ) :
 	/**
 	 * § 08. Services: Editor.
 	 *
-	 * This closure registers a service with the Core_Container::$storage array,
+	 * This closure registers a service with the Core_Container $_storage array,
 	 * and instantiates a new Module_Editor object with config data passed-in.
 	 *
 	 * @since  1.0.0 Wireframe
@@ -315,7 +315,7 @@ if ( class_exists( 'MixaTheme\Wireframe\Theme\Core_Theme' ) ) :
 	/**
 	 * § 08. Services: Admin.
 	 *
-	 * This closure registers a service with the Core_Container::$storage array,
+	 * This closure registers a service with the Core_Container $_storage array,
 	 * and instantiates a new Module_Admin object with config data passed-in.
 	 *
 	 * @since  1.0.0 Wireframe

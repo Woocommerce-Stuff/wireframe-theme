@@ -46,7 +46,7 @@ defined( 'ABSPATH' ) or die();
  * Option #1: We use a function so the config data can be called and reused
  *            easily when you neeed it.
  *
- * Option #2: Put your array data inside a Service closure (see wireframe.php).
+ * Option #2: Put your array data inside a Services closure (see wireframe.php).
  *            Another alternative is putting all your object configs into one
  *            single config file to minimize your file count.
  *
@@ -78,7 +78,7 @@ function wireframe_theme_config_ui() {
 	 * Prefix.
 	 *
 	 * Many objects use a prefix for various strings, handles, scripts, etc.
-	 * Generally, you should use a constant defined in wireframe.php. However,
+	 * Generally, you should use a constant defined in config-constants.php. However,
 	 * you can change it here if needed. Default: WIREFRAME_THEME_PREFIX
 	 *
 	 * @since 1.0.0 Wireframe
@@ -196,7 +196,7 @@ function wireframe_theme_config_ui() {
 	$commentjs = true;
 
 	/**
-	 * This object depends on the Core_Enqueue object, so we need to intantiate
+	 * This config depends on the Core_Enqueue object, so we need to intantiate
 	 * the Core_Enqueue object and pass-in parameters.
 	 *
 	 * @since 1.0.0 Wireframe

@@ -46,7 +46,7 @@ defined( 'ABSPATH' ) or die();
  * Option #1: We use a function so the config data can be called and reused
  *            easily when you neeed it.
  *
- * Option #2: Put your array data inside a Service closure (see wireframe.php).
+ * Option #2: Put your array data inside a Services closure (see wireframe.php).
  *            Another alternative is putting all your object configs into one
  *            single config file to minimize your file count.
  *
@@ -78,7 +78,7 @@ function wireframe_theme_config_customizer() {
 	 * Prefix.
 	 *
 	 * Many objects use a prefix for various strings, handles, scripts, etc.
-	 * Generally, you should use a constant defined in wireframe.php. However,
+	 * Generally, you should use a constant defined in config-constants.php. However,
 	 * you can change it here if needed. Default: WIREFRAME_THEME_PREFIX
 	 *
 	 * @since 1.0.0 Wireframe
@@ -181,7 +181,7 @@ function wireframe_theme_config_customizer() {
 	 *
 	 * @todo TRT: False positive for `sanitize_callback` in `Theme Check`
 	 * probably because we use an array for add_setting(). As you can see
-	 * below, our settings assign a callback to arrays. @see Customizer
+	 * below, our settings assign a callback to arrays. @see Module_Customizer
 	 *
 	 * @since 1.0.0 Wireframe
 	 * @since 1.0.0 Wireframe Theme
@@ -372,7 +372,7 @@ function wireframe_theme_config_customizer() {
 	);
 
 	/**
-	 * This object depends on the Core_Enqueue object, so we need to intantiate the
+	 * This config depends on the Core_Enqueue object, so we need to intantiate the
 	 * Core_Enqueue object and pass-in parameters.
 	 *
 	 * @since 1.0.0 Wireframe

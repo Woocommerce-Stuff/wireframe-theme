@@ -46,7 +46,7 @@ defined( 'ABSPATH' ) or die();
  * Option #1: We use a function so the config data can be called and reused
  *            easily when you neeed it.
  *
- * Option #2: Put your array data inside a Service closure (see wireframe.php).
+ * Option #2: Put your array data inside a Services closure (see wireframe.php).
  *            Another alternative is putting all your object configs into one
  *            single config file to minimize your file count.
  *
@@ -67,8 +67,6 @@ function wireframe_theme_config_admin() {
 	 *
 	 * 		1. In this config file, set: $wired = true.
 	 * 		2. In this config file, modify any default data you need.
-	 * 		3. In `config-controller.php` instantiate Module_Admin.
-	 * 		4. In `config-controller.php` pass this config into Module_Admin.
 	 *
 	 * @since 1.0.0 Wireframe
 	 * @since 1.0.0 Wireframe Theme
@@ -81,7 +79,7 @@ function wireframe_theme_config_admin() {
 	 * Prefix.
 	 *
 	 * Many objects use a prefix for various strings, handles, scripts, etc.
-	 * Generally, you should use a constant defined in wireframe.php. However,
+	 * Generally, you should use a constant defined in config-constants.php. However,
 	 * you can change it here if needed. Default: WIREFRAME_THEME_PREFIX
 	 *
 	 * @since 1.0.0 Wireframe
@@ -209,7 +207,7 @@ function wireframe_theme_config_admin() {
 	/**
 	 * Load media modal.
 	 *
-	 * Some plugins may need to tap into the Media Modal.
+	 * Some themes may need to tap into the Media Modal.
 	 *
 	 * @since 1.0.0 Wireframe
 	 * @since 1.0.0 Wireframe Theme
@@ -220,7 +218,7 @@ function wireframe_theme_config_admin() {
 	$mediamodal = false;
 
 	/**
-	 * This object depends on the Core_Enqueue object, so we need to intantiate
+	 * This config depends on the Core_Enqueue object, so we need to intantiate
 	 * the Core_Enqueue object and pass-in parameters.
 	 *
 	 * @since 1.0.0 Wireframe
