@@ -36,7 +36,7 @@
  *    § 10. Housekeeping
  *    § 11. Hooks
  *
- * (Constants are in functions.php. New sections are separated by lines.)
+ * (New sections are separated by lines.)
  */
 
 /**
