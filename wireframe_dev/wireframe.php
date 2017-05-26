@@ -31,7 +31,7 @@
  *    § 05. Objects
  *    § 06. Container
  *    § 07. Configs
- *    § 08. Service
+ *    § 08. Services
  *    § 09. Wireframe
  *    § 10. Housekeeping
  *    § 11. Hooks
