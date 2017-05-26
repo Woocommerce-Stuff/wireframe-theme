@@ -130,7 +130,7 @@ You should have received a copy of the GNU General Public License along with thi
 *More free and commercial open-source software by MixaTheme...*
 
 ### ![MIXA Logo](https://avatars3.githubusercontent.com/u/16634291?v=3&s=20)&nbsp;[Wireframe](https://github.com/mixatheme/Wireframe)
-Wireframe is a suite of object-oriented components for creating modular WordPress themes & plugins. Creators extend Wireframe to deliver professional client projects or for selling premium marketplace products to the world.
+Wireframe is a suite of free object-oriented components for creating modular WordPress themes & plugins. You extend Wireframe to deliver professional client projects or for selling premium marketplace products to the world.
 
 ### ![MIXA Logo](https://avatars3.githubusercontent.com/u/16634291?v=3&s=20)&nbsp;[Mainframe](https://mixatheme.com)
 Frustrated buying dozens of throwaway themes? Love Bootstrap, Foundation, HTML5 Boilerplate, Skeleton but wanna test drive Neat, Susy, Material UI, Unsemantic, Ink, Kube, Bulma, etc? Mainframe is our flagship smart theme for WordPress! Use any grid. Use any front-end framework. Use your creativity in one single theme.
