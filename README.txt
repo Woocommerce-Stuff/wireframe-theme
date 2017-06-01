@@ -1,4 +1,4 @@
-![Wireframe Theme logo](wireframe_client/img/mixatheme-wireframe-logo-fill.gif)
+![Wireframe Theme logo](wireframe_usr/img/mixatheme-wireframe-logo-fill.gif)
 
 # Wireframe Theme
 

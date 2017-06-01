@@ -125,7 +125,7 @@ function wireframe_theme_admin_page_tabs_support() {
  *
  * Replacing the badge with your own custom graphic:
  *
- *      1. Locate SVG file in: wireframe-theme/wireframe_client/img/wireframe-theme-badge-white.svg
+ *      1. Locate SVG file in: wireframe-theme/wireframe_usr/img/wireframe-theme-badge-white.svg
  *      2. Open the file in your favorite SVG/Vector application.
  *      3. Replace artwork with your own graphics or logo.
  *      4. Export the graphic as a SVG file with the same filename.
@@ -135,10 +135,10 @@ function wireframe_theme_admin_page_tabs_support() {
  * @since 1.0.0 Wireframe Theme
  * @see   functions-helpers.php Admin check function.
  * @see   wp-admin/images/wordpress-logo-white.svg
- * @see   wireframe-theme/wireframe_client/img/wireframe-theme-badge-white.svg
- * @see   wireframe-theme/wireframe_client/img/wireframe-theme-badge-white.png
- * @see   wireframe-theme/wireframe_client/css/wireframe-theme-admin.scss
- * @see   wireframe-theme/wireframe_client/css/wireframe-theme-admin-min.css
+ * @see   wireframe-theme/wireframe_usr/img/wireframe-theme-badge-white.svg
+ * @see   wireframe-theme/wireframe_usr/img/wireframe-theme-badge-white.png
+ * @see   wireframe-theme/wireframe_usr/css/wireframe-theme-admin.scss
+ * @see   wireframe-theme/wireframe_usr/css/wireframe-theme-admin-min.css
  */
 function wireframe_theme_admin_page_badge() {
 	wireframe_theme_admin_check();

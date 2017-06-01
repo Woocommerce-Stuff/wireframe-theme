@@ -136,76 +136,76 @@ define( 'WIREFRAME_THEME_OBJECTS', trailingslashit( WIREFRAME_THEME_DIR . '/wire
 /**
  * Theme path to client-side assets.
  *
- * Relative path to the `wireframe_client` directory. This directory primarily
+ * Relative path to the `wireframe_usr` directory. This directory primarily
  * holds front-end assets, such as: images, fonts, scripts, stylesheets, etc.
  *
  * @since 1.0.0 Wireframe
  * @since 1.0.0 Wireframe Theme
  */
-define( 'WIREFRAME_THEME_CLIENT', trailingslashit( '/wireframe_client' ) );
+define( 'WIREFRAME_THEME_USER', trailingslashit( '/wireframe_usr' ) );
 
 /**
  * Theme URI for CSS.
  *
- * URI for stylesheets located in the `wireframe_client/css` directory. This is
+ * URI for stylesheets located in the `wireframe_usr/css` directory. This is
  * primarily called by the `wp_enqueue_scripts()` function.
  *
  * @since 1.0.0 Wireframe
  * @since 1.0.0 Wireframe Theme
  */
-define( 'WIREFRAME_THEME_CSS', trailingslashit( WIREFRAME_THEME_URI . WIREFRAME_THEME_CLIENT . 'css' ) );
+define( 'WIREFRAME_THEME_CSS', trailingslashit( WIREFRAME_THEME_URI . WIREFRAME_THEME_USER . 'css' ) );
 
 /**
  * Theme URI for fonts.
  *
- * URI for fonts located in the `wireframe_client/fonts` directory. This is
+ * URI for fonts located in the `wireframe_usr/fonts` directory. This is
  * primarily called by `.scss` files to compile the path to fonts.
  *
  * @since 1.0.0 Wireframe
  * @since 1.0.0 Wireframe Theme
  */
-define( 'WIREFRAME_THEME_FONTS', trailingslashit( WIREFRAME_THEME_URI . WIREFRAME_THEME_CLIENT . 'fonts' ) );
+define( 'WIREFRAME_THEME_FONTS', trailingslashit( WIREFRAME_THEME_URI . WIREFRAME_THEME_USER . 'fonts' ) );
 
 /**
  * Theme URI for images.
  *
- * URI for images located in the `wireframe_client/img` directory. This is
+ * URI for images located in the `wireframe_usr/img` directory. This is
  * primarily called by `.scss` files to compile the path to images.
  *
  * @since 1.0.0 Wireframe
  * @since 1.0.0 Wireframe Theme
  */
-define( 'WIREFRAME_THEME_IMG', trailingslashit( WIREFRAME_THEME_URI . WIREFRAME_THEME_CLIENT . 'img' ) );
+define( 'WIREFRAME_THEME_IMG', trailingslashit( WIREFRAME_THEME_URI . WIREFRAME_THEME_USER . 'img' ) );
 
 /**
  * Theme URI for JavaScript.
  *
- * URI for JavaScript files located in the `wireframe_client/js` directory. This is
+ * URI for JavaScript files located in the `wireframe_usr/js` directory. This is
  * primarily called by the `wp_enqueue_scripts()` function.
  *
  * @since 1.0.0 Wireframe
  * @since 1.0.0 Wireframe Theme
  */
-define( 'WIREFRAME_THEME_JS', trailingslashit( WIREFRAME_THEME_URI . WIREFRAME_THEME_CLIENT . 'js' ) );
+define( 'WIREFRAME_THEME_JS', trailingslashit( WIREFRAME_THEME_URI . WIREFRAME_THEME_USER . 'js' ) );
 
 /**
  * Theme language path.
  *
- * Absolute path to the `wireframe_client/lang` directory. This directory
+ * Absolute path to the `wireframe_usr/lang` directory. This directory
  * holds any `.mo` or `.po` or `.pot` files you package with your theme.
  *
  * @since 1.0.0 Wireframe
  * @since 1.0.0 Wireframe Theme
  */
-define( 'WIREFRAME_THEME_LANG', trailingslashit( WIREFRAME_THEME_DIR . WIREFRAME_THEME_CLIENT . 'lang' ) );
+define( 'WIREFRAME_THEME_LANG', trailingslashit( WIREFRAME_THEME_DIR . WIREFRAME_THEME_USER . 'lang' ) );
 
 /**
  * Theme path for template parts.
  *
- * Relative path to the `wireframe_client/tpl` directory (NO leading slash).
+ * Relative path to the `wireframe_usr/tpl` directory (NO leading slash).
  * This directory holds files called by the `get_template_part()` function.
  *
  * @since 1.0.0 Wireframe
  * @since 1.0.0 Wireframe Theme
  */
-define( 'WIREFRAME_THEME_TPL', trailingslashit( 'wireframe_client/tpl' ) );
+define( 'WIREFRAME_THEME_TPL', trailingslashit( 'wireframe_usr/tpl' ) );

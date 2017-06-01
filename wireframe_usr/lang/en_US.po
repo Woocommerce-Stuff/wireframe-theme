@@ -77,40 +77,40 @@ msgstr ""
 msgid "Search Results for: %s"
 msgstr ""
 
-#: wireframe_client/tpl/content-none.php:32
+#: wireframe_usr/tpl/content-none.php:32
 msgid "Nothing Found"
 msgstr ""
 
-#: wireframe_client/tpl/content-none.php:38
+#: wireframe_usr/tpl/content-none.php:38
 #, php-format
 msgid ""
 "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
 msgstr ""
 
-#: wireframe_client/tpl/content-none.php:42
+#: wireframe_usr/tpl/content-none.php:42
 msgid ""
 "Sorry, but nothing matched your search terms. Please try again with some "
 "different keywords."
 msgstr ""
 
-#: wireframe_client/tpl/content-none.php:47
+#: wireframe_usr/tpl/content-none.php:47
 msgid ""
 "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
 "searching can help."
 msgstr ""
 
-#: wireframe_client/tpl/content-page.php:47
-#: wireframe_client/tpl/content.php:62
+#: wireframe_usr/tpl/content-page.php:47
+#: wireframe_usr/tpl/content.php:62
 msgid "Pages:"
 msgstr ""
 
-#: wireframe_client/tpl/content-page.php:60
+#: wireframe_usr/tpl/content-page.php:60
 #: wireframe_dev/wireframe/functions/functions-template-tags.php:203
 #, php-format
 msgid "Edit %s"
 msgstr ""
 
-#: wireframe_client/tpl/content.php:57
+#: wireframe_usr/tpl/content.php:57
 #, php-format
 msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
 msgstr ""

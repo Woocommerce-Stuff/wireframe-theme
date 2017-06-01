@@ -64,12 +64,12 @@ defined( 'ABSPATH' ) or die();
  * § 03. Constants.
  * =============================================================================
  *
- * Loads constants available to your theme.
+ * Loads config constants available to your theme.
  *
  * @since 1.0.0 Wireframe
  * @since 1.0.0 Wireframe Theme
  */
-require_once get_template_directory() . '/wireframe_dev/wireframe/config/config-constants.php';
+require_once get_template_directory() . '/wireframe_cfg/cfg-constants.php';
 
 /**
  * § 04. Functions.
@@ -175,20 +175,20 @@ if ( class_exists( 'MixaTheme\Wireframe\Theme\Core_Theme' ) ) :
 	 *            data inside closures, then you don't need to require files.
 	 *            We also use locate_template() so child themes can overload.
 	 *
-	 * Data files are located in: `wireframe_dev/wireframe/config/`
+	 * Data files are located in: `wireframe_cfg/`
 	 *
 	 * @since 1.0.0 Wireframe
 	 * @since 1.0.0 Wireframe Theme
 	 */
-	locate_template( WIREFRAME_THEME_API . 'config/config-language.php', true, true );
-	locate_template( WIREFRAME_THEME_API . 'config/config-notices.php', true, true );
-	locate_template( WIREFRAME_THEME_API . 'config/config-ui.php', true, true );
-	locate_template( WIREFRAME_THEME_API . 'config/config-navigation.php', true, true );
-	locate_template( WIREFRAME_THEME_API . 'config/config-widgets.php', true, true );
-	locate_template( WIREFRAME_THEME_API . 'config/config-features.php', true, true );
-	locate_template( WIREFRAME_THEME_API . 'config/config-customizer.php', true, true );
-	locate_template( WIREFRAME_THEME_API . 'config/config-editor.php', true, true );
-	locate_template( WIREFRAME_THEME_API . 'config/config-admin.php', true, true );
+	locate_template( trailingslashit( 'wireframe_cfg' ) . 'cfg-language.php', true, true );
+	locate_template( trailingslashit( 'wireframe_cfg' ) . 'cfg-notices.php', true, true );
+	locate_template( trailingslashit( 'wireframe_cfg' ) . 'cfg-ui.php', true, true );
+	locate_template( trailingslashit( 'wireframe_cfg' ) . 'cfg-navigation.php', true, true );
+	locate_template( trailingslashit( 'wireframe_cfg' ) . 'cfg-widgets.php', true, true );
+	locate_template( trailingslashit( 'wireframe_cfg' ) . 'cfg-features.php', true, true );
+	locate_template( trailingslashit( 'wireframe_cfg' ) . 'cfg-customizer.php', true, true );
+	locate_template( trailingslashit( 'wireframe_cfg' ) . 'cfg-editor.php', true, true );
+	locate_template( trailingslashit( 'wireframe_cfg' ) . 'cfg-admin.php', true, true );
 
 	/**
 	 * § 08. Services: Language.

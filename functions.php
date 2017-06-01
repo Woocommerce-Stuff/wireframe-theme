@@ -23,12 +23,12 @@
  */
 
 /**
- * Load constants.
+ * Load config constants.
  *
  * @since 1.0.0 Wireframe
  * @since 1.0.0 Wireframe Theme
  */
-require_once get_template_directory() . '/wireframe_dev/wireframe/config/config-constants.php';
+require_once get_template_directory() . '/wireframe_cfg/cfg-constants.php';
 
 /**
  * Check WordPress compatibility.

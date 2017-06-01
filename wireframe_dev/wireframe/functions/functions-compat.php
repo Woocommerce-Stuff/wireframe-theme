@@ -36,7 +36,7 @@
 function wireframe_theme_switch_theme() {
 
 	// Load theme textdomain.
-	load_theme_textdomain( 'wireframe-theme', get_template_directory() . '/wireframe_client/lang' );
+	load_theme_textdomain( 'wireframe-theme', get_template_directory() . '/wireframe_usr/lang' );
 
 	// Hook the update WordPress notice.
 	do_action( 'wireframe_theme_hook_update_wordpress', WIREFRAME_THEME_PRODUCT, WIREFRAME_THEME_WP );
