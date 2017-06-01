@@ -56,7 +56,7 @@ defined( 'ABSPATH' ) or die();
  * @see    object Core_Language
  * @return array  Default configuration values.
  */
-function wireframe_theme_config_language() {
+function wireframe_theme_cfg_language() {
 	/**
 	 * Module.
 	 *

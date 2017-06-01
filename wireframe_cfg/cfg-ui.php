@@ -56,7 +56,7 @@ defined( 'ABSPATH' ) or die();
  * @see    object Theme_UI
  * @return array  Default configuration values.
  */
-function wireframe_theme_config_ui() {
+function wireframe_theme_cfg_ui() {
 	/**
 	 * Wired.
 	 *
