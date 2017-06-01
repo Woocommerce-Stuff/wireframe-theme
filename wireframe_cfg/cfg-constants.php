@@ -22,6 +22,26 @@
  */
 
 /**
+ * Namespaces.
+ *
+ * You should namespace configs to access to your objects.
+ *
+ * @since 5.3.0 PHP
+ * @since 1.0.0 Wireframe
+ * @since 1.0.0 Wireframe Theme
+ */
+namespace MixaTheme\Wireframe\Theme;
+
+/**
+ * No direct access to this file.
+ *
+ * @since 1.0.0 Wireframe
+ * @since 1.0.0 Wireframe Theme
+ * @since 1.0.0 Wireframe Child
+ */
+defined( 'ABSPATH' ) or die();
+
+/**
  * WordPress compatibility version.
  *
  * The minimum version of WordPress compatible with Wireframe Theme.
