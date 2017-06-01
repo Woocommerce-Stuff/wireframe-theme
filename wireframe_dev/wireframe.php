@@ -200,7 +200,7 @@ if ( class_exists( 'MixaTheme\Wireframe\Theme\Core_Theme' ) ) :
 	 * @since  1.0.0 Wireframe
 	 * @since  1.0.0 Wireframe Theme
 	 * @see    wireframe_theme_cfg_language()
-	 * @return object Core_Language( @param array Object args. )
+	 * @return object Core_Language( @param array Config args. )
 	 */
 	$wireframe_theme_container->language = function () {
 		return new Core_Language( wireframe_theme_cfg_language() );
@@ -216,7 +216,7 @@ if ( class_exists( 'MixaTheme\Wireframe\Theme\Core_Theme' ) ) :
 	 * @since  1.0.0 Wireframe
 	 * @since  1.0.0 Wireframe Theme
 	 * @see    wireframe_theme_cfg_notices()
-	 * @return object Module_Notices( @param array Object args. )
+	 * @return object Module_Notices( @param array Config args. )
 	 */
 	$wireframe_theme_container->notices = function () {
 		return new Module_Notices( wireframe_theme_cfg_notices() );
@@ -231,7 +231,7 @@ if ( class_exists( 'MixaTheme\Wireframe\Theme\Core_Theme' ) ) :
 	 * @since  1.0.0 Wireframe
 	 * @since  1.0.0 Wireframe Theme
 	 * @see    wireframe_theme_cfg_ui()
-	 * @return object Module_UI( @param array Object args. )
+	 * @return object Module_UI( @param array Config args. )
 	 */
 	$wireframe_theme_container->ui = function () {
 		return new Module_UI( wireframe_theme_cfg_ui() );
@@ -246,7 +246,7 @@ if ( class_exists( 'MixaTheme\Wireframe\Theme\Core_Theme' ) ) :
 	 * @since  1.0.0 Wireframe
 	 * @since  1.0.0 Wireframe Theme
 	 * @see    wireframe_theme_cfg_navigation()
-	 * @return object Module_Navigation( @param array Object args. )
+	 * @return object Module_Navigation( @param array Config args. )
 	 */
 	$wireframe_theme_container->navigation = function () {
 		return new Module_Navigation( wireframe_theme_cfg_navigation() );
@@ -261,7 +261,7 @@ if ( class_exists( 'MixaTheme\Wireframe\Theme\Core_Theme' ) ) :
 	 * @since  1.0.0 Wireframe
 	 * @since  1.0.0 Wireframe Theme
 	 * @see    wireframe_theme_cfg_widgets()
-	 * @return object Module_Widgets( @param array Object args. )
+	 * @return object Module_Widgets( @param array Config args. )
 	 */
 	$wireframe_theme_container->widgets = function () {
 		return new Module_Widgets( wireframe_theme_cfg_widgets() );
@@ -276,7 +276,7 @@ if ( class_exists( 'MixaTheme\Wireframe\Theme\Core_Theme' ) ) :
 	 * @since  1.0.0 Wireframe
 	 * @since  1.0.0 Wireframe Theme
 	 * @see    wireframe_theme_cfg_features()
-	 * @return object Module_Features( @param array Object args. )
+	 * @return object Module_Features( @param array Config args. )
 	 */
 	$wireframe_theme_container->features = function () {
 		return new Module_Features( wireframe_theme_cfg_features() );
@@ -291,7 +291,7 @@ if ( class_exists( 'MixaTheme\Wireframe\Theme\Core_Theme' ) ) :
 	 * @since  1.0.0 Wireframe
 	 * @since  1.0.0 Wireframe Theme
 	 * @see    wireframe_theme_cfg_customizer()
-	 * @return object Module_Customizer( @param array Object args. )
+	 * @return object Module_Customizer( @param array Config args. )
 	 */
 	$wireframe_theme_container->customizer = function () {
 		return new Module_Customizer( wireframe_theme_cfg_customizer() );
@@ -306,7 +306,7 @@ if ( class_exists( 'MixaTheme\Wireframe\Theme\Core_Theme' ) ) :
 	 * @since  1.0.0 Wireframe
 	 * @since  1.0.0 Wireframe Theme
 	 * @see    wireframe_theme_cfg_editor()
-	 * @return object Module_Editor( @param array Object args. )
+	 * @return object Module_Editor( @param array Config args. )
 	 */
 	$wireframe_theme_container->editor = function () {
 		return new Module_Editor( wireframe_theme_cfg_editor() );
@@ -321,7 +321,7 @@ if ( class_exists( 'MixaTheme\Wireframe\Theme\Core_Theme' ) ) :
 	 * @since  1.0.0 Wireframe
 	 * @since  1.0.0 Wireframe Theme
 	 * @see    wireframe_theme_cfg_admin()
-	 * @return object Module_Admin( @param array Object args. )
+	 * @return object Module_Admin( @param array Config args. )
 	 */
 	$wireframe_theme_container->admin = function () {
 		return new Module_Admin( wireframe_theme_cfg_admin() );
