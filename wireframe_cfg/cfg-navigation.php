@@ -24,11 +24,21 @@
 /**
  * Namespaces.
  *
- * You should namespace configs to access to your objects.
+ * You should namespace configs to access your objects. If you change your
+ * namespace, don't forget to `use` any namespace aliases you may need.
+ * Also, if you autoload, don't forget to re-compile Composer.
+ *
+ * Examples:
+ *
+ * 		namespace MyCompany\MyTheme;
+ * 		use MixaTheme\Wireframe\Theme\Core_Enqueue;
+ * 		use Walker_Nav_Menus;
+ * 		use wpdb;
  *
  * @since 5.3.0 PHP
  * @since 1.0.0 Wireframe
  * @since 1.0.0 Wireframe Theme
+ * @since 1.0.0 Wireframe Child
  */
 namespace MixaTheme\Wireframe\Theme;
 use Walker_Nav_Menu;
